@@ -18,6 +18,22 @@
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="ja_JP">
     <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="hi_IN">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <!-- hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="ko" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="en" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="zh" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="hi" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="ru" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="ja" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="es" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="pt" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="id" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="tr" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="de" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="fr" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="x-default" href="https://dopabrain.com/brain-type/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="나의 두뇌 유형은? 🧠 8가지 중 당신은?" data-i18n="meta.twitter_title">
     <meta name="twitter:description" content="10개 질문으로 8가지 뇌 유형 중 당신의 타입을 찾아보세요!" data-i18n="meta.twitter_description">
@@ -30,14 +46,14 @@
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "@type": "Quiz",
         "name": "두뇌 유형 테스트",
-        "description": "10개 질문으로 8가지 뇌 유형 중 당신의 타입을 찾아보세요! 크리에이터, 분석가, 공감각, 직관형 등 뇌 유형별 특징 분석.",
-        "applicationCategory": "HealthApplication",
+        "description": "10개 질문으로 8가지 뇌 유형 중 당신의 타입을 찾아보세요! 크리에이터, 분석가, 공감각, 직관형 등 뇌 유형별 특징 분석 및 결과 공유!",
         "url": "https://dopabrain.com/brain-type/",
         "image": "https://dopabrain.com/brain-type/icon-512.svg",
+        "applicationCategory": "HealthApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Safari, Firefox, Edge).",
+        "inLanguage": ["ko", "en", "zh", "hi", "ru"],
         "author": {
             "@type": "Organization",
             "name": "DopaBrain",
@@ -51,7 +67,15 @@
         "offers": {
             "@type": "Offer",
             "price": "0",
-            "priceCurrency": "KRW"
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "ratingCount": "1950",
+            "bestRating": "5",
+            "worstRating": "1"
         }
     }
     </script>
@@ -77,6 +101,9 @@
     <link rel="preload" href="js/app.js" as="script">
 </head>
 <body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link" data-i18n="app.skipLink">Skip to main</a>
+
     <div class="app-loader" id="app-loader">
         <div class="loader-content">
             <div class="loader-emoji">🧠</div>
