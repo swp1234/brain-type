@@ -3,44 +3,73 @@ class BrainTypeApp {
         this.currentQuestion = 0;
         this.answers = [];
         this.resultType = null;
+        this.hideLoader();
         this.init();
     }
 
+    hideLoader() {
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('app-loader');
+            if (loader) {
+                loader.classList.add('hidden');
+                setTimeout(() => loader.remove(), 300);
+            }
+        });
+    }
+
     async init() {
-        await i18n.init();
+        try {
+            if (window.i18n && typeof window.i18n.init === 'function') {
+                await i18n.init();
+            }
+        } catch (e) {
+            console.warn('i18n init failed:', e.message);
+        }
         this.setupEventListeners();
         this.setupServiceWorker();
     }
 
     setupEventListeners() {
         // 시작 버튼
-        document.getElementById('start-btn').addEventListener('click', () => this.startQuiz());
+        const startBtn = document.getElementById('start-btn');
+        if (startBtn) startBtn.addEventListener('click', () => this.startQuiz());
 
         // 뒤로가기 버튼
-        document.getElementById('progress-back').addEventListener('click', () => this.goBack());
-        document.getElementById('result-back').addEventListener('click', () => this.goBack());
+        const progressBack = document.getElementById('progress-back');
+        const resultBack = document.getElementById('result-back');
+        if (progressBack) progressBack.addEventListener('click', () => this.goBack());
+        if (resultBack) resultBack.addEventListener('click', () => this.goBack());
 
         // 다시 하기 버튼
-        document.getElementById('retry-btn').addEventListener('click', () => this.resetQuiz());
+        const retryBtn = document.getElementById('retry-btn');
+        if (retryBtn) retryBtn.addEventListener('click', () => this.resetQuiz());
 
         // 언어 선택기
-        document.getElementById('lang-toggle').addEventListener('click', () => this.toggleLangMenu());
+        const langToggle = document.getElementById('lang-toggle');
+        if (langToggle) {
+            langToggle.addEventListener('click', () => this.toggleLangMenu());
+        }
 
         document.querySelectorAll('.lang-option').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const lang = e.target.getAttribute('data-lang');
-                this.changeLang(lang);
+                if (lang) this.changeLang(lang);
             });
         });
 
         // 공유 버튼
-        document.getElementById('share-kakao').addEventListener('click', () => this.shareKakao());
-        document.getElementById('share-twitter').addEventListener('click', () => this.shareTwitter());
-        document.getElementById('share-facebook').addEventListener('click', () => this.shareFacebook());
-        document.getElementById('share-copy').addEventListener('click', () => this.shareCopy());
+        const shareKakao = document.getElementById('share-kakao');
+        const shareTwitter = document.getElementById('share-twitter');
+        const shareFacebook = document.getElementById('share-facebook');
+        const shareCopy = document.getElementById('share-copy');
+        if (shareKakao) shareKakao.addEventListener('click', () => this.shareKakao());
+        if (shareTwitter) shareTwitter.addEventListener('click', () => this.shareTwitter());
+        if (shareFacebook) shareFacebook.addEventListener('click', () => this.shareFacebook());
+        if (shareCopy) shareCopy.addEventListener('click', () => this.shareCopy());
 
         // 프리미엄 분석 버튼
-        document.getElementById('premium-btn').addEventListener('click', () => this.showPremiumAnalysis());
+        const premiumBtn = document.getElementById('premium-btn');
+        if (premiumBtn) premiumBtn.addEventListener('click', () => this.showPremiumAnalysis());
 
         // Google Analytics
         this.setupGA();
