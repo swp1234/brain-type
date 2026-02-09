@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="당신의 두뇌는 어떤 유형인가요? 10개 질문으로 당신의 뇌 유형을 알아보세요. SNS 공유 가능한 재미있는 심리 테스트입니다." data-i18n="meta.description">
+    <meta name="keywords" content="뇌 유형 테스트, 심리 테스트, 두뇌 진단, 성격 테스트" data-i18n="meta.keywords">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="나의 두뇌 유형 테스트" data-i18n="meta.og_title">
+    <meta property="og:description" content="당신의 두뇌는 어떤 유형인가요? 10개 질문으로 당신의 뇌 유형을 알아보세요." data-i18n="meta.og_description">
+    <meta property="og:image" content="https://dopabrain.com/brain-type/og-image.png">
+    <meta property="og:url" content="https://dopabrain.com/brain-type/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="나의 두뇌 유형 테스트" data-i18n="meta.twitter_title">
+    <meta name="twitter:description" content="당신의 두뇌는 어떤 유형인가요? 10개 질문으로 당신의 뇌 유형을 알아보세요." data-i18n="meta.twitter_description">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-J8GSWM40TV');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882"
+        crossorigin="anonymous"></script>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon-192.svg">
+    <link rel="apple-touch-icon" href="icon-192.svg">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <title data-i18n="app.title">나의 두뇌 유형 테스트</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 언어 선택기 -->
+        <div class="language-selector">
+            <button id="lang-toggle" class="lang-toggle" title="언어 선택">🌐</button>
+            <div id="lang-menu" class="lang-menu hidden">
+                <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
+                <button class="lang-option" data-lang="en">🇺🇸 English</button>
+                <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+                <button class="lang-option" data-lang="zh">🇨🇳 中文</button>
+                <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+                <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+                <button class="lang-option" data-lang="id">🇮🇩 Bahasa</button>
+                <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
+                <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+                <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+                <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
+                <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+            </div>
+        </div>
+
+        <!-- 상단 배너 광고 -->
+        <div class="ad-container ad-top">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-3600813755953882"
+                data-ad-slot="1234567890"
+                data-ad-format="horizontal"></ins>
+        </div>
+
+        <!-- 인트로 화면 -->
+        <div id="intro-screen" class="screen active">
+            <div class="intro-content">
+                <div class="brain-emoji-animation">
+                    <span class="brain-emoji">🧠</span>
+                </div>
+                <h1 class="intro-title" data-i18n="intro.title">나의 두뇌 유형 테스트</h1>
+                <p class="intro-subtitle" data-i18n="intro.subtitle">당신의 두뇌는 어떤 유형인가요?</p>
+
+                <div class="intro-description">
+                    <p data-i18n="intro.description">10개의 질문으로 당신의 뇌 유형을 분석합니다.</p>
+                    <p data-i18n="intro.description_2">8가지 유형 중 당신을 가장 잘 나타내는 유형을 발견해보세요!</p>
+                </div>
+
+                <div class="brain-types-preview">
+                    <div class="type-badge">🎨 크리에이터</div>
+                    <div class="type-badge">🧮 분석가</div>
+                    <div class="type-badge">🌈 공감각</div>
+                    <div class="type-badge">⚡ 스피드</div>
+                    <div class="type-badge">🔮 직관</div>
+                    <div class="type-badge">📚 탐구</div>
+                    <div class="type-badge">🎯 전략가</div>
+                    <div class="type-badge">🌊 자유</div>
+                </div>
+
+                <button id="start-btn" class="btn btn-primary" data-i18n="button.start">테스트 시작</button>
+                <p class="time-estimate" data-i18n="intro.time_estimate">소요 시간: 약 2분</p>
+            </div>
+        </div>
+
+        <!-- 질문 화면 -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <button id="progress-back" class="back-btn">← <span data-i18n="button.back">뒤로</span></button>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <span class="progress-text"><span id="current-question">1</span>/10</span>
+            </div>
+
+            <div class="quiz-content">
+                <div class="question-container">
+                    <h2 id="question-text" class="question-text"></h2>
+                    <div id="options-container" class="options-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 분석 중 화면 -->
+        <div id="analyzing-screen" class="screen">
+            <div class="analyzing-content">
+                <div class="brain-scan">
+                    <div class="brain-scan-circle"></div>
+                    <div class="brain-scan-wave"></div>
+                    <span class="brain-scan-text">🧠</span>
+                </div>
+                <h2 data-i18n="analyzing.title">당신의 두뇌를 분석 중입니다...</h2>
+                <p data-i18n="analyzing.subtitle">잠시만 기다려주세요</p>
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 결과 화면 -->
+        <div id="result-screen" class="screen">
+            <div class="result-content">
+                <button id="result-back" class="back-btn">← <span data-i18n="button.back">뒤로</span></button>
+
+                <div class="confetti-container" id="confetti-container"></div>
+
+                <div class="result-header">
+                    <div id="result-emoji" class="result-emoji">🧠</div>
+                    <h1 id="result-title" class="result-title"></h1>
+                    <p id="result-tagline" class="result-tagline"></p>
+                </div>
+
+                <div class="result-description" id="result-description"></div>
+
+                <div class="strengths-weaknesses">
+                    <div class="strengths">
+                        <h3 data-i18n="result.strengths">주요 강점</h3>
+                        <ul id="strengths-list"></ul>
+                    </div>
+                    <div class="weaknesses">
+                        <h3 data-i18n="result.weaknesses">보완할 점</h3>
+                        <ul id="weaknesses-list"></ul>
+                    </div>
+                </div>
+
+                <div class="compatibility">
+                    <div class="compatible-types">
+                        <h4 data-i18n="result.compatible">궁합이 좋은 유형</h4>
+                        <div id="compatible-list" class="type-list"></div>
+                    </div>
+                    <div class="incompatible-types">
+                        <h4 data-i18n="result.incompatible">상극 유형</h4>
+                        <div id="incompatible-list" class="type-list"></div>
+                    </div>
+                </div>
+
+                <div class="famous-examples">
+                    <h3 data-i18n="result.famous_examples">비슷한 유형의 역사적 인물</h3>
+                    <p id="famous-people"></p>
+                </div>
+
+                <!-- 프리미염 분석 섹션 -->
+                <div class="premium-analysis">
+                    <button id="premium-btn" class="btn btn-premium" data-i18n="button.premium">광고 보고 AI 심층 분석 받기</button>
+                    <div id="premium-content" class="premium-content hidden">
+                        <h3 data-i18n="result.deep_analysis">AI 심층 분석</h3>
+                        <div id="premium-analysis-text"></div>
+                    </div>
+                </div>
+
+                <!-- 공유 섹션 -->
+                <div class="share-section">
+                    <h3 data-i18n="result.share">결과 공유하기</h3>
+                    <div class="share-buttons">
+                        <button id="share-kakao" class="share-btn kakao" data-i18n="button.share_kakao">카카오톡</button>
+                        <button id="share-twitter" class="share-btn twitter" data-i18n="button.share_twitter">트위터</button>
+                        <button id="share-facebook" class="share-btn facebook" data-i18n="button.share_facebook">페이스북</button>
+                        <button id="share-copy" class="share-btn copy" data-i18n="button.share_copy">링크 복사</button>
+                    </div>
+                </div>
+
+                <!-- 추천 앱 섹션 -->
+                <div class="recommended-apps">
+                    <h3 data-i18n="result.recommended_apps">다른 DopaBrain 테스트도 해보세요</h3>
+                    <div id="recommended-list" class="app-grid"></div>
+                </div>
+
+                <!-- 다시 하기 버튼 -->
+                <button id="retry-btn" class="btn btn-secondary" data-i18n="button.retry">다시 하기</button>
+            </div>
+        </div>
+
+        <!-- 하단 배너 광고 -->
+        <div class="ad-container ad-bottom">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-3600813755953882"
+                data-ad-slot="0987654321"
+                data-ad-format="horizontal"></ins>
+        </div>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/quiz-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
