@@ -1,6 +1,7 @@
 {
   "app": {
     "title": "Brain Type Test",
+    "loading": "Loading...",
     "reaction_test": "Reaction Speed Test",
     "dream_fortune": "Dream Interpretation",
     "mbti_love": "MBTI Compatibility",

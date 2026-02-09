@@ -1,6 +1,7 @@
 {
   "app": {
     "title": "나의 두뇌 유형 테스트",
+    "loading": "로딩 중...",
     "reaction_test": "반응속도 테스트",
     "dream_fortune": "꿈 해몽",
     "mbti_love": "MBTI 궁합",
