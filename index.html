@@ -32,6 +32,9 @@
 
     <title data-i18n="app.title">나의 두뇌 유형 테스트</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="js/i18n.js" as="script">
+    <link rel="preload" href="js/quiz-data.js" as="script">
+    <link rel="preload" href="js/app.js" as="script">
 </head>
 <body>
     <div class="app-container">
@@ -212,8 +215,8 @@
         </div>
     </div>
 
-    <script src="js/i18n.js"></script>
-    <script src="js/quiz-data.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/quiz-data.js" defer></script>
+    <script src="js/app.js" defer></script>
 </body>
 </html>
