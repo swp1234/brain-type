@@ -1,12 +1,12 @@
 {
   "app": {
     "title": "나의 두뇌 유형 테스트",
-    "past_life": "전생 테스트",
+    "reaction_test": "반응속도 테스트",
     "dream_fortune": "꿈 해몽",
     "mbti_love": "MBTI 궁합",
     "hsp_test": "HSP 테스트",
     "emotion_temp": "감정 온도계",
-    "tarot_reading": "타로 카드 읽기"
+    "color_memory": "색상 기억 게임"
   },
   "meta": {
     "description": "당신의 두뇌는 어떤 유형인가요? 10개 질문으로 당신의 뇌 유형을 알아보세요. SNS 공유 가능한 재미있는 심리 테스트입니다.",

@@ -213,9 +213,9 @@ const QUIZ_QUESTIONS = [
 // 추천 앱 (최대 6개)
 const RECOMMENDED_APPS = [
     {
-        id: 'past-life',
-        emoji: '👼',
-        nameKey: 'app.past_life'
+        id: 'reaction-test',
+        emoji: '⚡',
+        nameKey: 'app.reaction_test'
     },
     {
         id: 'dream-fortune',
@@ -238,9 +238,9 @@ const RECOMMENDED_APPS = [
         nameKey: 'app.emotion_temp'
     },
     {
-        id: 'tarot-reading',
-        emoji: '🃏',
-        nameKey: 'app.tarot_reading'
+        id: 'color-memory',
+        emoji: '🎨',
+        nameKey: 'app.color_memory'
     }
 ];
 

@@ -1,12 +1,12 @@
 {
   "app": {
     "title": "Brain Type Test",
-    "past_life": "Past Life Test",
+    "reaction_test": "Reaction Speed Test",
     "dream_fortune": "Dream Interpretation",
     "mbti_love": "MBTI Compatibility",
     "hsp_test": "HSP Test",
     "emotion_temp": "Emotion Thermometer",
-    "tarot_reading": "Tarot Reading"
+    "color_memory": "Color Memory Game"
   },
   "meta": {
     "description": "What type of brain do you have? Discover your brain type with 10 questions. A fun personality test that's shareable on social media.",
