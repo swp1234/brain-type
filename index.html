@@ -11,11 +11,11 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 
-    <meta name="description" content="당신의 두뇌는 어떤 유형인가요? 🧠 10개 질문으로 당신의 뇌 유형을 알아보세요. 8가지 유형 중 당신은? SNS 공유 가능한 재미있는 심리 테스트입니다." data-i18n="meta.description">
-    <meta name="keywords" content="뇌 유형 테스트, 심리 테스트, 두뇌 진단, 성격 테스트, 브레인 유형, 인지 스타일, 뇌 분석" data-i18n="meta.keywords">
+    <meta name="description" content="Neural Pathway Scanner - 10 rapid-fire decisions reveal your brain type through simulated neural pathway activation." data-i18n="meta.description">
+    <meta name="keywords" content="brain type test, neural pathway, psychology test, brain scan, cognitive style" data-i18n="meta.keywords">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="나의 두뇌 유형은? 🧠 8가지 중 당신은?" data-i18n="meta.og_title">
-    <meta property="og:description" content="10개 질문으로 8가지 뇌 유형 중 당신의 타입을 찾아보세요! 크리에이터, 분석가, 공감각, 직관형... 테스트 후 결과를 SNS에 공유해보세요!" data-i18n="meta.og_description">
+    <meta property="og:title" content="Neural Pathway Scanner - What's Your Brain Type?" data-i18n="meta.og_title">
+    <meta property="og:description" content="10 rapid-fire decisions activate your neural pathways. Discover your brain type through our simulated brain scan!" data-i18n="meta.og_description">
     <meta property="og:image" content="https://dopabrain.com/brain-type/icon-512.svg">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
@@ -42,25 +42,25 @@
     <link rel="alternate" hreflang="fr" href="https://dopabrain.com/brain-type/">
     <link rel="alternate" hreflang="x-default" href="https://dopabrain.com/brain-type/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="나의 두뇌 유형은? 🧠 8가지 중 당신은?" data-i18n="meta.twitter_title">
-    <meta name="twitter:description" content="10개 질문으로 8가지 뇌 유형 중 당신의 타입을 찾아보세요!" data-i18n="meta.twitter_description">
+    <meta name="twitter:title" content="Neural Pathway Scanner - What's Your Brain Type?" data-i18n="meta.twitter_title">
+    <meta name="twitter:description" content="10 rapid-fire decisions reveal your brain type!" data-i18n="meta.twitter_description">
     <meta name="twitter:image" content="https://dopabrain.com/brain-type/icon-512.svg">
     <meta name="twitter:site" content="@dopabrain">
     <link rel="canonical" href="https://dopabrain.com/brain-type/">
-    <title>나의 두뇌 유형 테스트 🧠 - 8가지 뇌 유형 진단 | DopaBrain</title>
+    <title data-i18n="meta.page_title">Neural Pathway Scanner - Brain Type Test | DopaBrain</title>
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "두뇌 유형 테스트",
-        "description": "10개 질문으로 8가지 뇌 유형 중 당신의 타입을 찾아보세요! 크리에이터, 분석가, 공감각, 직관형 등 뇌 유형별 특징 분석 및 결과 공유!",
+        "name": "Neural Pathway Scanner",
+        "description": "10 rapid-fire decisions activate your neural pathways and reveal your brain type through simulated brain scanning.",
         "url": "https://dopabrain.com/brain-type/",
         "image": "https://dopabrain.com/brain-type/icon-512.svg",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Safari, Firefox, Edge).",
-        "inLanguage": ["ko", "en", "zh", "hi", "ru"],
+        "inLanguage": ["ko", "en", "zh", "hi", "ru", "ja", "es", "pt", "id", "tr", "de", "fr"],
         "author": {
             "@type": "Organization",
             "name": "DopaBrain",
@@ -99,14 +99,13 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
     <link rel="icon" href="icon-192.svg">
     <link rel="apple-touch-icon" href="icon-192.svg">
-    <meta name="theme-color" content="#9b59b6">
+    <meta name="theme-color" content="#e040fb">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Preload critical scripts -->
     <link rel="preload" href="js/i18n.js" as="script">
-    <link rel="preload" href="js/quiz-data.js" as="script">
     <link rel="preload" href="js/app.js" as="script">
 </head>
 <body>
@@ -115,36 +114,36 @@
 
     <div class="app-loader" id="app-loader">
         <div class="loader-content">
-            <div class="loader-emoji">🧠</div>
+            <div class="loader-emoji">&#x1F9E0;</div>
             <div class="loader-spinner"></div>
-            <div class="loader-text" data-i18n="app.loading">로딩 중...</div>
+            <div class="loader-text" data-i18n="app.loading">Loading...</div>
         </div>
     </div>
 
-    <div class="app-container">
+    <div class="app-container" id="main-content">
         <!-- Theme Toggle -->
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Theme toggle">🌙</button>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Theme toggle">&#x1F319;</button>
 
-        <!-- 언어 선택기 -->
+        <!-- Language Selector -->
         <div class="language-selector">
-            <button id="lang-toggle" class="lang-toggle" title="언어 선택">🌐</button>
+            <button id="lang-toggle" class="lang-toggle" title="Language">&#x1F310;</button>
             <div id="lang-menu" class="lang-menu hidden">
-                <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
-                <button class="lang-option" data-lang="en">🇺🇸 English</button>
-                <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
-                <button class="lang-option" data-lang="zh">🇨🇳 中文</button>
-                <button class="lang-option" data-lang="es">🇪🇸 Español</button>
-                <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
-                <button class="lang-option" data-lang="id">🇮🇩 Bahasa</button>
-                <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
-                <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
-                <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
-                <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
-                <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+                <button class="lang-option" data-lang="ko">&#x1F1F0;&#x1F1F7; Korean</button>
+                <button class="lang-option" data-lang="en">&#x1F1FA;&#x1F1F8; English</button>
+                <button class="lang-option" data-lang="ja">&#x1F1EF;&#x1F1F5; Japanese</button>
+                <button class="lang-option" data-lang="zh">&#x1F1E8;&#x1F1F3; Chinese</button>
+                <button class="lang-option" data-lang="es">&#x1F1EA;&#x1F1F8; Spanish</button>
+                <button class="lang-option" data-lang="pt">&#x1F1E7;&#x1F1F7; Portuguese</button>
+                <button class="lang-option" data-lang="id">&#x1F1EE;&#x1F1E9; Bahasa</button>
+                <button class="lang-option" data-lang="tr">&#x1F1F9;&#x1F1F7; Turkish</button>
+                <button class="lang-option" data-lang="de">&#x1F1E9;&#x1F1EA; German</button>
+                <button class="lang-option" data-lang="fr">&#x1F1EB;&#x1F1F7; French</button>
+                <button class="lang-option" data-lang="hi">&#x1F1EE;&#x1F1F3; Hindi</button>
+                <button class="lang-option" data-lang="ru">&#x1F1F7;&#x1F1FA; Russian</button>
             </div>
         </div>
 
-        <!-- 상단 배너 광고 -->
+        <!-- Top Ad -->
         <div class="ad-container ad-top">
             <ins class="adsbygoogle"
                 style="display:block"
@@ -153,154 +152,222 @@
                 data-ad-format="horizontal"></ins>
         </div>
 
-        <!-- 인트로 화면 -->
+        <!-- INTRO SCREEN -->
         <div id="intro-screen" class="screen active">
             <div class="intro-content">
-                <div class="brain-emoji-animation">
-                    <span class="brain-emoji">🧠</span>
+                <div class="brain-visual-intro">
+                    <svg class="brain-svg-intro" viewBox="0 0 200 200" aria-hidden="true">
+                        <defs>
+                            <filter id="glow-intro">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <!-- Brain outline -->
+                        <path class="brain-outline" d="M100,30 C60,30 35,55 35,85 C35,100 40,110 45,118 C38,125 32,135 32,148 C32,168 48,180 70,180 C80,180 88,176 94,170 L100,170 L106,170 C112,176 120,180 130,180 C152,180 168,168 168,148 C168,135 162,125 155,118 C160,110 165,100 165,85 C165,55 140,30 100,30Z" fill="none" stroke="rgba(224,64,251,0.3)" stroke-width="1.5"/>
+                        <!-- Neural pathways (animated in intro) -->
+                        <path class="neural-path intro-path p1" d="M70,60 Q85,50 100,65 Q115,80 95,95" fill="none" stroke="rgba(224,64,251,0.6)" stroke-width="1.5" filter="url(#glow-intro)"/>
+                        <path class="neural-path intro-path p2" d="M130,60 Q115,50 100,65 Q85,80 105,95" fill="none" stroke="rgba(0,212,255,0.6)" stroke-width="1.5" filter="url(#glow-intro)"/>
+                        <path class="neural-path intro-path p3" d="M60,100 Q75,90 90,100 Q105,110 85,125" fill="none" stroke="rgba(255,107,107,0.6)" stroke-width="1.5" filter="url(#glow-intro)"/>
+                        <path class="neural-path intro-path p4" d="M140,100 Q125,90 110,100 Q95,110 115,125" fill="none" stroke="rgba(78,205,196,0.6)" stroke-width="1.5" filter="url(#glow-intro)"/>
+                        <path class="neural-path intro-path p5" d="M80,130 Q90,120 100,130 Q110,140 100,155" fill="none" stroke="rgba(155,89,182,0.6)" stroke-width="1.5" filter="url(#glow-intro)"/>
+                        <!-- Neural dots -->
+                        <circle class="neural-dot nd1" cx="100" cy="65" r="3" fill="#e040fb"/>
+                        <circle class="neural-dot nd2" cx="85" cy="95" r="2.5" fill="#00d4ff"/>
+                        <circle class="neural-dot nd3" cx="115" cy="95" r="2.5" fill="#ff6b6b"/>
+                        <circle class="neural-dot nd4" cx="100" cy="130" r="3" fill="#4ecdc4"/>
+                        <circle class="neural-dot nd5" cx="100" cy="155" r="2" fill="#9b59b6"/>
+                    </svg>
                 </div>
-                <h1 class="intro-title" data-i18n="intro.title">나의 두뇌 유형 테스트</h1>
-                <p class="intro-subtitle" data-i18n="intro.subtitle">당신의 두뇌는 어떤 유형인가요?</p>
+                <h1 class="intro-title" data-i18n="intro.title">Neural Pathway Scanner</h1>
+                <p class="intro-subtitle" data-i18n="intro.subtitle">We'll scan your neural pathways through rapid-fire decisions.</p>
 
-                <div class="intro-description">
-                    <p data-i18n="intro.description">10개의 질문으로 당신의 뇌 유형을 분석합니다.</p>
-                    <p data-i18n="intro.description_2">8가지 유형 중 당신을 가장 잘 나타내는 유형을 발견해보세요!</p>
+                <div class="intro-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">&#x26A1;</span>
+                        <span class="feature-text" data-i18n="intro.feature_rapid">10 rapid-fire decisions</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">&#x23F1;</span>
+                        <span class="feature-text" data-i18n="intro.feature_timer">3-second timer each</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">&#x1F9E0;</span>
+                        <span class="feature-text" data-i18n="intro.feature_scan">Live neural pathway mapping</span>
+                    </div>
                 </div>
 
-                <div class="brain-types-preview">
-                    <div class="type-badge" data-i18n="intro.type_creator">🎨 크리에이터</div>
-                    <div class="type-badge" data-i18n="intro.type_analyst">🧮 분석가</div>
-                    <div class="type-badge" data-i18n="intro.type_empath">🌈 공감각</div>
-                    <div class="type-badge" data-i18n="intro.type_speedster">⚡ 스피드</div>
-                    <div class="type-badge" data-i18n="intro.type_intuitive">🔮 직관</div>
-                    <div class="type-badge" data-i18n="intro.type_scholar">📚 탐구</div>
-                    <div class="type-badge" data-i18n="intro.type_strategist">🎯 전략가</div>
-                    <div class="type-badge" data-i18n="intro.type_spirit">🌊 자유</div>
-                </div>
-
-                <button id="start-btn" class="btn btn-primary" data-i18n="button.start">테스트 시작</button>
-                <p class="time-estimate" data-i18n="intro.time_estimate">소요 시간: 약 2분</p>
+                <button id="start-btn" class="btn btn-primary btn-glow" data-i18n="button.start">Start Brain Scan</button>
+                <p class="time-estimate" data-i18n="intro.time_estimate">Takes about 1 minute</p>
             </div>
         </div>
 
-        <!-- 질문 화면 -->
-        <div id="quiz-screen" class="screen">
-            <div class="quiz-header">
-                <button id="progress-back" class="back-btn">← <span data-i18n="button.back">뒤로</span></button>
-                <div class="progress-bar">
-                    <div id="progress-fill" class="progress-fill"></div>
+        <!-- SCAN SCREEN (Phase 1 - Rapid Fire) -->
+        <div id="scan-screen" class="screen">
+            <div class="scan-header">
+                <div class="scan-progress">
+                    <div class="scan-progress-fill" id="scan-progress-fill"></div>
                 </div>
-                <span class="progress-text"><span id="current-question">1</span>/10</span>
+                <span class="scan-counter"><span id="scan-current">1</span>/10</span>
             </div>
 
-            <div class="quiz-content">
-                <div class="question-container">
-                    <h2 id="question-text" class="question-text"></h2>
-                    <div id="options-container" class="options-container"></div>
+            <div class="scan-body">
+                <!-- Brain SVG with live pathway activation -->
+                <div class="brain-scan-container">
+                    <svg class="brain-svg-scan" id="brain-svg-scan" viewBox="0 0 200 200" aria-hidden="true">
+                        <defs>
+                            <filter id="glow-scan">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <!-- Brain outline -->
+                        <path class="brain-outline" d="M100,30 C60,30 35,55 35,85 C35,100 40,110 45,118 C38,125 32,135 32,148 C32,168 48,180 70,180 C80,180 88,176 94,170 L100,170 L106,170 C112,176 120,180 130,180 C152,180 168,168 168,148 C168,135 162,125 155,118 C160,110 165,100 165,85 C165,55 140,30 100,30Z" fill="none" stroke="rgba(224,64,251,0.2)" stroke-width="1.5"/>
+                        <!-- 10 neural pathways (one per question) - initially hidden -->
+                        <path id="np-0" class="neural-pathway" d="M70,55 Q85,45 100,60 Q110,70 95,85" fill="none" stroke="#e040fb" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-1" class="neural-pathway" d="M130,55 Q115,45 100,60 Q90,70 105,85" fill="none" stroke="#00d4ff" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-2" class="neural-pathway" d="M55,80 Q70,70 85,82 Q100,94 80,108" fill="none" stroke="#ff6b6b" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-3" class="neural-pathway" d="M145,80 Q130,70 115,82 Q100,94 120,108" fill="none" stroke="#4ecdc4" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-4" class="neural-pathway" d="M65,110 Q80,100 95,112 Q105,120 88,132" fill="none" stroke="#9b59b6" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-5" class="neural-pathway" d="M135,110 Q120,100 105,112 Q95,120 112,132" fill="none" stroke="#f39c12" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-6" class="neural-pathway" d="M75,135 Q90,125 100,138 Q110,150 95,160" fill="none" stroke="#ff69f8" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-7" class="neural-pathway" d="M125,135 Q110,125 100,138 Q90,150 105,160" fill="none" stroke="#3498db" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-8" class="neural-pathway" d="M80,155 Q95,148 100,158 Q105,168 100,175" fill="none" stroke="#1abc9c" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <path id="np-9" class="neural-pathway" d="M120,155 Q105,148 100,158 Q95,168 100,175" fill="none" stroke="#ffd93d" stroke-width="2" filter="url(#glow-scan)" opacity="0"/>
+                        <!-- Neural junction dots -->
+                        <circle class="junction-dot" cx="100" cy="60" r="3" fill="#e040fb" opacity="0.3"/>
+                        <circle class="junction-dot" cx="85" cy="82" r="2.5" fill="#00d4ff" opacity="0.3"/>
+                        <circle class="junction-dot" cx="115" cy="82" r="2.5" fill="#ff6b6b" opacity="0.3"/>
+                        <circle class="junction-dot" cx="95" cy="112" r="2.5" fill="#9b59b6" opacity="0.3"/>
+                        <circle class="junction-dot" cx="105" cy="112" r="2.5" fill="#4ecdc4" opacity="0.3"/>
+                        <circle class="junction-dot" cx="100" cy="138" r="3" fill="#f39c12" opacity="0.3"/>
+                        <circle class="junction-dot" cx="100" cy="158" r="2" fill="#1abc9c" opacity="0.3"/>
+                    </svg>
+                </div>
+
+                <!-- Timer ring -->
+                <div class="timer-container">
+                    <svg class="timer-ring" viewBox="0 0 60 60" aria-hidden="true">
+                        <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+                        <circle id="timer-circle" cx="30" cy="30" r="26" fill="none" stroke="#e040fb" stroke-width="4" stroke-linecap="round" stroke-dasharray="163.36" stroke-dashoffset="0" transform="rotate(-90 30 30)"/>
+                    </svg>
+                    <span id="timer-text" class="timer-text">3</span>
+                </div>
+
+                <!-- Scenario prompt -->
+                <div class="scenario-container">
+                    <p id="scenario-text" class="scenario-text"></p>
+                </div>
+
+                <!-- Binary choice buttons -->
+                <div class="choice-container">
+                    <button id="choice-a" class="choice-btn choice-a"></button>
+                    <button id="choice-b" class="choice-btn choice-b"></button>
                 </div>
             </div>
         </div>
 
-        <!-- 분석 중 화면 -->
+        <!-- ANALYZING SCREEN (Phase 2 - Brain Scan Animation) -->
         <div id="analyzing-screen" class="screen">
             <div class="analyzing-content">
-                <div class="brain-scan">
-                    <div class="brain-scan-circle"></div>
-                    <div class="brain-scan-wave"></div>
-                    <span class="brain-scan-text">🧠</span>
+                <div class="brain-scan-final">
+                    <svg class="brain-svg-final" id="brain-svg-final" viewBox="0 0 200 200" aria-hidden="true">
+                        <defs>
+                            <filter id="glow-final">
+                                <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <path class="brain-outline final-outline" d="M100,30 C60,30 35,55 35,85 C35,100 40,110 45,118 C38,125 32,135 32,148 C32,168 48,180 70,180 C80,180 88,176 94,170 L100,170 L106,170 C112,176 120,180 130,180 C152,180 168,168 168,148 C168,135 162,125 155,118 C160,110 165,100 165,85 C165,55 140,30 100,30Z" fill="none" stroke="rgba(224,64,251,0.5)" stroke-width="2"/>
+                    </svg>
+                    <div class="scan-line"></div>
                 </div>
-                <h2 data-i18n="analyzing.title">당신의 두뇌를 분석 중입니다...</h2>
-                <p data-i18n="analyzing.subtitle">잠시만 기다려주세요</p>
-                <div class="loading-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <h2 data-i18n="analyzing.title">Analyzing neural patterns...</h2>
+                <div class="analyzing-progress">
+                    <div class="analyzing-bar">
+                        <div class="analyzing-fill" id="analyzing-fill"></div>
+                    </div>
+                    <span class="analyzing-percent" id="analyzing-percent">0%</span>
                 </div>
+                <p class="analyzing-detail" id="analyzing-detail" data-i18n="analyzing.mapping">Mapping neural connections...</p>
             </div>
         </div>
 
-        <!-- 결과 화면 -->
+        <!-- RESULT SCREEN -->
         <div id="result-screen" class="screen">
             <div class="result-content">
-                <button id="result-back" class="back-btn">← <span data-i18n="button.back">뒤로</span></button>
-
                 <div class="confetti-container" id="confetti-container"></div>
 
                 <div class="result-header">
-                    <div id="result-emoji" class="result-emoji">🧠</div>
+                    <div class="result-brain-visual">
+                        <svg class="brain-svg-result" id="brain-svg-result" viewBox="0 0 200 200" aria-hidden="true">
+                            <defs>
+                                <filter id="glow-result">
+                                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <path class="brain-outline result-outline" d="M100,30 C60,30 35,55 35,85 C35,100 40,110 45,118 C38,125 32,135 32,148 C32,168 48,180 70,180 C80,180 88,176 94,170 L100,170 L106,170 C112,176 120,180 130,180 C152,180 168,168 168,148 C168,135 162,125 155,118 C160,110 165,100 165,85 C165,55 140,30 100,30Z" fill="none" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div id="result-emoji" class="result-emoji"></div>
                     <h1 id="result-title" class="result-title"></h1>
                     <p id="result-tagline" class="result-tagline"></p>
                 </div>
 
+                <!-- Neural Metrics -->
+                <div class="neural-metrics" id="neural-metrics">
+                    <h3 data-i18n="result.neural_metrics">Neural Metrics</h3>
+                    <div class="metrics-grid" id="metrics-grid"></div>
+                </div>
+
+                <!-- Description -->
                 <div class="result-description" id="result-description"></div>
 
-                <div class="strengths-weaknesses">
-                    <div class="strengths">
-                        <h3 data-i18n="result.strengths">주요 강점</h3>
-                        <ul id="strengths-list"></ul>
-                    </div>
-                    <div class="weaknesses">
-                        <h3 data-i18n="result.weaknesses">보완할 점</h3>
-                        <ul id="weaknesses-list"></ul>
-                    </div>
+                <!-- Key Traits -->
+                <div class="key-traits">
+                    <h3 data-i18n="result.key_traits">Key Traits</h3>
+                    <div class="traits-list" id="traits-list"></div>
                 </div>
 
-                <div class="compatibility">
-                    <div class="compatible-types">
-                        <h4 data-i18n="result.compatible">궁합이 좋은 유형</h4>
-                        <div id="compatible-list" class="type-list"></div>
-                    </div>
-                    <div class="incompatible-types">
-                        <h4 data-i18n="result.incompatible">상극 유형</h4>
-                        <div id="incompatible-list" class="type-list"></div>
-                    </div>
-                </div>
-
-                <div class="famous-examples">
-                    <h3 data-i18n="result.famous_examples">비슷한 유형의 역사적 인물</h3>
-                    <p id="famous-people"></p>
-                </div>
-
-                <!-- 프리미염 분석 섹션 -->
-                <div class="premium-analysis">
-                    <button id="premium-btn" class="btn btn-premium" data-i18n="button.premium">광고 보고 AI 심층 분석 받기</button>
-                    <div id="premium-content" class="premium-content hidden">
-                        <h3 data-i18n="result.deep_analysis">AI 심층 분석</h3>
-                        <div id="premium-analysis-text"></div>
-                    </div>
-                </div>
-
-                <!-- 공유 섹션 -->
+                <!-- Share Section -->
                 <div class="share-section">
-                    <h3 data-i18n="result.share">결과 공유하기</h3>
-                    <!-- Canvas for image generation -->
-                    <canvas id="result-canvas" width="1080" height="1080" style="display:none;"></canvas>
+                    <h3 data-i18n="result.share">Share Your Result</h3>
                     <div class="share-buttons">
-                        <button id="share-image-download" class="share-btn download" data-i18n="button.share_download">📥 이미지 다운로드</button>
-                        <button id="share-kakao" class="share-btn kakao" data-i18n="button.share_kakao">카카오톡</button>
-                        <button id="share-twitter" class="share-btn twitter" data-i18n="button.share_twitter">트위터</button>
-                        <button id="share-facebook" class="share-btn facebook" data-i18n="button.share_facebook">페이스북</button>
-                        <button id="share-copy" class="share-btn copy" data-i18n="button.share_copy">링크 복사</button>
+                        <button id="share-twitter" class="share-btn twitter" data-i18n="button.share_twitter">Twitter</button>
+                        <button id="share-facebook" class="share-btn facebook" data-i18n="button.share_facebook">Facebook</button>
+                        <button id="share-copy" class="share-btn copy" data-i18n="button.share_copy">Copy Link</button>
                     </div>
                 </div>
 
-                <!-- 추천 앱 섹션 -->
-                <section class="related-apps" style="margin:24px 0;padding:20px;background:rgba(255,255,255,0.05);border-radius:16px;border:1px solid rgba(255,255,255,0.1);">
-                  <h3 style="font-size:16px;font-weight:700;margin-bottom:14px;color:#aaa;">🧪 관련 테스트</h3>
-                  <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                    <a href="/blood-type/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">🩸 Blood Type Test</a>
-                    <a href="/dev-quiz/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">💻 Dev Quiz</a>
-                    <a href="/iq-test/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">🧠 IQ Test</a>
-                  </div>
+                <!-- Related Apps -->
+                <section class="related-apps">
+                    <h3 data-i18n="result.related">Related Tests</h3>
+                    <div class="related-links">
+                        <a href="/eq-test/" class="related-link">EQ Test</a>
+                        <a href="/iq-test/" class="related-link">IQ Test</a>
+                        <a href="/hsp-test/" class="related-link">HSP Test</a>
+                    </div>
                 </section>
-                </div>
 
-                <!-- 다시 하기 버튼 -->
-                <button id="retry-btn" class="btn btn-secondary" data-i18n="button.retry">다시 하기</button>
+                <!-- Retry -->
+                <button id="retry-btn" class="btn btn-secondary" data-i18n="button.retry">Scan Again</button>
             </div>
         </div>
 
-        <!-- 하단 배너 광고 -->
+        <!-- Bottom Ad -->
         <div class="ad-container ad-bottom">
             <ins class="adsbygoogle"
                 style="display:block"
@@ -310,18 +377,16 @@
         </div>
     </div>
 
-            <!-- Footer with Home Link -->
+    <!-- Footer with Home Link -->
     <footer class="game-footer">
         <a href="https://dopabrain.com/portal/" class="back-link" data-i18n="game.back" aria-label="Go back to DopaBrain home">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
-            DopaBrain 홈
+            DopaBrain Home
         </a>
     </footer>
 
     <script src="js/i18n.js" defer></script>
-    <script src="js/quiz-data.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="/portal/js/cross-promo.js" defer></script>
-    <script src="/portal/js/pwa-install.js" defer></script>
 </body>
 </html>
