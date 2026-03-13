@@ -11,7 +11,7 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 
-    <meta name="description" content="Neural Pathway Scanner - 10 rapid-fire decisions reveal your brain type through simulated neural pathway activation." data-i18n="meta.description">
+    <meta name="description" content="Discover your brain type with 10 rapid-fire decisions. Are you a Creator, Analyzer, or Empath? Free neural pathway scan quiz - instant results!" data-i18n="meta.description">
     <meta name="keywords" content="brain type test, neural pathway, psychology test, brain scan, cognitive style" data-i18n="meta.keywords">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Neural Pathway Scanner - What's Your Brain Type?" data-i18n="meta.og_title">
@@ -47,7 +47,7 @@
     <meta name="twitter:image" content="https://dopabrain.com/brain-type/og-image.jpg">
     <meta name="twitter:site" content="@dopabrain">
     <link rel="canonical" href="https://dopabrain.com/brain-type/">
-    <title data-i18n="meta.page_title">Neural Pathway Scanner - Brain Type Test | DopaBrain</title>
+    <title data-i18n="meta.page_title">Brain Type Test - Free Online Neural Scan | DopaBrain</title>
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
@@ -84,6 +84,68 @@
             "bestRating": "5",
             "worstRating": "1"
         }
+    }
+    </script>
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dopabrain.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Tests", "item": "https://dopabrain.com/portal/" },
+            { "@type": "ListItem", "position": 3, "name": "Brain Tests", "item": "https://dopabrain.com/portal/" },
+            { "@type": "ListItem", "position": 4, "name": "Brain Type Test", "item": "https://dopabrain.com/brain-type/" }
+        ]
+    }
+    </script>
+    <!-- FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is a brain type test?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A brain type test measures your cognitive style through rapid decision-making scenarios. It reveals whether you lean toward analytical, creative, empathic, or strategic thinking patterns based on your instinctive responses."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the Neural Pathway Scanner work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You face 10 rapid-fire scenarios with a 3-second timer each. Your instinctive choices activate simulated neural pathways, mapping your cognitive patterns into one of 8 brain types: Creator, Analyzer, Empath, Intuitive, Strategist, Visionary, Guardian, or Dynamo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the 8 brain types?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The 8 brain types are: Creator Brain (imagination & innovation), Analyzer Brain (logic & data), Empath Brain (emotional intelligence), Intuitive Brain (pattern recognition), Strategist Brain (planning & leadership), Visionary Brain (future-oriented thinking), Guardian Brain (stability & care), and Dynamo Brain (action & energy)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is the brain type test scientifically accurate?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "This test is designed for entertainment and self-reflection, not clinical diagnosis. It draws on cognitive psychology concepts about thinking styles but is not a medical assessment. It offers fun insights into your natural decision-making tendencies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can my brain type change over time?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Your cognitive patterns can shift with life experiences, learning, and personal growth. Retaking the test at different points in your life may reveal how your thinking style has evolved."
+                }
+            }
+        ]
     }
     </script>
 
@@ -182,8 +244,21 @@
                         <circle class="neural-dot nd5" cx="100" cy="155" r="2" fill="#9b59b6"/>
                     </svg>
                 </div>
-                <h1 class="intro-title" data-i18n="intro.title">Neural Pathway Scanner</h1>
-                <p class="intro-subtitle" data-i18n="intro.subtitle">We'll scan your neural pathways through rapid-fire decisions.</p>
+                <h1 class="intro-title" data-i18n="intro.title">Brain Type Test</h1>
+                <p class="intro-subtitle" data-i18n="intro.subtitle">Discover your cognitive style through 10 rapid-fire neural decisions.</p>
+
+                <!-- Result Preview Carousel -->
+                <div class="result-carousel" aria-live="polite">
+                    <div class="carousel-track">
+                        <div class="carousel-item" data-i18n="engage.result1">Creator Brain -- Imagination & Innovation</div>
+                        <div class="carousel-item" data-i18n="engage.result2">Analyzer Brain -- Logic & Data-Driven</div>
+                        <div class="carousel-item" data-i18n="engage.result3">Empath Brain -- Emotional Intelligence</div>
+                        <div class="carousel-item" data-i18n="engage.result4">Strategist Brain -- Planning & Leadership</div>
+                    </div>
+                </div>
+
+                <!-- Social Proof Badge -->
+                <div class="social-proof-badge" data-i18n="engage.socialProof">1,950+ brains scanned today</div>
 
                 <div class="intro-features">
                     <div class="feature-item">
@@ -200,7 +275,7 @@
                     </div>
                 </div>
 
-                <button id="start-btn" class="btn btn-primary btn-glow" data-i18n="button.start">Start Brain Scan</button>
+                <button id="start-btn" class="btn btn-primary btn-glow" data-i18n="button.start">Scan My Brain Now - It's Free</button>
                 <p class="time-estimate" data-i18n="intro.time_estimate">Takes about 1 minute</p>
             </div>
         </div>
@@ -380,6 +455,19 @@
                 data-ad-format="horizontal"></ins>
         </div>
     </div>
+
+    <!-- About Section -->
+    <section class="about-section collapsible-section" id="about-section">
+      <details>
+        <summary data-i18n="about.toggle">About This Brain Type Test</summary>
+        <div class="about-content">
+          <h2 data-i18n="about.heading1">How the Brain Type Test Works</h2>
+          <p data-i18n="about.text1">The Brain Type Test presents you with 10 rapid-fire decision scenarios, each with a 3-second timer. Your instinctive responses activate simulated neural pathways that map your cognitive style. The test analyzes patterns across creativity, logic, empathy, intuition, and drive to classify you into one of 8 distinct brain types.</p>
+          <h2 data-i18n="about.heading2">Understanding Your Brain Type</h2>
+          <p data-i18n="about.text2">Each brain type represents a unique cognitive fingerprint. Whether you are a Creator who sees the world through imagination, an Analyzer who thrives on data, or a Dynamo who acts on instinct, your result reveals how your mind naturally processes decisions. Understanding your brain type can help you leverage your cognitive strengths in work, relationships, and personal growth.</p>
+        </div>
+      </details>
+    </section>
 
     <!-- Footer with Home Link -->
     <footer class="game-footer">

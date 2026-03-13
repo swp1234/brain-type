@@ -181,5 +181,19 @@
   },
   "game": {
     "back": "DopaBrain Beranda"
+  },
+  "engage": {
+    "result1": "Otak Kreator -- Imajinasi & Inovasi",
+    "result2": "Otak Analis -- Logika & Data",
+    "result3": "Otak Empati -- Kecerdasan Emosional",
+    "result4": "Otak Strategis -- Perencanaan & Kepemimpinan",
+    "socialProof": "1,950+ otak dipindai hari ini"
+  },
+  "about": {
+    "toggle": "Tentang Tes Ini",
+    "heading1": "Cara Kerja",
+    "text1": "Tes ini menyajikan 10 skenario keputusan cepat dengan timer 3 detik.",
+    "heading2": "Memahami Tipe Otak Anda",
+    "text2": "Setiap tipe otak mewakili sidik jari kognitif unik."
   }
 }

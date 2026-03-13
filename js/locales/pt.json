@@ -2,21 +2,21 @@
   "app": {
     "title": "Neural Pathway Scanner",
     "loading": "Carregando...",
-    "skipLink": "Pular para o conte\u00fado"
+    "skipLink": "Pular para o conteúdo"
   },
   "meta": {
-    "description": "10 decis\u00f5es r\u00e1pidas revelam seu tipo de c\u00e9rebro atrav\u00e9s da ativa\u00e7\u00e3o de vias neurais.",
-    "keywords": "teste tipo cerebral, vias neurais, teste psicol\u00f3gico, scanner cerebral",
-    "og_title": "Neural Pathway Scanner - Qual \u00e9 o seu tipo de c\u00e9rebro?",
-    "og_description": "10 decis\u00f5es r\u00e1pidas ativam suas vias neurais. Descubra seu tipo de c\u00e9rebro!",
+    "description": "10 decisões rápidas revelam seu tipo de cérebro através da ativação de vias neurais.",
+    "keywords": "teste tipo cerebral, vias neurais, teste psicológico, scanner cerebral",
+    "og_title": "Neural Pathway Scanner - Qual é o seu tipo de cérebro?",
+    "og_description": "10 decisões rápidas ativam suas vias neurais. Descubra seu tipo de cérebro!",
     "twitter_title": "Neural Pathway Scanner - Teste de Tipo Cerebral",
-    "twitter_description": "10 decis\u00f5es r\u00e1pidas revelam seu tipo de c\u00e9rebro!",
+    "twitter_description": "10 decisões rápidas revelam seu tipo de cérebro!",
     "page_title": "Neural Pathway Scanner - Teste Cerebral | DopaBrain"
   },
   "intro": {
     "title": "Neural Pathway Scanner",
-    "subtitle": "Vamos escanear suas vias neurais atrav\u00e9s de decis\u00f5es r\u00e1pidas.",
-    "feature_rapid": "10 decis\u00f5es r\u00e1pidas",
+    "subtitle": "Vamos escanear suas vias neurais através de decisões rápidas.",
+    "feature_rapid": "10 decisões rápidas",
     "feature_timer": "3 segundos cada",
     "feature_scan": "Mapeamento neural em tempo real",
     "time_estimate": "Leva cerca de 1 minuto"
@@ -31,25 +31,25 @@
   "scenario": {
     "0": "Algo quebrou no trabalho",
     "1": "Fim de semana livre",
-    "2": "Decis\u00e3o importante a tomar",
-    "3": "Um amigo est\u00e1 chateado",
-    "4": "Novo projeto come\u00e7ando",
+    "2": "Decisão importante a tomar",
+    "3": "Um amigo está chateado",
+    "4": "Novo projeto começando",
     "5": "Um debate interessante",
     "6": "Desafio criativo proposto",
-    "7": "Conhecer pessoas novas \u00e9...",
+    "7": "Conhecer pessoas novas é...",
     "8": "Prazo se aproximando",
-    "9": "Grande mudan\u00e7a de vida chegando"
+    "9": "Grande mudança de vida chegando"
   },
   "choice": {
-    "0a": "Consertar voc\u00ea mesmo",
+    "0a": "Consertar você mesmo",
     "0b": "Pedir ajuda",
     "1a": "Explorar um lugar novo",
     "1b": "Ficar em casa e recarregar",
     "2a": "Confiar no instinto",
     "2b": "Pesquisar a fundo",
     "3a": "Ouvir e ter empatia",
-    "3b": "Oferecer solu\u00e7\u00f5es",
-    "4a": "Mergulhar de cabe\u00e7a",
+    "3b": "Oferecer soluções",
+    "4a": "Mergulhar de cabeça",
     "4b": "Planejar tudo primeiro",
     "5a": "Fazer advogado do diabo",
     "5b": "Encontrar pontos em comum",
@@ -57,104 +57,104 @@
     "6b": "Refinar o existente",
     "7a": "Energizante",
     "7b": "Cansativo",
-    "8a": "Brilhar sob press\u00e3o",
+    "8a": "Brilhar sob pressão",
     "8b": "Preferir ritmo constante",
     "9a": "Oportunidade empolgante",
-    "9b": "Considera\u00e7\u00e3o cuidadosa"
+    "9b": "Consideração cuidadosa"
   },
   "analyzing": {
-    "title": "Analisando padr\u00f5es neurais...",
-    "mapping": "Mapeando conex\u00f5es neurais...",
-    "synapses": "Medindo atividade sin\u00e1ptica...",
-    "patterns": "Analisando padr\u00f5es cognitivos...",
+    "title": "Analisando padrões neurais...",
+    "mapping": "Mapeando conexões neurais...",
+    "synapses": "Medindo atividade sináptica...",
+    "patterns": "Analisando padrões cognitivos...",
     "cognitive": "Construindo perfil cognitivo...",
     "finalizing": "Determinando tipo cerebral...",
-    "complete": "An\u00e1lise completa!"
+    "complete": "Análise completa!"
   },
   "type": {
     "creator": {
-      "name": "C\u00e9rebro Criador",
-      "tagline": "Fonte de imagina\u00e7\u00e3o e inova\u00e7\u00e3o. Voc\u00ea v\u00ea o mundo de forma diferente.",
-      "description": "Seu c\u00e9rebro \u00e9 feito para criatividade e novidade. Voc\u00ea quebra padr\u00f5es convencionais, gera ideias originais e possui intui\u00e7\u00e3o e imagina\u00e7\u00e3o excepcionais.",
-      "trait1": "Imagina\u00e7\u00e3o rica",
+      "name": "Cérebro Criador",
+      "tagline": "Fonte de imaginação e inovação. Você vê o mundo de forma diferente.",
+      "description": "Seu cérebro é feito para criatividade e novidade. Você quebra padrões convencionais, gera ideias originais e possui intuição e imaginação excepcionais.",
+      "trait1": "Imaginação rica",
       "trait2": "Pensamento original",
-      "trait3": "Intui\u00e7\u00e3o forte",
-      "trait4": "Senso art\u00edstico"
+      "trait3": "Intuição forte",
+      "trait4": "Senso artístico"
     },
     "analyzer": {
-      "name": "C\u00e9rebro Analista",
-      "tagline": "Descobrindo a verdade atrav\u00e9s da l\u00f3gica e dados.",
-      "description": "Seu c\u00e9rebro \u00e9 otimizado para an\u00e1lise sistem\u00e1tica e racioc\u00ednio l\u00f3gico. Voc\u00ea decomp\u00f5e informa\u00e7\u00f5es complexas e toma decis\u00f5es baseadas em fatos.",
-      "trait1": "Pensamento l\u00f3gico",
-      "trait2": "Decis\u00f5es baseadas em dados",
-      "trait3": "An\u00e1lise sistem\u00e1tica",
-      "trait4": "Observa\u00e7\u00e3o aguada"
+      "name": "Cérebro Analista",
+      "tagline": "Descobrindo a verdade através da lógica e dados.",
+      "description": "Seu cérebro é otimizado para análise sistemática e raciocínio lógico. Você decompõe informações complexas e toma decisões baseadas em fatos.",
+      "trait1": "Pensamento lógico",
+      "trait2": "Decisões baseadas em dados",
+      "trait3": "Análise sistemática",
+      "trait4": "Observação aguada"
     },
     "empath": {
-      "name": "C\u00e9rebro Emp\u00e1tico",
-      "tagline": "Lendo ondas emocionais e conectando cora\u00e7\u00f5es.",
-      "description": "Seu c\u00e9rebro se destaca em sentir emo\u00e7\u00f5es alheias e experimentar empatia profunda. Voc\u00ea valoriza a harmonia e alcan\u00e7a os melhores resultados atrav\u00e9s da colabora\u00e7\u00e3o.",
+      "name": "Cérebro Empático",
+      "tagline": "Lendo ondas emocionais e conectando corações.",
+      "description": "Seu cérebro se destaca em sentir emoções alheias e experimentar empatia profunda. Você valoriza a harmonia e alcança os melhores resultados através da colaboração.",
       "trait1": "Empatia profunda",
       "trait2": "Busca por harmonia",
       "trait3": "Natureza colaborativa",
-      "trait4": "Perspic\u00e1cia emocional"
+      "trait4": "Perspicácia emocional"
     },
     "intuitive": {
-      "name": "C\u00e9rebro Intuitivo",
-      "tagline": "Penetrando a ess\u00eancia com um sexto sentido.",
-      "description": "Seu c\u00e9rebro entende o mundo atrav\u00e9s da intui\u00e7\u00e3o em vez da l\u00f3gica. Voc\u00ea detecta rapidamente padr\u00f5es ocultos e percebe possibilidades futuras.",
-      "trait1": "Intui\u00e7\u00e3o excepcional",
-      "trait2": "Reconhecimento de padr\u00f5es",
-      "trait3": "Esp\u00edrito aventureiro",
+      "name": "Cérebro Intuitivo",
+      "tagline": "Penetrando a essência com um sexto sentido.",
+      "description": "Seu cérebro entende o mundo através da intuição em vez da lógica. Você detecta rapidamente padrões ocultos e percebe possibilidades futuras.",
+      "trait1": "Intuição excepcional",
+      "trait2": "Reconhecimento de padrões",
+      "trait3": "Espírito aventureiro",
       "trait4": "Julgamento instintivo"
     },
     "strategist": {
-      "name": "C\u00e9rebro Estrategista",
-      "tagline": "Projetando o quadro geral e executando com precis\u00e3o.",
-      "description": "Seu c\u00e9rebro \u00e9 otimizado para planejamento e pensamento estrat\u00e9gico. Voc\u00ea define metas de longo prazo e as alcan\u00e7a sistematicamente.",
-      "trait1": "Pensamento estrat\u00e9gico",
-      "trait2": "Execu\u00e7\u00e3o planejada",
-      "trait3": "Resolu\u00e7\u00e3o de problemas",
-      "trait4": "Lideran\u00e7a forte"
+      "name": "Cérebro Estrategista",
+      "tagline": "Projetando o quadro geral e executando com precisão.",
+      "description": "Seu cérebro é otimizado para planejamento e pensamento estratégico. Você define metas de longo prazo e as alcança sistematicamente.",
+      "trait1": "Pensamento estratégico",
+      "trait2": "Execução planejada",
+      "trait3": "Resolução de problemas",
+      "trait4": "Liderança forte"
     },
     "visionary": {
-      "name": "C\u00e9rebro Vision\u00e1rio",
+      "name": "Cérebro Visionário",
       "tagline": "Visualizando o futuro e desbravando com ousadia.",
-      "description": "Seu c\u00e9rebro corre em dire\u00e7\u00e3o \u00e0 inova\u00e7\u00e3o e aventura. Voc\u00ea busca novas possibilidades e aceita desafios com ousadia.",
+      "description": "Seu cérebro corre em direção à inovação e aventura. Você busca novas possibilidades e aceita desafios com ousadia.",
       "trait1": "Orientado ao futuro",
       "trait2": "Desafiador audacioso",
       "trait3": "Ideias inovadoras",
-      "trait4": "Alta motiva\u00e7\u00e3o"
+      "trait4": "Alta motivação"
     },
     "guardian": {
-      "name": "C\u00e9rebro Guardi\u00e3o",
+      "name": "Cérebro Guardião",
       "tagline": "Protegendo todos com estabilidade e cuidado.",
-      "description": "Seu c\u00e9rebro tem fortes instintos de estabilidade e prote\u00e7\u00e3o. Voc\u00ea cuida dos que est\u00e3o ao redor, evita riscos e cria ambientes seguros.",
+      "description": "Seu cérebro tem fortes instintos de estabilidade e proteção. Você cuida dos que estão ao redor, evita riscos e cria ambientes seguros.",
       "trait1": "Forte responsabilidade",
       "trait2": "Cuidado caloroso",
       "trait3": "Julgamento cuidadoso",
       "trait4": "Busca por estabilidade"
     },
     "dynamo": {
-      "name": "C\u00e9rebro D\u00ednamo",
-      "tagline": "Agindo instantaneamente e brilhando sob press\u00e3o.",
-      "description": "Seu c\u00e9rebro \u00e9 cheio de a\u00e7\u00e3o e energia. Voc\u00ea se move imediatamente, rende melhor sob press\u00e3o e energiza todos ao seu redor.",
-      "trait1": "A\u00e7\u00e3o instant\u00e2nea",
-      "trait2": "Brilha sob press\u00e3o",
+      "name": "Cérebro Dínamo",
+      "tagline": "Agindo instantaneamente e brilhando sob pressão.",
+      "description": "Seu cérebro é cheio de ação e energia. Você se move imediatamente, rende melhor sob pressão e energiza todos ao seu redor.",
+      "trait1": "Ação instantânea",
+      "trait2": "Brilha sob pressão",
       "trait3": "Energia social",
-      "trait4": "Decis\u00f5es r\u00e1pidas"
+      "trait4": "Decisões rápidas"
     }
   },
   "metric": {
     "creativity": "Criatividade",
-    "logic": "L\u00f3gica",
+    "logic": "Lógica",
     "empathy": "Empatia",
-    "intuition": "Intui\u00e7\u00e3o",
+    "intuition": "Intuição",
     "drive": "Impulso"
   },
   "result": {
-    "neural_metrics": "M\u00e9tricas Neurais",
-    "key_traits": "Tra\u00e7os Principais",
+    "neural_metrics": "Métricas Neurais",
+    "key_traits": "Traços Principais",
     "share": "Compartilhar Resultado",
     "related": "Testes Relacionados",
     "moreTests": "Explorar mais",
@@ -167,8 +167,8 @@
     "iqTest": "Teste de QI"
   },
   "share": {
-    "twitterText": "Meu tipo de c\u00e9rebro \u00e9 {type}{emoji}! Escaneado pelo Neural Pathway Scanner!",
-    "copyText": "Meu tipo de c\u00e9rebro \u00e9 {type}{emoji}! {url}",
+    "twitterText": "Meu tipo de cérebro é {type}{emoji}! Escaneado pelo Neural Pathway Scanner!",
+    "copyText": "Meu tipo de cérebro é {type}{emoji}! {url}",
     "canvasTitle": "Neural Pathway Scanner"
   },
   "message": {
@@ -180,6 +180,20 @@
     "toDarkMode": "Modo escuro"
   },
   "game": {
-    "back": "DopaBrain In\u00edcio"
+    "back": "DopaBrain Início"
+  },
+  "engage": {
+    "result1": "Cérebro Criador -- Imaginação & Inovação",
+    "result2": "Cérebro Analisador -- Lógica & Dados",
+    "result3": "Cérebro Empático -- Inteligência Emocional",
+    "result4": "Cérebro Estrategista -- Planejamento & Liderança",
+    "socialProof": "1,950+ cérebros escaneados hoje"
+  },
+  "about": {
+    "toggle": "Sobre Este Teste",
+    "heading1": "Como Funciona",
+    "text1": "O teste apresenta 10 cenários de decisão rápida com timer de 3 segundos.",
+    "heading2": "Entendendo Seu Tipo Cerebral",
+    "text2": "Cada tipo cerebral representa uma impressão digital cognitiva única."
   }
 }

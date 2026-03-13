@@ -5,24 +5,24 @@
     "skipLink": "Skip to main"
   },
   "meta": {
-    "description": "10 rapid-fire decisions reveal your brain type through simulated neural pathway activation.",
+    "description": "Discover your brain type with 10 rapid-fire decisions. Are you a Creator, Analyzer, or Empath? Free neural pathway scan quiz - instant results!",
     "keywords": "brain type test, neural pathway, psychology test, brain scan, cognitive style",
     "og_title": "Neural Pathway Scanner - What's Your Brain Type?",
     "og_description": "10 rapid-fire decisions activate your neural pathways. Discover your brain type!",
     "twitter_title": "Neural Pathway Scanner - Brain Type Test",
     "twitter_description": "10 rapid-fire decisions reveal your brain type!",
-    "page_title": "Neural Pathway Scanner - Brain Type Test | DopaBrain"
+    "page_title": "Brain Type Test - Free Online Neural Scan | DopaBrain"
   },
   "intro": {
-    "title": "Neural Pathway Scanner",
-    "subtitle": "We'll scan your neural pathways through rapid-fire decisions.",
+    "title": "Brain Type Test",
+    "subtitle": "Discover your cognitive style through 10 rapid-fire neural decisions.",
     "feature_rapid": "10 rapid-fire decisions",
     "feature_timer": "3-second timer each",
     "feature_scan": "Live neural pathway mapping",
     "time_estimate": "Takes about 1 minute"
   },
   "button": {
-    "start": "Start Brain Scan",
+    "start": "Scan My Brain Now - It's Free",
     "retry": "Scan Again",
     "share_twitter": "Twitter",
     "share_facebook": "Facebook",
@@ -181,5 +181,19 @@
   },
   "game": {
     "back": "DopaBrain Home"
+  },
+  "engage": {
+    "result1": "Creator Brain -- Imagination & Innovation",
+    "result2": "Analyzer Brain -- Logic & Data-Driven",
+    "result3": "Empath Brain -- Emotional Intelligence",
+    "result4": "Strategist Brain -- Planning & Leadership",
+    "socialProof": "1,950+ brains scanned today"
+  },
+  "about": {
+    "toggle": "About This Brain Type Test",
+    "heading1": "How the Brain Type Test Works",
+    "text1": "The Brain Type Test presents you with 10 rapid-fire decision scenarios, each with a 3-second timer. Your instinctive responses activate simulated neural pathways that map your cognitive style into one of 8 distinct brain types.",
+    "heading2": "Understanding Your Brain Type",
+    "text2": "Each brain type represents a unique cognitive fingerprint. Whether you are a Creator, Analyzer, or Dynamo, your result reveals how your mind naturally processes decisions."
   }
 }

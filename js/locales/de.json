@@ -5,12 +5,12 @@
     "skipLink": "Zum Inhalt springen"
   },
   "meta": {
-    "description": "10 blitzschnelle Entscheidungen enth\u00fcllen Ihren Gehirntyp durch neurale Pfadaktivierung.",
+    "description": "10 blitzschnelle Entscheidungen enthüllen Ihren Gehirntyp durch neurale Pfadaktivierung.",
     "keywords": "Gehirntyp-Test, neurale Pfade, Psychologietest, Gehirnscan",
     "og_title": "Neural Pathway Scanner - Welcher Gehirntyp sind Sie?",
     "og_description": "10 schnelle Entscheidungen aktivieren Ihre neuralen Pfade!",
     "twitter_title": "Neural Pathway Scanner - Gehirntyp-Test",
-    "twitter_description": "10 blitzschnelle Entscheidungen enth\u00fcllen Ihren Gehirntyp!",
+    "twitter_description": "10 blitzschnelle Entscheidungen enthüllen Ihren Gehirntyp!",
     "page_title": "Neural Pathway Scanner - Gehirntyp-Test | DopaBrain"
   },
   "intro": {
@@ -32,23 +32,23 @@
     "0": "Bei der Arbeit geht etwas kaputt",
     "1": "Freies Wochenende",
     "2": "Wichtige Entscheidung zu treffen",
-    "3": "Ein Freund ist ver\u00e4rgert",
+    "3": "Ein Freund ist verärgert",
     "4": "Neues Projekt beginnt",
     "5": "Eine interessante Debatte",
     "6": "Kreative Herausforderung gestellt",
     "7": "Neue Leute kennenlernen ist...",
-    "8": "Deadline n\u00e4hert sich",
-    "9": "Gro\u00dfe Lebensver\u00e4nderung kommt"
+    "8": "Deadline nähert sich",
+    "9": "Große Lebensveränderung kommt"
   },
   "choice": {
     "0a": "Selbst reparieren",
     "0b": "Um Hilfe bitten",
     "1a": "Neues erkunden",
     "1b": "Zuhause aufladen",
-    "2a": "Dem Bauchgef\u00fchl vertrauen",
-    "2b": "Gr\u00fcndlich recherchieren",
-    "3a": "Zuh\u00f6ren und mitf\u00fchlen",
-    "3b": "L\u00f6sungen anbieten",
+    "2a": "Dem Bauchgefühl vertrauen",
+    "2b": "Gründlich recherchieren",
+    "3a": "Zuhören und mitfühlen",
+    "3b": "Lösungen anbieten",
     "4a": "Direkt einsteigen",
     "4b": "Erst alles planen",
     "5a": "Advocatus Diaboli spielen",
@@ -56,16 +56,16 @@
     "6a": "Wildes Brainstorming",
     "6b": "Bestehendes verbessern",
     "7a": "Energiespendend",
-    "7b": "Ersch\u00f6pfend",
-    "8a": "Unter Druck aufbl\u00fchen",
-    "8b": "Gleichm\u00e4\u00dfiges Tempo bevorzugen",
+    "7b": "Erschöpfend",
+    "8a": "Unter Druck aufblühen",
+    "8b": "Gleichmäßiges Tempo bevorzugen",
     "9a": "Aufregende Gelegenheit",
-    "9b": "Sorgf\u00e4ltige \u00dcberlegung"
+    "9b": "Sorgfältige Überlegung"
   },
   "analyzing": {
     "title": "Neurale Muster werden analysiert...",
     "mapping": "Neurale Verbindungen werden kartiert...",
-    "synapses": "Synapsenaktivit\u00e4t wird gemessen...",
+    "synapses": "Synapsenaktivität wird gemessen...",
     "patterns": "Kognitive Muster werden analysiert...",
     "cognitive": "Kognitives Profil wird erstellt...",
     "finalizing": "Gehirntyp wird bestimmt...",
@@ -73,18 +73,18 @@
   },
   "type": {
     "creator": {
-      "name": "Sch\u00f6pfer-Gehirn",
+      "name": "Schöpfer-Gehirn",
       "tagline": "Quelle von Fantasie und Innovation. Sie sehen die Welt anders.",
-      "description": "Ihr Gehirn ist f\u00fcr Kreativit\u00e4t und Neuheit verdrahtet. Sie durchbrechen konventionelle Muster, erzeugen originelle Ideen und besitzen au\u00dfergew\u00f6hnliche Intuition und Vorstellungskraft.",
+      "description": "Ihr Gehirn ist für Kreativität und Neuheit verdrahtet. Sie durchbrechen konventionelle Muster, erzeugen originelle Ideen und besitzen außergewöhnliche Intuition und Vorstellungskraft.",
       "trait1": "Reiche Fantasie",
       "trait2": "Originelles Denken",
       "trait3": "Starke Intuition",
-      "trait4": "K\u00fcnstlerisches Gesp\u00fcr"
+      "trait4": "Künstlerisches Gespür"
     },
     "analyzer": {
       "name": "Analytiker-Gehirn",
       "tagline": "Wahrheit durch Logik und Daten aufdecken.",
-      "description": "Ihr Gehirn ist f\u00fcr systematische Analyse und logisches Denken optimiert. Sie zerlegen komplexe Informationen und treffen faktenbasierte Entscheidungen.",
+      "description": "Ihr Gehirn ist für systematische Analyse und logisches Denken optimiert. Sie zerlegen komplexe Informationen und treffen faktenbasierte Entscheidungen.",
       "trait1": "Logisches Denken",
       "trait2": "Datengetriebene Entscheidungen",
       "trait3": "Systematische Analyse",
@@ -92,8 +92,8 @@
     },
     "empath": {
       "name": "Empathie-Gehirn",
-      "tagline": "Emotionale Wellenl\u00e4ngen lesen und Herzen verbinden.",
-      "description": "Ihr Gehirn zeichnet sich durch das Sp\u00fcren der Emotionen anderer und tiefes Mitgef\u00fchl aus. Sie sch\u00e4tzen Harmonie und erzielen die besten Ergebnisse durch Zusammenarbeit.",
+      "tagline": "Emotionale Wellenlängen lesen und Herzen verbinden.",
+      "description": "Ihr Gehirn zeichnet sich durch das Spüren der Emotionen anderer und tiefes Mitgefühl aus. Sie schätzen Harmonie und erzielen die besten Ergebnisse durch Zusammenarbeit.",
       "trait1": "Tiefe Empathie",
       "trait2": "Harmoniesuche",
       "trait3": "Kooperative Natur",
@@ -102,51 +102,51 @@
     "intuitive": {
       "name": "Intuitives Gehirn",
       "tagline": "Mit dem sechsten Sinn zum Kern vordringen.",
-      "description": "Ihr Gehirn versteht die Welt durch Intuition statt Logik. Sie erkennen schnell verborgene Muster und sp\u00fcren zuk\u00fcnftige M\u00f6glichkeiten.",
-      "trait1": "Ausgepr\u00e4gte Intuition",
+      "description": "Ihr Gehirn versteht die Welt durch Intuition statt Logik. Sie erkennen schnell verborgene Muster und spüren zukünftige Möglichkeiten.",
+      "trait1": "Ausgeprägte Intuition",
       "trait2": "Mustererkennung",
       "trait3": "Abenteuerlust",
       "trait4": "Instinktives Urteil"
     },
     "strategist": {
       "name": "Strategen-Gehirn",
-      "tagline": "Das gro\u00dfe Bild entwerfen und pr\u00e4zise umsetzen.",
-      "description": "Ihr Gehirn ist f\u00fcr Planung und strategisches Denken optimiert. Sie setzen langfristige Ziele und erreichen sie systematisch.",
+      "tagline": "Das große Bild entwerfen und präzise umsetzen.",
+      "description": "Ihr Gehirn ist für Planung und strategisches Denken optimiert. Sie setzen langfristige Ziele und erreichen sie systematisch.",
       "trait1": "Strategisches Denken",
       "trait2": "Geplante Umsetzung",
-      "trait3": "Probleml\u00f6sung",
-      "trait4": "Starke F\u00fchrung"
+      "trait3": "Problemlösung",
+      "trait4": "Starke Führung"
     },
     "visionary": {
-      "name": "Vision\u00e4r-Gehirn",
+      "name": "Visionär-Gehirn",
       "tagline": "Die Zukunft visualisieren und mutig vorangehen.",
-      "description": "Ihr Gehirn strebt nach Innovation und Abenteuer. Sie suchen neue M\u00f6glichkeiten und nehmen mutig Herausforderungen an.",
+      "description": "Ihr Gehirn strebt nach Innovation und Abenteuer. Sie suchen neue Möglichkeiten und nehmen mutig Herausforderungen an.",
       "trait1": "Zukunftsorientiert",
       "trait2": "Mutiger Herausforderer",
       "trait3": "Innovative Ideen",
       "trait4": "Hoher Antrieb"
     },
     "guardian": {
-      "name": "H\u00fcter-Gehirn",
-      "tagline": "Alle mit Stabilit\u00e4t und F\u00fcrsorge sch\u00fctzen.",
-      "description": "Ihr Gehirn hat starke Stabilit\u00e4ts- und Schutzinstinkte. Sie k\u00fcmmern sich um Ihre Mitmenschen, vermeiden Risiken und schaffen sichere Umgebungen.",
+      "name": "Hüter-Gehirn",
+      "tagline": "Alle mit Stabilität und Fürsorge schützen.",
+      "description": "Ihr Gehirn hat starke Stabilitäts- und Schutzinstinkte. Sie kümmern sich um Ihre Mitmenschen, vermeiden Risiken und schaffen sichere Umgebungen.",
       "trait1": "Starke Verantwortung",
-      "trait2": "Warme F\u00fcrsorge",
-      "trait3": "Sorgf\u00e4ltiges Urteil",
-      "trait4": "Stabilit\u00e4tssuche"
+      "trait2": "Warme Fürsorge",
+      "trait3": "Sorgfältiges Urteil",
+      "trait4": "Stabilitätssuche"
     },
     "dynamo": {
       "name": "Dynamo-Gehirn",
-      "tagline": "Sofort handeln und unter Druck aufbl\u00fchen.",
+      "tagline": "Sofort handeln und unter Druck aufblühen.",
       "description": "Ihr Gehirn ist voller Aktion und Energie. Sie handeln sofort, leisten unter Druck am besten und energetisieren alle um sich herum.",
       "trait1": "Sofortiges Handeln",
-      "trait2": "Aufbl\u00fchen unter Druck",
+      "trait2": "Aufblühen unter Druck",
       "trait3": "Soziale Energie",
       "trait4": "Schnelle Entscheidungen"
     }
   },
   "metric": {
-    "creativity": "Kreativit\u00e4t",
+    "creativity": "Kreativität",
     "logic": "Logik",
     "empathy": "Empathie",
     "intuition": "Intuition",
@@ -181,5 +181,19 @@
   },
   "game": {
     "back": "DopaBrain Startseite"
+  },
+  "engage": {
+    "result1": "Kreator-Gehirn -- Fantasie & Innovation",
+    "result2": "Analytiker-Gehirn -- Logik & Daten",
+    "result3": "Empath-Gehirn -- Emotionale Intelligenz",
+    "result4": "Strategen-Gehirn -- Planung & Fuhrung",
+    "socialProof": "Heute 1,950+ Gehirne gescannt"
+  },
+  "about": {
+    "toggle": "Uber diesen Test",
+    "heading1": "Wie es funktioniert",
+    "text1": "Der Test prasentiert 10 schnelle Entscheidungsszenarien mit 3-Sekunden-Timer.",
+    "heading2": "Ihren Gehirntyp verstehen",
+    "text2": "Jeder Gehirntyp reprasentiert einen einzigartigen kognitiven Fingerabdruck."
   }
 }

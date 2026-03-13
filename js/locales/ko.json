@@ -5,24 +5,24 @@
     "skipLink": "본문으로 이동"
   },
   "meta": {
-    "description": "10가지 순간 결정으로 당신의 신경 경로를 스캔합니다. 뇌 유형 시뮬레이션 테스트!",
+    "description": "10가지 순발력 결정으로 나의 뇌 유형을 발견하세요. 무료!",
     "keywords": "뇌 유형 테스트, 신경 경로 스캔, 심리 테스트, 두뇌 진단",
     "og_title": "Neural Pathway Scanner - 당신의 뇌 유형은?",
     "og_description": "10가지 빠른 결정으로 신경 경로를 활성화하세요. 당신의 뇌 유형을 발견하세요!",
     "twitter_title": "Neural Pathway Scanner - 뇌 유형 테스트",
     "twitter_description": "10가지 순간 결정으로 당신의 뇌 유형을 발견하세요!",
-    "page_title": "Neural Pathway Scanner - 뇌 유형 테스트 | DopaBrain"
+    "page_title": "뇌 유형 테스트 - 무료 온라인 뉴럴 스캔 | DopaBrain"
   },
   "intro": {
-    "title": "Neural Pathway Scanner",
-    "subtitle": "빠른 결정을 통해 당신의 신경 경로를 스캔합니다.",
+    "title": "뇌 유형 테스트",
+    "subtitle": "10가지 순발력 결정으로 인지 스타일을 발견하세요.",
     "feature_rapid": "10가지 순간 결정",
     "feature_timer": "각 3초 제한시간",
     "feature_scan": "실시간 신경 경로 매핑",
     "time_estimate": "소요 시간: 약 1분"
   },
   "button": {
-    "start": "브레인 스캔 시작",
+    "start": "내 뇌 스캔하기 - 무료",
     "retry": "다시 스캔하기",
     "share_twitter": "트위터",
     "share_facebook": "페이스북",
@@ -181,5 +181,19 @@
   },
   "game": {
     "back": "DopaBrain 홈"
+  },
+  "engage": {
+    "result1": "창조자 뇌 -- 상상력 & 혁신",
+    "result2": "분석가 뇌 -- 논리 & 데이터",
+    "result3": "공감자 뇌 -- 감성 지능",
+    "result4": "전략가 뇌 -- 기획 & 리더십",
+    "socialProof": "오늘 1,950+명이 스캔 완료"
+  },
+  "about": {
+    "toggle": "이 뇌 유형 테스트에 대해",
+    "heading1": "뇌 유형 테스트 작동 방식",
+    "text1": "3초 타이머와 함께 10가지 순발력 결정 시나리오를 제시합니다. 본능적인 응답이 시뮬레이션된 뉴럴 경로를 활성화하여 인지 스타일을 매핑합니다.",
+    "heading2": "나의 뇌 유형 이해하기",
+    "text2": "각 뇌 유형은 고유한 인지 지문을 나타냅니다. 결과는 당신의 마음이 자연스럽게 결정을 처리하는 방식을 보여줍니다."
   }
 }
