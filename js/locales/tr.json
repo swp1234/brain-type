@@ -156,7 +156,15 @@
     "neural_metrics": "N\u00f6ral Metrikler",
     "key_traits": "Temel \u00d6zellikler",
     "share": "Sonucu Payla\u015f",
-    "related": "Ilgili Testler"
+    "related": "Ilgili Testler",
+    "moreTests": "Daha fazla keşfet",
+    "percentileStat": "Sadece <strong>{percent}%</strong>'i senin beyin tipine sahip"
+  },
+  "related": {
+    "eqTest": "EQ Testi",
+    "hspTest": "HSP Testi",
+    "mentalAge": "Zihinsel Yaş",
+    "iqTest": "IQ Testi"
   },
   "share": {
     "twitterText": "Beyin tipim {type}{emoji}! Neural Pathway Scanner ile taratt\u0131m!",

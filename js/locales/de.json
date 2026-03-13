@@ -156,7 +156,15 @@
     "neural_metrics": "Neurale Metriken",
     "key_traits": "Kernmerkmale",
     "share": "Ergebnis teilen",
-    "related": "Verwandte Tests"
+    "related": "Verwandte Tests",
+    "moreTests": "Mehr entdecken",
+    "percentileStat": "Nur <strong>{percent}%</strong> teilen deinen Gehirntyp"
+  },
+  "related": {
+    "eqTest": "EQ-Test",
+    "hspTest": "HSP-Test",
+    "mentalAge": "Mentales Alter",
+    "iqTest": "IQ-Test"
   },
   "share": {
     "twitterText": "Mein Gehirntyp ist {type}{emoji}! Gescannt vom Neural Pathway Scanner!",

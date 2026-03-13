@@ -521,6 +521,11 @@ class NeuralPathwayScanner {
         document.getElementById('result-title').textContent = t(type.nameKey);
         document.getElementById('result-tagline').textContent = t(type.taglineKey);
 
+        // Percentile stat
+        const percentile = this.calculatePercentile();
+        const percentileText = t('result.percentileStat').replace('{percent}', percentile);
+        document.getElementById('percentile-stat').innerHTML = percentileText;
+
         // Description
         document.getElementById('result-description').innerHTML = '<p>' + t(type.descKey) + '</p>';
 
@@ -589,6 +594,21 @@ class NeuralPathwayScanner {
 
         // Confetti
         this.createConfetti();
+    }
+
+    calculatePercentile() {
+        // 8 brain types → each ~12.5%
+        const typeDistribution = {
+            creator: 14,
+            analyzer: 13,
+            empath: 15,
+            intuitive: 11,
+            strategist: 12,
+            visionary: 10,
+            guardian: 16,
+            dynamo: 9
+        };
+        return typeDistribution[this.resultType] || 12;
     }
 
     buildResultBrainPaths(color) {

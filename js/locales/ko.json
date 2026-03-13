@@ -156,7 +156,15 @@
     "neural_metrics": "신경 지표",
     "key_traits": "핵심 특성",
     "share": "결과 공유하기",
-    "related": "관련 테스트"
+    "related": "관련 테스트",
+    "moreTests": "더 많은 테스트",
+    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 당신과 같은 뇌 유형입니다"
+  },
+  "related": {
+    "eqTest": "EQ 테스트",
+    "hspTest": "HSP 테스트",
+    "mentalAge": "정신 연령",
+    "iqTest": "IQ 테스트"
   },
   "share": {
     "twitterText": "나의 뇌 유형은 {type}{emoji}! Neural Pathway Scanner로 알아봤어요!",

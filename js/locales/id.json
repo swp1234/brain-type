@@ -156,7 +156,15 @@
     "neural_metrics": "Metrik Neural",
     "key_traits": "Sifat Utama",
     "share": "Bagikan Hasil",
-    "related": "Tes Terkait"
+    "related": "Tes Terkait",
+    "moreTests": "Jelajahi lagi",
+    "percentileStat": "Hanya <strong>{percent}%</strong> memiliki tipe otak yang sama"
+  },
+  "related": {
+    "eqTest": "Tes EQ",
+    "hspTest": "Tes HSP",
+    "mentalAge": "Usia Mental",
+    "iqTest": "Tes IQ"
   },
   "share": {
     "twitterText": "Tipe otak saya adalah {type}{emoji}! Dipindai oleh Neural Pathway Scanner!",

@@ -156,7 +156,15 @@
     "neural_metrics": "M\u00e9tricas Neurais",
     "key_traits": "Tra\u00e7os Principais",
     "share": "Compartilhar Resultado",
-    "related": "Testes Relacionados"
+    "related": "Testes Relacionados",
+    "moreTests": "Explorar mais",
+    "percentileStat": "Apenas <strong>{percent}%</strong> compartilham seu tipo cerebral"
+  },
+  "related": {
+    "eqTest": "Teste de QE",
+    "hspTest": "Teste HSP",
+    "mentalAge": "Idade Mental",
+    "iqTest": "Teste de QI"
   },
   "share": {
     "twitterText": "Meu tipo de c\u00e9rebro \u00e9 {type}{emoji}! Escaneado pelo Neural Pathway Scanner!",

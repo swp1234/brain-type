@@ -156,7 +156,15 @@
     "neural_metrics": "神経指標",
     "key_traits": "主要特性",
     "share": "結果を共有",
-    "related": "関連テスト"
+    "related": "関連テスト",
+    "moreTests": "もっと見る",
+    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じ脳タイプです"
+  },
+  "related": {
+    "eqTest": "EQテスト",
+    "hspTest": "HSPテスト",
+    "mentalAge": "精神年齢",
+    "iqTest": "IQテスト"
   },
   "share": {
     "twitterText": "私の脳タイプは{type}{emoji}！Neural Pathway Scannerで判明！",

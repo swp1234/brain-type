@@ -156,7 +156,15 @@
     "neural_metrics": "Нейронные метрики",
     "key_traits": "Ключевые черты",
     "share": "Поделиться результатом",
-    "related": "Похожие тесты"
+    "related": "Похожие тесты",
+    "moreTests": "Ещё тесты",
+    "percentileStat": "Только <strong>{percent}%</strong> имеют такой же тип мозга"
+  },
+  "related": {
+    "eqTest": "Тест EQ",
+    "hspTest": "HSP Тест",
+    "mentalAge": "Ментальный возраст",
+    "iqTest": "IQ Тест"
   },
   "share": {
     "twitterText": "Мой тип мозга — {type}{emoji}! Определено Neural Pathway Scanner!",

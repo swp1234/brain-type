@@ -156,7 +156,15 @@
     "neural_metrics": "神经指标",
     "key_traits": "核心特质",
     "share": "分享结果",
-    "related": "相关测试"
+    "related": "相关测试",
+    "moreTests": "探索更多",
+    "percentileStat": "仅 <strong>{percent}%</strong> 拥有与你相同的大脑类型"
+  },
+  "related": {
+    "eqTest": "情商测试",
+    "hspTest": "HSP测试",
+    "mentalAge": "心理年龄",
+    "iqTest": "智商测试"
   },
   "share": {
     "twitterText": "我的大脑类型是{type}{emoji}！通过Neural Pathway Scanner发现的！",

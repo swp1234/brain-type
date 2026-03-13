@@ -156,7 +156,15 @@
     "neural_metrics": "तंत्रिका मेट्रिक्स",
     "key_traits": "मुख्य लक्षण",
     "share": "परिणाम साझा करें",
-    "related": "संबंधित परीक्षण"
+    "related": "संबंधित परीक्षण",
+    "moreTests": "और जानें",
+    "percentileStat": "केवल <strong>{percent}%</strong> का आपके जैसा मस्तिष्क प्रकार है"
+  },
+  "related": {
+    "eqTest": "EQ परीक्षण",
+    "hspTest": "HSP परीक्षण",
+    "mentalAge": "मानसिक उम्र",
+    "iqTest": "IQ परीक्षण"
   },
   "share": {
     "twitterText": "मेरा मस्तिष्क प्रकार {type}{emoji} है! Neural Pathway Scanner से पता चला!",

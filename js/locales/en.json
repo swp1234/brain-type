@@ -156,7 +156,15 @@
     "neural_metrics": "Neural Metrics",
     "key_traits": "Key Traits",
     "share": "Share Your Result",
-    "related": "Related Tests"
+    "related": "Related Tests",
+    "moreTests": "Explore More",
+    "percentileStat": "Only <strong>{percent}%</strong> share your brain type"
+  },
+  "related": {
+    "eqTest": "EQ Test",
+    "hspTest": "HSP Test",
+    "mentalAge": "Mental Age",
+    "iqTest": "IQ Test"
   },
   "share": {
     "twitterText": "My brain type is {type}{emoji}! Scanned by Neural Pathway Scanner!",

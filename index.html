@@ -333,6 +333,9 @@
                     <div class="metrics-grid" id="metrics-grid"></div>
                 </div>
 
+                <!-- Percentile Stat -->
+                <p class="percentile-stat" id="percentile-stat"></p>
+
                 <!-- Description -->
                 <div class="result-description" id="result-description"></div>
 
@@ -340,6 +343,17 @@
                 <div class="key-traits">
                     <h3 data-i18n="result.key_traits">Key Traits</h3>
                     <div class="traits-list" id="traits-list"></div>
+                </div>
+
+                <!-- Related Tests -->
+                <div class="related-tests">
+                    <h3 data-i18n="result.moreTests">Explore More</h3>
+                    <div class="related-grid">
+                        <a href="/eq-test/" class="related-card" style="--card-color: #00bcd4"><span class="related-emoji">🧠</span><span class="related-name" data-i18n="related.eqTest">EQ Test</span></a>
+                        <a href="/hsp-test/" class="related-card" style="--card-color: #7c3aed"><span class="related-emoji">🔮</span><span class="related-name" data-i18n="related.hspTest">HSP Test</span></a>
+                        <a href="/mental-age/" class="related-card" style="--card-color: #e67e22"><span class="related-emoji">🧒</span><span class="related-name" data-i18n="related.mentalAge">Mental Age</span></a>
+                        <a href="/iq-test/" class="related-card" style="--card-color: #2ecc71"><span class="related-emoji">📊</span><span class="related-name" data-i18n="related.iqTest">IQ Test</span></a>
+                    </div>
                 </div>
 
                 <!-- Share Section -->
@@ -351,16 +365,6 @@
                         <button id="share-copy" class="share-btn copy" data-i18n="button.share_copy">Copy Link</button>
                     </div>
                 </div>
-
-                <!-- Related Apps -->
-                <section class="related-apps">
-                    <h3 data-i18n="result.related">Related Tests</h3>
-                    <div class="related-links">
-                        <a href="/eq-test/" class="related-link">EQ Test</a>
-                        <a href="/iq-test/" class="related-link">IQ Test</a>
-                        <a href="/hsp-test/" class="related-link">HSP Test</a>
-                    </div>
-                </section>
 
                 <!-- Retry -->
                 <button id="retry-btn" class="btn btn-secondary" data-i18n="button.retry">Scan Again</button>
