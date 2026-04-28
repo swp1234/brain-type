@@ -164,7 +164,17 @@
     "eqTest": "Тест EQ",
     "hspTest": "HSP Тест",
     "mentalAge": "Ментальный возраст",
-    "iqTest": "IQ Тест"
+    "iqTest": "IQ Тест",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "Продолжи изучать свою когнитивную карту",
+    "tests": "Все психологические тесты",
+    "testsDesc": "EQ, HSP, стресс, отношения и личностные тесты в одном хабе.",
+    "mbti": "Карта типов MBTI",
+    "mbtiDesc": "Сравни свой стиль мышления с 16 профилями личности.",
+    "guide": "Гид по типу мозга",
+    "guideDesc": "Узнай, как тип мозга связан с привычками, работой и отношениями."
   },
   "share": {
     "twitterText": "Мой тип мозга — {type}{emoji}! Определено Neural Pathway Scanner!",

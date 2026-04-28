@@ -164,7 +164,17 @@
     "eqTest": "EQ Test",
     "hspTest": "HSP Test",
     "mentalAge": "Mental Age",
-    "iqTest": "IQ Test"
+    "iqTest": "IQ Test",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "Keep exploring your cognitive map",
+    "tests": "All psychology tests",
+    "testsDesc": "Find EQ, HSP, stress, relationship, and fun personality tests in one hub.",
+    "mbti": "MBTI type map",
+    "mbtiDesc": "Compare your thinking style with the 16 personality profiles.",
+    "guide": "Brain type guide",
+    "guideDesc": "Read how brain type results connect to habits, work, and relationships."
   },
   "share": {
     "twitterText": "My brain type is {type}{emoji}! Scanned by Neural Pathway Scanner!",

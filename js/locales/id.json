@@ -164,7 +164,17 @@
     "eqTest": "Tes EQ",
     "hspTest": "Tes HSP",
     "mentalAge": "Usia Mental",
-    "iqTest": "Tes IQ"
+    "iqTest": "Tes IQ",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "Lanjut jelajahi peta kognitifmu",
+    "tests": "Semua tes psikologi",
+    "testsDesc": "Temukan tes EQ, HSP, stres, hubungan, dan kepribadian dalam satu hub.",
+    "mbti": "Peta tipe MBTI",
+    "mbtiDesc": "Bandingkan gaya berpikirmu dengan 16 profil kepribadian.",
+    "guide": "Panduan tipe otak",
+    "guideDesc": "Baca bagaimana hasil tipe otak terhubung dengan kebiasaan, kerja, dan hubungan."
   },
   "share": {
     "twitterText": "Tipe otak saya adalah {type}{emoji}! Dipindai oleh Neural Pathway Scanner!",

@@ -164,7 +164,17 @@
     "eqTest": "EQ 테스트",
     "hspTest": "HSP 테스트",
     "mentalAge": "정신 연령",
-    "iqTest": "IQ 테스트"
+    "iqTest": "IQ 테스트",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "인지 지도를 계속 탐색하기",
+    "tests": "전체 심리 테스트",
+    "testsDesc": "EQ, HSP, 스트레스, 관계, 성격 테스트를 한 허브에서 찾기.",
+    "mbti": "MBTI 유형 지도",
+    "mbtiDesc": "나의 사고 스타일을 16가지 성격 유형과 비교하기.",
+    "guide": "뇌 유형 가이드",
+    "guideDesc": "뇌 유형 결과가 습관, 일, 관계와 어떻게 이어지는지 읽기."
   },
   "share": {
     "twitterText": "나의 뇌 유형은 {type}{emoji}! Neural Pathway Scanner로 알아봤어요!",

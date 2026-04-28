@@ -164,7 +164,17 @@
     "eqTest": "Test de EQ",
     "hspTest": "Test HSP",
     "mentalAge": "Edad Mental",
-    "iqTest": "Test de CI"
+    "iqTest": "Test de CI",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "Sigue explorando tu mapa cognitivo",
+    "tests": "Todos los tests psicologicos",
+    "testsDesc": "Encuentra EQ, HSP, estres, relaciones y tests de personalidad en un hub.",
+    "mbti": "Mapa de tipos MBTI",
+    "mbtiDesc": "Compara tu estilo de pensamiento con los 16 perfiles de personalidad.",
+    "guide": "Guia de tipo cerebral",
+    "guideDesc": "Lee como tu resultado se conecta con habitos, trabajo y relaciones."
   },
   "share": {
     "twitterText": "¡Mi tipo de cerebro es {type}{emoji}! ¡Escaneado por Neural Pathway Scanner!",

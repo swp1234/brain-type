@@ -164,7 +164,17 @@
     "eqTest": "情商测试",
     "hspTest": "HSP测试",
     "mentalAge": "心理年龄",
-    "iqTest": "智商测试"
+    "iqTest": "智商测试",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "继续探索你的认知地图",
+    "tests": "全部心理测试",
+    "testsDesc": "在一个入口找到EQ、HSP、压力、关系和趣味性格测试。",
+    "mbti": "MBTI类型地图",
+    "mbtiDesc": "把你的思维风格与16型人格资料进行比较。",
+    "guide": "大脑类型指南",
+    "guideDesc": "了解大脑类型如何连接习惯、工作和关系。"
   },
   "share": {
     "twitterText": "我的大脑类型是{type}{emoji}！通过Neural Pathway Scanner发现的！",

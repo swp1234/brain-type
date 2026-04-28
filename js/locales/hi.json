@@ -164,7 +164,17 @@
     "eqTest": "EQ परीक्षण",
     "hspTest": "HSP परीक्षण",
     "mentalAge": "मानसिक उम्र",
-    "iqTest": "IQ परीक्षण"
+    "iqTest": "IQ परीक्षण",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "अपना cognitive map आगे explore करें",
+    "tests": "सभी psychology tests",
+    "testsDesc": "EQ, HSP, stress, relationship और personality tests एक ही hub में देखें.",
+    "mbti": "MBTI type map",
+    "mbtiDesc": "अपनी thinking style को 16 personality profiles से compare करें.",
+    "guide": "Brain type guide",
+    "guideDesc": "पढ़ें कि brain type habits, work और relationships से कैसे जुड़ता है."
   },
   "share": {
     "twitterText": "मेरा मस्तिष्क प्रकार {type}{emoji} है! Neural Pathway Scanner से पता चला!",

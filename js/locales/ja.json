@@ -164,7 +164,17 @@
     "eqTest": "EQテスト",
     "hspTest": "HSPテスト",
     "mentalAge": "精神年齢",
-    "iqTest": "IQテスト"
+    "iqTest": "IQテスト",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "認知マップをさらに探索",
+    "tests": "すべての心理テスト",
+    "testsDesc": "EQ、HSP、ストレス、恋愛、性格テストをまとめて探せます。",
+    "mbti": "MBTIタイプマップ",
+    "mbtiDesc": "あなたの思考スタイルを16タイプの性格プロフィールと比較。",
+    "guide": "脳タイプガイド",
+    "guideDesc": "脳タイプが習慣、仕事、人間関係にどう関わるかを読む。"
   },
   "share": {
     "twitterText": "私の脳タイプは{type}{emoji}！Neural Pathway Scannerで判明！",

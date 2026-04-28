@@ -232,6 +232,26 @@ class NeuralPathwayScanner {
         }
     }
 
+    trackEvent(eventName, params = {}) {
+        const payload = Object.assign({ app_name: 'brain-type' }, params);
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, payload);
+        } else {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(Object.assign({ event: eventName }, payload));
+        }
+    }
+
+    getSlugFromHref(href) {
+        try {
+            const url = new URL(href, window.location.origin);
+            const parts = url.pathname.split('/').filter(Boolean);
+            return parts[parts.length - 1] || 'home';
+        } catch (error) {
+            return 'unknown';
+        }
+    }
+
     setupEventListeners() {
         const startBtn = document.getElementById('start-btn');
         if (startBtn) startBtn.addEventListener('click', () => this.startScan());
@@ -265,6 +285,40 @@ class NeuralPathwayScanner {
         if (shareTwitter) shareTwitter.addEventListener('click', () => this.shareTwitter());
         if (shareFacebook) shareFacebook.addEventListener('click', () => this.shareFacebook());
         if (shareCopy) shareCopy.addEventListener('click', () => this.shareCopy());
+
+        document.querySelectorAll('.growth-card').forEach((card, index) => {
+            card.addEventListener('click', () => {
+                this.trackEvent('brain_type_growth_click', {
+                    cta_surface: card.getAttribute('data-growth-surface') || 'intro_growth',
+                    link_position: index + 1,
+                    target_slug: card.getAttribute('data-target-slug') || this.getSlugFromHref(card.href),
+                    destination: card.href,
+                    target_label: card.textContent.trim().replace(/\s+/g, ' ').slice(0, 120)
+                });
+            });
+        });
+
+        document.querySelectorAll('.related-card').forEach((card, index) => {
+            card.addEventListener('click', () => {
+                this.trackEvent('brain_type_related_click', {
+                    related_position: index + 1,
+                    related_key: card.getAttribute('data-related-key') || this.getSlugFromHref(card.href),
+                    destination: card.href,
+                    target_label: card.textContent.trim().replace(/\s+/g, ' ').slice(0, 120)
+                });
+            });
+        });
+
+        document.querySelectorAll('.related-games a').forEach((link, index) => {
+            link.addEventListener('click', () => {
+                this.trackEvent('brain_type_footer_link_click', {
+                    link_position: index + 1,
+                    target_slug: this.getSlugFromHref(link.href),
+                    destination: link.href,
+                    target_label: link.textContent.trim()
+                });
+            });
+        });
     }
 
     initTheme() {

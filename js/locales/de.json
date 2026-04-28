@@ -164,7 +164,17 @@
     "eqTest": "EQ-Test",
     "hspTest": "HSP-Test",
     "mentalAge": "Mentales Alter",
-    "iqTest": "IQ-Test"
+    "iqTest": "IQ-Test",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "Erkunde deine kognitive Karte weiter",
+    "tests": "Alle Psychologie-Tests",
+    "testsDesc": "Finde EQ, HSP, Stress, Beziehungen und Personlichkeitstests in einem Hub.",
+    "mbti": "MBTI-Typenkarte",
+    "mbtiDesc": "Vergleiche deinen Denkstil mit den 16 Personlichkeitsprofilen.",
+    "guide": "Gehirntyp-Guide",
+    "guideDesc": "Lies, wie dein Ergebnis mit Gewohnheiten, Arbeit und Beziehungen zusammenhangt."
   },
   "share": {
     "twitterText": "Mein Gehirntyp ist {type}{emoji}! Gescannt vom Neural Pathway Scanner!",

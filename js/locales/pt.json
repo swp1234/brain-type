@@ -164,7 +164,17 @@
     "eqTest": "Teste de QE",
     "hspTest": "Teste HSP",
     "mentalAge": "Idade Mental",
-    "iqTest": "Teste de QI"
+    "iqTest": "Teste de QI",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "Continue explorando seu mapa cognitivo",
+    "tests": "Todos os testes psicologicos",
+    "testsDesc": "Encontre EQ, HSP, estresse, relacionamento e testes de personalidade em um hub.",
+    "mbti": "Mapa de tipos MBTI",
+    "mbtiDesc": "Compare seu estilo de pensamento com os 16 perfis de personalidade.",
+    "guide": "Guia de tipo cerebral",
+    "guideDesc": "Leia como seu resultado se conecta a habitos, trabalho e relacionamentos."
   },
   "share": {
     "twitterText": "Meu tipo de cérebro é {type}{emoji}! Escaneado pelo Neural Pathway Scanner!",

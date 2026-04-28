@@ -412,6 +412,61 @@ body {
     color: var(--text-secondary);
 }
 
+.growth-bridge {
+    margin: 22px auto 0;
+    padding: 16px;
+    background: rgba(255,255,255,0.045);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    text-align: left;
+}
+
+.growth-heading {
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 0 0 12px;
+}
+
+.growth-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.growth-card {
+    display: block;
+    padding: 12px 14px;
+    color: var(--text-primary);
+    text-decoration: none;
+    background: rgba(0,0,0,0.12);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    min-height: 70px;
+    transition: transform 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.growth-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(224,64,251,0.45);
+    background: rgba(224,64,251,0.1);
+}
+
+.growth-card-title {
+    display: block;
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.growth-card-desc {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.45;
+}
+
 /* === SCAN SCREEN === */
 #scan-screen {
     padding: 16px 20px;

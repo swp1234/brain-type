@@ -164,7 +164,17 @@
     "eqTest": "EQ Testi",
     "hspTest": "HSP Testi",
     "mentalAge": "Zihinsel Yaş",
-    "iqTest": "IQ Testi"
+    "iqTest": "IQ Testi",
+    "hailMaryMode": "Hail Mary Mode Test"
+  },
+  "growth": {
+    "heading": "Bilişsel haritanı keşfetmeye devam et",
+    "tests": "Tum psikoloji testleri",
+    "testsDesc": "EQ, HSP, stres, ilişki ve kişilik testlerini tek merkezde bul.",
+    "mbti": "MBTI tip haritası",
+    "mbtiDesc": "Düşünme stilini 16 kişilik profiliyle karşılaştır.",
+    "guide": "Beyin tipi rehberi",
+    "guideDesc": "Beyin tipinin alışkanlık, iş ve ilişkilerle bağlantısını oku."
   },
   "share": {
     "twitterText": "Beyin tipim {type}{emoji}! Neural Pathway Scanner ile tarattım!",
