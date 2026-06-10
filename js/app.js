@@ -197,6 +197,7 @@ class NeuralPathwayScanner {
         this.timeLeft = 3000;
         this.resultType = null;
         this.isTransitioning = false;
+        this.resultViewTracked = false;
         this.hideLoader();
         this.init();
     }
@@ -240,6 +241,40 @@ class NeuralPathwayScanner {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push(Object.assign({ event: eventName }, payload));
         }
+    }
+
+    getCurrentLang() {
+        if (window.i18n && typeof i18n.getCurrentLanguage === 'function') {
+            return i18n.getCurrentLanguage();
+        }
+        return document.documentElement.lang || 'en';
+    }
+
+    getShareUrl() {
+        const url = new URL(window.location.origin + window.location.pathname);
+        const resultType = this.resultType || 'unknown';
+        url.searchParams.set('lang', this.getCurrentLang());
+        url.searchParams.set('utm_source', 'share');
+        url.searchParams.set('utm_medium', 'brain_type_result');
+        url.searchParams.set('utm_campaign', 'personality_result_share');
+        url.searchParams.set('utm_content', resultType);
+        if (this.resultType) url.searchParams.set('brain_type', this.resultType);
+        return url.toString();
+    }
+
+    getShareEventParams(method, extra = {}) {
+        const resultType = this.resultType || 'unknown';
+        return Object.assign({
+            content_type: 'test_result',
+            surface: 'result_actions',
+            method,
+            result_type: resultType,
+            lang: this.getCurrentLang(),
+            utm_source: 'share',
+            utm_medium: 'brain_type_result',
+            utm_campaign: 'personality_result_share',
+            utm_content: resultType
+        }, extra);
     }
 
     getSlugFromHref(href) {
@@ -382,6 +417,7 @@ class NeuralPathwayScanner {
         this.currentRound = 0;
         this.scores = {};
         this.resultType = null;
+        this.resultViewTracked = false;
 
         // Reset all neural pathways in SVG
         for (let i = 0; i < 10; i++) {
@@ -648,6 +684,16 @@ class NeuralPathwayScanner {
 
         // Confetti
         this.createConfetti();
+
+        if (!this.resultViewTracked) {
+            this.resultViewTracked = true;
+            this.trackEvent('result_view', this.getShareEventParams('view', {
+                surface: 'result_screen'
+            }));
+            this.trackEvent('brain_type_result_view', this.getShareEventParams('view', {
+                surface: 'result_screen'
+            }));
+        }
     }
 
     calculatePercentile() {
@@ -743,37 +789,40 @@ class NeuralPathwayScanner {
         const text = template
             .replace('{type}', t(type.nameKey))
             .replace('{emoji}', type.emoji);
-        const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.href)}`;
+        const shareUrl = this.getShareUrl();
+        const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`;
         window.open(url, '_blank', 'width=550,height=420');
 
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'share', { method: 'twitter', result_type: this.resultType });
-        }
+        const params = this.getShareEventParams('twitter', { share_url: shareUrl });
+        this.trackEvent('brain_type_share_click', params);
+        this.trackEvent('share', params);
     }
 
     shareFacebook() {
-        const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+        const shareUrl = this.getShareUrl();
+        const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
         window.open(url, '_blank', 'width=550,height=420');
 
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'share', { method: 'facebook', result_type: this.resultType });
-        }
+        const params = this.getShareEventParams('facebook', { share_url: shareUrl });
+        this.trackEvent('brain_type_share_click', params);
+        this.trackEvent('share', params);
     }
 
     shareCopy() {
         const type = BRAIN_TYPES[this.resultType];
         const t = (key) => (window.i18n && typeof i18n.t === 'function') ? i18n.t(key) : key;
+        const shareUrl = this.getShareUrl();
         const template = t('share.copyText');
         const text = template
             .replace('{type}', t(type.nameKey))
             .replace('{emoji}', type.emoji)
-            .replace('{url}', window.location.href);
+            .replace('{url}', shareUrl);
 
         navigator.clipboard.writeText(text).then(() => {
             alert(t('message.copy_success'));
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'share', { method: 'copy', result_type: this.resultType });
-            }
+            const params = this.getShareEventParams('clipboard', { share_url: shareUrl });
+            this.trackEvent('brain_type_copy_link', params);
+            this.trackEvent('share', params);
         }).catch(() => {
             alert(t('message.copy_error'));
         });
@@ -783,6 +832,7 @@ class NeuralPathwayScanner {
         this.currentRound = 0;
         this.scores = {};
         this.resultType = null;
+        this.resultViewTracked = false;
         clearInterval(this.timerInterval);
         this.showScreen('intro-screen');
     }
