@@ -56,7 +56,7 @@
         "description": "10 rapid-fire decisions activate your neural pathways and reveal your brain type through simulated brain scanning.",
         "url": "https://dopabrain.com/brain-type/",
         "image": "https://dopabrain.com/brain-type/icon-512.svg",
-        "dateModified": "2026-06-10",
+        "dateModified": "2026-06-20",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Safari, Firefox, Edge).",
@@ -439,10 +439,36 @@
                     <div class="traits-list" id="traits-list"></div>
                 </div>
 
+                <!-- Best Next Step -->
+                <div class="next-step-card" id="next-step-card">
+                    <p class="next-step-label" data-i18n="result.moreTests">Explore More</p>
+                    <div class="next-step-main">
+                        <span class="next-step-emoji" id="primary-related-emoji" aria-hidden="true">&#129504;</span>
+                        <div>
+                            <h3 class="next-step-title" id="primary-related-title">EQ Test</h3>
+                            <p class="next-step-desc" data-i18n="growth.testsDesc">Find EQ, HSP, stress, relationship, and fun personality tests in one hub.</p>
+                        </div>
+                    </div>
+                    <a href="/eq-test/" class="next-step-cta" id="primary-related-cta" data-related-key="eq-test" data-related-rank="1">
+                        <span id="primary-related-cta-text">EQ Test</span>
+                    </a>
+                </div>
+
+                <!-- Result Ad -->
+                <div class="result-ad-slot" id="result-inline-ad" aria-label="Sponsored">
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-3600813755953882"
+                        data-ad-slot="auto"
+                        data-ad-format="horizontal"
+                        data-full-width-responsive="true"
+                        data-ad-surface="brain_type_result"></ins>
+                </div>
+
                 <!-- Related Tests -->
                 <div class="related-tests">
                     <h3 data-i18n="result.moreTests">Explore More</h3>
-                    <div class="related-grid">
+                    <div class="related-grid" id="related-grid">
                         <a href="/eq-test/" class="related-card" data-related-key="eq-test" style="--card-color: #00bcd4"><span class="related-emoji">🧠</span><span class="related-name" data-i18n="related.eqTest">EQ Test</span></a>
                         <a href="/hail-mary-mode/" class="related-card" data-related-key="hail-mary-mode" style="--card-color: #ff8c42"><span class="related-emoji">&#128680;</span><span class="related-name" data-i18n="related.hailMaryMode">Hail Mary Mode Test</span></a>
                         <a href="/hsp-test/" class="related-card" data-related-key="hsp-test" style="--card-color: #7c3aed"><span class="related-emoji">🔮</span><span class="related-name" data-i18n="related.hspTest">HSP Test</span></a>

@@ -198,6 +198,7 @@ class NeuralPathwayScanner {
         this.resultType = null;
         this.isTransitioning = false;
         this.resultViewTracked = false;
+        this.resultInlineAdLoaded = false;
         this.hideLoader();
         this.init();
     }
@@ -336,13 +337,26 @@ class NeuralPathwayScanner {
         document.querySelectorAll('.related-card').forEach((card, index) => {
             card.addEventListener('click', () => {
                 this.trackEvent('brain_type_related_click', {
-                    related_position: index + 1,
+                    related_position: Number(card.getAttribute('data-related-rank') || index + 1),
                     related_key: card.getAttribute('data-related-key') || this.getSlugFromHref(card.href),
                     destination: card.href,
                     target_label: card.textContent.trim().replace(/\s+/g, ' ').slice(0, 120)
                 });
             });
         });
+
+        const primaryRelatedCta = document.getElementById('primary-related-cta');
+        if (primaryRelatedCta) {
+            primaryRelatedCta.addEventListener('click', () => {
+                this.trackEvent('brain_type_primary_cta_click', {
+                    result_type: this.resultType || 'unknown',
+                    related_key: primaryRelatedCta.getAttribute('data-related-key') || this.getSlugFromHref(primaryRelatedCta.href),
+                    related_rank: Number(primaryRelatedCta.getAttribute('data-related-rank') || '1'),
+                    destination: primaryRelatedCta.href,
+                    surface: 'result_next_step'
+                });
+            });
+        }
 
         document.querySelectorAll('.related-games a').forEach((link, index) => {
             link.addEventListener('click', () => {
@@ -354,6 +368,78 @@ class NeuralPathwayScanner {
                 });
             });
         });
+    }
+
+    getRecommendationOrder() {
+        const map = {
+            creator: ['hsp-test', 'eq-test', 'mental-age', 'hail-mary-mode', 'iq-test'],
+            analyzer: ['iq-test', 'eq-test', 'mental-age', 'hail-mary-mode', 'hsp-test'],
+            empath: ['eq-test', 'hsp-test', 'mental-age', 'hail-mary-mode', 'iq-test'],
+            intuitive: ['hsp-test', 'mental-age', 'eq-test', 'hail-mary-mode', 'iq-test'],
+            strategist: ['hail-mary-mode', 'iq-test', 'eq-test', 'mental-age', 'hsp-test'],
+            visionary: ['hail-mary-mode', 'eq-test', 'hsp-test', 'iq-test', 'mental-age'],
+            guardian: ['hsp-test', 'eq-test', 'mental-age', 'iq-test', 'hail-mary-mode'],
+            dynamo: ['hail-mary-mode', 'eq-test', 'iq-test', 'hsp-test', 'mental-age']
+        };
+        return map[this.resultType] || map.empath;
+    }
+
+    updatePrimaryRecommendation() {
+        const grid = document.getElementById('related-grid');
+        const primaryCta = document.getElementById('primary-related-cta');
+        const primaryTitle = document.getElementById('primary-related-title');
+        const primaryEmoji = document.getElementById('primary-related-emoji');
+        const primaryText = document.getElementById('primary-related-cta-text');
+        if (!grid || !primaryCta || !primaryTitle || !primaryEmoji || !primaryText) return;
+
+        const order = this.getRecommendationOrder();
+        const rankMap = {};
+        order.forEach((key, index) => { rankMap[key] = index; });
+
+        const cards = Array.from(grid.querySelectorAll('.related-card'));
+        cards.sort((a, b) => {
+            const aKey = a.getAttribute('data-related-key') || '';
+            const bKey = b.getAttribute('data-related-key') || '';
+            const aRank = Object.prototype.hasOwnProperty.call(rankMap, aKey) ? rankMap[aKey] : 999;
+            const bRank = Object.prototype.hasOwnProperty.call(rankMap, bKey) ? rankMap[bKey] : 999;
+            return aRank - bRank;
+        });
+        cards.forEach((card, index) => {
+            card.setAttribute('data-related-rank', String(index + 1));
+            grid.appendChild(card);
+        });
+
+        const firstCard = cards[0];
+        if (!firstCard) return;
+        const title = firstCard.querySelector('.related-name')?.textContent?.trim() || firstCard.getAttribute('data-related-key') || 'EQ Test';
+        const emoji = firstCard.querySelector('.related-emoji')?.textContent?.trim() || '\u{1F9E0}';
+        const relatedKey = firstCard.getAttribute('data-related-key') || this.getSlugFromHref(firstCard.href);
+        primaryTitle.textContent = title;
+        primaryEmoji.textContent = emoji;
+        primaryText.textContent = title;
+        primaryCta.href = firstCard.href;
+        primaryCta.setAttribute('data-related-key', relatedKey);
+        primaryCta.setAttribute('data-related-rank', firstCard.getAttribute('data-related-rank') || '1');
+    }
+
+    ensureResultAdLoaded() {
+        if (this.resultInlineAdLoaded) return;
+        const resultAd = document.getElementById('result-inline-ad');
+        const adNode = resultAd ? resultAd.querySelector('.adsbygoogle') : null;
+        if (!adNode) return;
+
+        try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (error) {
+            // Ad blockers or delayed AdSense init should not break the result flow.
+        }
+
+        this.resultInlineAdLoaded = true;
+        this.trackEvent('brain_type_result_ad_impression', this.getShareEventParams('ad_impression', {
+            surface: 'result_inline',
+            ad_surface: adNode.getAttribute('data-ad-surface') || 'brain_type_result',
+            ad_slot: adNode.getAttribute('data-ad-slot') || 'auto'
+        }));
     }
 
     initTheme() {
@@ -682,6 +768,9 @@ class NeuralPathwayScanner {
         // Build result brain pathways
         this.buildResultBrainPaths(type.color);
 
+        this.updatePrimaryRecommendation();
+        this.ensureResultAdLoaded();
+
         // Confetti
         this.createConfetti();
 
@@ -833,6 +922,7 @@ class NeuralPathwayScanner {
         this.scores = {};
         this.resultType = null;
         this.resultViewTracked = false;
+        this.resultInlineAdLoaded = false;
         clearInterval(this.timerInterval);
         this.showScreen('intro-screen');
     }
