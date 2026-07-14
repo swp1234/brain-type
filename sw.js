@@ -1,5 +1,5 @@
 // 뇌 유형 테스트 - Service Worker
-const CACHE_NAME = 'brain-type-v2';
+const CACHE_NAME = 'brain-type-v3';
 const urlsToCache = [
     './',
     './index.html',

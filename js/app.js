@@ -199,6 +199,7 @@ class NeuralPathwayScanner {
         this.isTransitioning = false;
         this.resultViewTracked = false;
         this.resultInlineAdLoaded = false;
+        this.autoStartConsumed = false;
         this.hideLoader();
         this.init();
     }
@@ -223,6 +224,7 @@ class NeuralPathwayScanner {
         }
         this.setupEventListeners();
         this.setupGA();
+        this.tryAutoStart();
     }
 
     setupGA() {
@@ -288,9 +290,31 @@ class NeuralPathwayScanner {
         }
     }
 
+    getUrlParam(name) {
+        try {
+            return new URLSearchParams(window.location.search || '').get(name) || '';
+        } catch (error) {
+            return '';
+        }
+    }
+
+    getAutoStartSurface() {
+        if (this.getUrlParam('start') !== '1') return '';
+        return this.getUrlParam('surface') || this.getUrlParam('utm_content') || 'url_start';
+    }
+
+    tryAutoStart() {
+        const surface = this.getAutoStartSurface();
+        if (!surface || this.autoStartConsumed) return;
+        const introScreen = document.getElementById('intro-screen');
+        if (!introScreen || !introScreen.classList.contains('active')) return;
+        this.autoStartConsumed = true;
+        setTimeout(() => this.startScan(surface), 80);
+    }
+
     setupEventListeners() {
         const startBtn = document.getElementById('start-btn');
-        if (startBtn) startBtn.addEventListener('click', () => this.startScan());
+        if (startBtn) startBtn.addEventListener('click', () => this.startScan(startBtn.getAttribute('data-cta-surface') || 'intro_primary'));
 
         const retryBtn = document.getElementById('retry-btn');
         if (retryBtn) retryBtn.addEventListener('click', () => this.reset());
@@ -495,10 +519,21 @@ class NeuralPathwayScanner {
     }
 
     // === PHASE 1: RAPID FIRE ===
-    startScan() {
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'test_start', { app_name: 'brain-type', content_type: 'neural_scan' });
-        }
+    startScan(ctaSurface = 'intro_primary') {
+        this.trackEvent('brain_type_intro_start_click', {
+            event_category: 'brain_type',
+            cta_surface: ctaSurface
+        });
+        this.trackEvent('quiz_start', {
+            event_category: 'brain_type',
+            content_type: 'neural_scan',
+            cta_surface: ctaSurface
+        });
+        this.trackEvent('test_start', {
+            event_category: 'brain_type',
+            content_type: 'neural_scan',
+            cta_surface: ctaSurface
+        });
 
         this.currentRound = 0;
         this.scores = {};
