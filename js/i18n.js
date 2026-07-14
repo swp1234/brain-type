@@ -41,9 +41,10 @@ try {
                 this.isLoading = false;
                 return data;
             } catch (e) {
-                console.error('i18n load error:', e);
+                console.warn('i18n load warning:', e);
                 this.isLoading = false;
                 if (lang !== 'ko') return this.loadTranslations('ko');
+                return null;
             }
         }
 
@@ -94,8 +95,8 @@ try {
         getCurrentLanguage() { return this.currentLang; }
 
         async init() {
-            await this.loadTranslations(this.currentLang);
-            this.updateUI();
+            const loaded = await this.loadTranslations(this.currentLang);
+            if (loaded) this.updateUI();
             this.updateLangButtons();
         }
     }

@@ -200,6 +200,8 @@ class NeuralPathwayScanner {
         this.resultViewTracked = false;
         this.resultInlineAdLoaded = false;
         this.autoStartConsumed = false;
+        this.introStickyViewSent = false;
+        this.introStickyMountTimer = null;
         this.hideLoader();
         this.init();
     }
@@ -225,6 +227,7 @@ class NeuralPathwayScanner {
         this.setupEventListeners();
         this.setupGA();
         this.tryAutoStart();
+        if (!this.autoStartConsumed) this.scheduleIntroStickyStart();
     }
 
     setupGA() {
@@ -244,6 +247,10 @@ class NeuralPathwayScanner {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push(Object.assign({ event: eventName }, payload));
         }
+    }
+
+    t(key) {
+        return (window.i18n && typeof i18n.t === 'function') ? i18n.t(key) : key;
     }
 
     getCurrentLang() {
@@ -310,6 +317,58 @@ class NeuralPathwayScanner {
         if (!introScreen || !introScreen.classList.contains('active')) return;
         this.autoStartConsumed = true;
         setTimeout(() => this.startScan(surface), 80);
+    }
+
+    shouldShowIntroStickyStart() {
+        if (this.getAutoStartSurface()) return false;
+        const introScreen = document.getElementById('intro-screen');
+        return Boolean(introScreen && introScreen.classList.contains('active'));
+    }
+
+    updateIntroStickyLabel() {
+        const sticky = document.querySelector('.brain-intro-sticky-start');
+        const label = sticky?.querySelector('.brain-intro-sticky-label');
+        if (label) label.textContent = this.t('button.start');
+    }
+
+    trackIntroStickyView() {
+        if (this.introStickyViewSent) return;
+        this.introStickyViewSent = true;
+        this.trackEvent('brain_type_intro_sticky_view', {
+            event_category: 'brain_type',
+            cta_surface: 'intro_sticky'
+        });
+    }
+
+    removeIntroStickyStart() {
+        if (this.introStickyMountTimer) {
+            clearTimeout(this.introStickyMountTimer);
+            this.introStickyMountTimer = null;
+        }
+        document.querySelector('.brain-intro-sticky-start')?.remove();
+        document.body.classList.remove('has-brain-intro-sticky-start');
+    }
+
+    mountIntroStickyStart() {
+        if (!this.shouldShowIntroStickyStart() || document.querySelector('.brain-intro-sticky-start')) return;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'brain-intro-sticky-start';
+        button.setAttribute('data-cta-surface', 'intro_sticky');
+        button.innerHTML = '<span class="brain-intro-sticky-label"></span>';
+        button.addEventListener('click', () => this.startScan('intro_sticky'));
+        document.body.appendChild(button);
+        document.body.classList.add('has-brain-intro-sticky-start');
+        this.updateIntroStickyLabel();
+        this.trackIntroStickyView();
+    }
+
+    scheduleIntroStickyStart() {
+        if (this.introStickyMountTimer) clearTimeout(this.introStickyMountTimer);
+        this.introStickyMountTimer = setTimeout(() => {
+            this.introStickyMountTimer = null;
+            this.mountIntroStickyStart();
+        }, 650);
     }
 
     setupEventListeners() {
@@ -509,6 +568,8 @@ class NeuralPathwayScanner {
         // If on result screen, re-render result
         if (this.resultType) {
             this.displayResult();
+        } else {
+            this.updateIntroStickyLabel();
         }
     }
 
@@ -516,6 +577,11 @@ class NeuralPathwayScanner {
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
         document.getElementById(id).classList.add('active');
         window.scrollTo(0, 0);
+        if (id === 'intro-screen') {
+            this.scheduleIntroStickyStart();
+        } else {
+            this.removeIntroStickyStart();
+        }
     }
 
     // === PHASE 1: RAPID FIRE ===

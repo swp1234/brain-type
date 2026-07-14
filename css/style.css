@@ -74,6 +74,34 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.brain-intro-sticky-start {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: max(14px, env(safe-area-inset-bottom));
+    z-index: 9000;
+    width: auto;
+    max-width: 420px;
+    min-height: 54px;
+    margin: 0 auto;
+    padding: 14px 18px;
+    border: 1px solid rgba(224,64,251,0.34);
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: #fff;
+    box-shadow: 0 14px 36px rgba(0,0,0,0.34), 0 0 22px rgba(224,64,251,0.24);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.15;
+    cursor: pointer;
+}
+
+.brain-intro-sticky-start:active { transform: scale(0.98); }
+.brain-intro-sticky-start:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 3px; }
+.brain-intro-sticky-label { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.has-brain-intro-sticky-start #intro-screen.active { padding-bottom: 92px; }
+[data-theme="light"] .brain-intro-sticky-start { box-shadow: 0 12px 28px rgba(170,0,204,0.2); }
+
 /* === App Loader === */
 .app-loader {
     position: fixed;
