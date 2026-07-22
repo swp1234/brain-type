@@ -225,6 +225,7 @@ class NeuralPathwayScanner {
             console.warn('i18n init failed:', e.message);
         }
         this.setupEventListeners();
+        this.updateGrowthGuideLink();
         this.setupGA();
         this.tryAutoStart();
         if (!this.autoStartConsumed) this.scheduleIntroStickyStart();
@@ -258,6 +259,21 @@ class NeuralPathwayScanner {
             return i18n.getCurrentLanguage();
         }
         return document.documentElement.lang || 'en';
+    }
+
+    updateGrowthGuideLink() {
+        const guide = document.getElementById('brain-type-action-guide');
+        if (!guide) return;
+        const lang = this.getCurrentLang();
+        const paths = {
+            ko: '/portal/blog/ko/brain-type-work-study-action-plan.html',
+            zh: '/portal/blog/zh/brain-type-work-study-action-plan.html',
+            en: '/portal/blog/en/brain-type-work-study-action-plan.html',
+            ja: '/portal/blog/ja/brain-type-test.html',
+            hi: '/portal/blog/hi/brain-type-test.html'
+        };
+        guide.href = paths[lang] || paths.en;
+        guide.setAttribute('data-target-slug', lang + '-brain-type-action-guide');
     }
 
     getShareUrl() {
@@ -559,6 +575,7 @@ class NeuralPathwayScanner {
         if (window.i18n) {
             await i18n.setLanguage(lang);
         }
+        this.updateGrowthGuideLink();
         document.getElementById('lang-menu').classList.add('hidden');
 
         // If on scan screen, update current scenario
