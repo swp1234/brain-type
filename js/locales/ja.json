@@ -1,29 +1,29 @@
 {
   "app": {
-    "title": "Neural Pathway Scanner",
+    "title": "脳タイプ診断",
     "loading": "読み込み中...",
     "skipLink": "本文へ"
   },
   "meta": {
-    "description": "10の瞬間的な判断で神経経路をスキャン。あなたの脳タイプを発見！",
-    "keywords": "脳タイプ診断, 神経経路スキャン, 心理テスト, ブレインスキャン",
-    "og_title": "Neural Pathway Scanner - あなたの脳タイプは？",
-    "og_description": "10の即断即決で神経経路を活性化。あなたの脳タイプを発見！",
-    "twitter_title": "Neural Pathway Scanner - 脳タイプ診断",
-    "twitter_description": "10の瞬間的な判断であなたの脳タイプを発見！",
-    "page_title": "Neural Pathway Scanner - 脳タイプ診断 | DopaBrain"
+    "description": "10の時間制限付き選択で、創造・分析・共感・直感・戦略などの意思決定の傾向を探ります。",
+    "keywords": "脳タイプ診断, 認知スタイル, 意思決定タイプ, 思考スタイルクイズ",
+    "og_title": "脳タイプ診断 - 認知スタイルクイズ",
+    "og_description": "10の選択で意思決定の傾向を探ります。無料・登録不要・すぐに結果表示。",
+    "twitter_title": "脳タイプ診断 - 認知スタイルクイズ",
+    "twitter_description": "10の選択で意思決定の傾向を探ります。",
+    "page_title": "脳タイプ診断 - 無料の認知スタイルクイズ | DopaBrain"
   },
   "intro": {
-    "title": "Neural Pathway Scanner",
-    "subtitle": "瞬間的な判断で神経経路をスキャンします。",
+    "title": "脳タイプ診断",
+    "subtitle": "10の時間制限付き選択で意思決定の傾向を探ります。",
     "feature_rapid": "10の瞬間的な判断",
     "feature_timer": "各3秒の制限時間",
-    "feature_scan": "リアルタイム神経経路マッピング",
+    "feature_scan": "選択パターンに基づくスコア",
     "time_estimate": "所要時間：約1分"
   },
   "button": {
-    "start": "ブレインスキャン開始",
-    "retry": "もう一度スキャン",
+    "start": "無料クイズを始める",
+    "retry": "もう一度試す",
     "share_twitter": "Twitter",
     "share_facebook": "Facebook",
     "share_copy": "リンクコピー"
@@ -63,13 +63,13 @@
     "9b": "慎重に検討する"
   },
   "analyzing": {
-    "title": "神経パターンを分析中...",
-    "mapping": "神経接続をマッピング中...",
-    "synapses": "シナプス活動を測定中...",
-    "patterns": "認知パターンを分析中...",
-    "cognitive": "認知プロファイルを構築中...",
-    "finalizing": "脳タイプを決定中...",
-    "complete": "分析完了！"
+    "title": "選択パターンを計算中...",
+    "mapping": "回答を読み取り中...",
+    "synapses": "回答の重みを比較中...",
+    "patterns": "好みのパターンを整理中...",
+    "cognitive": "振り返り用プロフィールを作成中...",
+    "finalizing": "最も近いプロフィールを選択中...",
+    "complete": "プロフィール完成！"
   },
   "type": {
     "creator": {
@@ -153,12 +153,12 @@
     "drive": "推進力"
   },
   "result": {
-    "neural_metrics": "神経指標",
+    "neural_metrics": "プロフィール指標",
     "key_traits": "主要特性",
     "share": "結果を共有",
     "related": "関連テスト",
     "moreTests": "もっと見る",
-    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じ脳タイプです"
+    "profileStat": "回答は8つの振り返り用プロフィールのうち1つに最も近いパターンです。"
   },
   "related": {
     "eqTest": "EQテスト",
@@ -177,9 +177,9 @@
     "guideDesc": "脳タイプが習慣、仕事、人間関係にどう関わるかを読む。"
   },
   "share": {
-    "twitterText": "私の脳タイプは{type}{emoji}！Neural Pathway Scannerで判明！",
+    "twitterText": "私の脳タイプは{type}{emoji}！脳タイプ診断でチェック！",
     "copyText": "私の脳タイプは{type}{emoji}！{url}",
-    "canvasTitle": "Neural Pathway Scanner"
+    "canvasTitle": "脳タイプ診断"
   },
   "message": {
     "copy_success": "リンクをコピーしました！",
@@ -197,13 +197,15 @@
     "result2": "分析者脳 -- 論理 & データ",
     "result3": "共感者脳 -- 感情知性",
     "result4": "戦略家脳 -- 計画 & リーダーシップ",
-    "socialProof": "今日1,950+人がスキャン完了"
+    "trustNote": "非公開 · 登録不要 · すぐに結果"
   },
   "about": {
     "toggle": "この脳タイプテストについて",
     "heading1": "脳タイプテストの仕組み",
-    "text1": "3秒タイマー付きの10の瞬時判断シナリオを提示します。",
+    "text1": "計画か行動か、新しさか慣れか、直感か調査かといった好みを10の二択で確認します。各回答を関連プロフィールに加点し、合計が最も高い結果を表示します。",
     "heading2": "あなたの脳タイプを理解する",
-    "text2": "各脳タイプはユニークな認知指紋を表します。"
+    "text2": "8つのプロフィールは固定された人格ではなく、振り返りのためのヒントです。実際の経験と比べ、役立つ部分だけを活用してください。",
+    "heading3": "このクイズが測定しないもの",
+    "text3": "この娯楽用クイズは脳のスキャンやドーパミン測定、診断を行わず、心理・医療の専門的助言に代わるものではありません。"
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,11 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 
-    <meta name="description" content="What's your brain type? Take this free dopamine-driven neural pathway quiz. 10 rapid-fire decisions reveal if you're a Creator, Analyzer, or Empath. Instant results!" data-i18n="meta.description">
-    <meta name="keywords" content="brain type test, dopamine test, dopamine quiz, neural pathway, psychology test, brain scan, cognitive style, dopamine type" data-i18n="meta.keywords">
+    <meta name="description" content="Take 10 timed choices to explore your cognitive style. Compare creative, analytical, empathic, intuitive, strategic, and action-oriented preferences. Free, private, instant result." data-i18n="meta.description">
+    <meta name="keywords" content="brain type test, cognitive style quiz, decision style test, thinking style, personality quiz" data-i18n="meta.keywords">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Neural Pathway Scanner - What's Your Brain Type?" data-i18n="meta.og_title">
-    <meta property="og:description" content="10 rapid-fire decisions activate your neural pathways. Discover your brain type through our simulated brain scan!" data-i18n="meta.og_description">
+    <meta property="og:title" content="Brain Type Test - Cognitive Style Quiz" data-i18n="meta.og_title">
+    <meta property="og:description" content="Explore your decision-making preferences with 10 timed choices. Free, private, instant result." data-i18n="meta.og_description">
     <meta property="og:image" content="https://dopabrain.com/portal/img/og/brain-type.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -27,37 +27,50 @@
     <meta property="og:locale:alternate" content="hi_IN">
     <meta property="og:locale:alternate" content="ru_RU">
     <!-- hreflang for multilingual SEO -->
-    <link rel="alternate" hreflang="ko" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="ko" href="https://dopabrain.com/brain-type/?lang=ko">
     <link rel="alternate" hreflang="en" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="zh" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="hi" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="ru" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="ja" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="es" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="pt" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="id" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="tr" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="de" href="https://dopabrain.com/brain-type/">
-    <link rel="alternate" hreflang="fr" href="https://dopabrain.com/brain-type/">
+    <link rel="alternate" hreflang="zh" href="https://dopabrain.com/brain-type/?lang=zh">
+    <link rel="alternate" hreflang="hi" href="https://dopabrain.com/brain-type/?lang=hi">
+    <link rel="alternate" hreflang="ru" href="https://dopabrain.com/brain-type/?lang=ru">
+    <link rel="alternate" hreflang="ja" href="https://dopabrain.com/brain-type/?lang=ja">
+    <link rel="alternate" hreflang="es" href="https://dopabrain.com/brain-type/?lang=es">
+    <link rel="alternate" hreflang="pt" href="https://dopabrain.com/brain-type/?lang=pt">
+    <link rel="alternate" hreflang="id" href="https://dopabrain.com/brain-type/?lang=id">
+    <link rel="alternate" hreflang="tr" href="https://dopabrain.com/brain-type/?lang=tr">
+    <link rel="alternate" hreflang="de" href="https://dopabrain.com/brain-type/?lang=de">
+    <link rel="alternate" hreflang="fr" href="https://dopabrain.com/brain-type/?lang=fr">
     <link rel="alternate" hreflang="x-default" href="https://dopabrain.com/brain-type/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Neural Pathway Scanner - What's Your Brain Type?" data-i18n="meta.twitter_title">
-    <meta name="twitter:description" content="10 rapid-fire decisions reveal your brain type!" data-i18n="meta.twitter_description">
+    <meta name="twitter:title" content="Brain Type Test - Cognitive Style Quiz" data-i18n="meta.twitter_title">
+    <meta name="twitter:description" content="Explore your decision-making preferences with 10 timed choices." data-i18n="meta.twitter_description">
     <meta name="twitter:image" content="https://dopabrain.com/portal/img/og/brain-type.png">
     <meta name="twitter:site" content="@dopabrain">
     <link rel="canonical" href="https://dopabrain.com/brain-type/">
-    <title data-i18n="meta.page_title">Brain Type Test - Free Online Neural Scan | DopaBrain</title>
+    <title data-i18n="meta.page_title">Brain Type Test - Free Cognitive Style Quiz | DopaBrain</title>
+    <script>
+    (function () {
+        var lang = new URLSearchParams(window.location.search).get('lang');
+        if (!lang) return;
+        var target = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
+        if (!target) return;
+        var canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.href = target.href;
+        var ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.content = target.href;
+        document.documentElement.lang = lang;
+    })();
+    </script>
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Neural Pathway Scanner",
-        "description": "10 rapid-fire decisions activate your neural pathways and reveal your brain type through simulated brain scanning.",
+        "name": "Brain Type Test - Cognitive Style Quiz",
+        "description": "Ten timed choices group decision-making preferences into one of eight reflection profiles. This entertainment quiz is not a neurological or clinical assessment.",
         "url": "https://dopabrain.com/brain-type/",
         "image": "https://dopabrain.com/brain-type/icon-512.svg",
-        "dateModified": "2026-07-22",
-        "applicationCategory": "HealthApplication",
+        "dateModified": "2026-08-28",
+        "applicationCategory": "EntertainmentApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Safari, Firefox, Edge).",
         "inLanguage": ["ko", "en", "zh", "hi", "ru", "ja", "es", "pt", "id", "tr", "de", "fr"],
@@ -76,13 +89,6 @@
             "price": "0",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.5",
-            "ratingCount": "1950",
-            "bestRating": "5",
-            "worstRating": "1"
         }
     }
     </script>
@@ -99,56 +105,6 @@
         ]
     }
     </script>
-    <!-- FAQPage -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is a brain type test?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A brain type test measures your cognitive style through rapid decision-making scenarios. It reveals whether you lean toward analytical, creative, empathic, or strategic thinking patterns based on your instinctive responses."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How does the Neural Pathway Scanner work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "You face 10 rapid-fire scenarios with a 3-second timer each. Your instinctive choices activate simulated neural pathways, mapping your cognitive patterns into one of 8 brain types: Creator, Analyzer, Empath, Intuitive, Strategist, Visionary, Guardian, or Dynamo."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the 8 brain types?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The 8 brain types are: Creator Brain (imagination & innovation), Analyzer Brain (logic & data), Empath Brain (emotional intelligence), Intuitive Brain (pattern recognition), Strategist Brain (planning & leadership), Visionary Brain (future-oriented thinking), Guardian Brain (stability & care), and Dynamo Brain (action & energy)."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is the brain type test scientifically accurate?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "This test is designed for entertainment and self-reflection, not clinical diagnosis. It draws on cognitive psychology concepts about thinking styles but is not a medical assessment. It offers fun insights into your natural decision-making tendencies."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can my brain type change over time?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes! Your cognitive patterns can shift with life experiences, learning, and personal growth. Retaking the test at different points in your life may reveal how your thinking style has evolved."
-                }
-            }
-        ]
-    }
-    </script>
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -246,7 +202,7 @@
                     </svg>
                 </div>
                 <h1 class="intro-title" data-i18n="intro.title">Brain Type Test</h1>
-                <p class="intro-subtitle" data-i18n="intro.subtitle">Discover your cognitive style through 10 rapid-fire neural decisions.</p>
+                <p class="intro-subtitle" data-i18n="intro.subtitle">Explore your decision-making preferences through 10 timed choices.</p>
 
                 <!-- Result Preview Carousel -->
                 <div class="result-carousel" aria-live="polite">
@@ -258,8 +214,7 @@
                     </div>
                 </div>
 
-                <!-- Social Proof Badge -->
-                <div class="social-proof-badge" data-i18n="engage.socialProof">1,950+ brains scanned today</div>
+                <div class="social-proof-badge" data-i18n="engage.trustNote">Private · no sign-up · instant result</div>
 
                 <div class="intro-features">
                     <div class="feature-item">
@@ -272,11 +227,11 @@
                     </div>
                     <div class="feature-item">
                         <span class="feature-icon">&#x1F9E0;</span>
-                        <span class="feature-text" data-i18n="intro.feature_scan">Live neural pathway mapping</span>
+                        <span class="feature-text" data-i18n="intro.feature_scan">Pattern-based profile scoring</span>
                     </div>
                 </div>
 
-                <button id="start-btn" class="btn btn-primary btn-glow" data-i18n="button.start">Scan My Brain Now - It's Free</button>
+                <button id="start-btn" class="btn btn-primary btn-glow" data-i18n="button.start">Start the Free Quiz</button>
                 <p class="time-estimate" data-i18n="intro.time_estimate">Takes about 1 minute</p>
 
                 <nav class="growth-bridge" aria-label="Brain type next paths">
@@ -385,7 +340,7 @@
                     </svg>
                     <div class="scan-line"></div>
                 </div>
-                <h2 data-i18n="analyzing.title">Analyzing neural patterns...</h2>
+                <h2 data-i18n="analyzing.title">Calculating your choice pattern...</h2>
                 <div class="analyzing-progress">
                     <div class="analyzing-bar">
                         <div class="analyzing-fill" id="analyzing-fill"></div>
@@ -421,9 +376,9 @@
                     <p id="result-tagline" class="result-tagline"></p>
                 </div>
 
-                <!-- Neural Metrics -->
+                <!-- Profile dimensions -->
                 <div class="neural-metrics" id="neural-metrics">
-                    <h3 data-i18n="result.neural_metrics">Neural Metrics</h3>
+                    <h3 data-i18n="result.neural_metrics">Profile Dimensions</h3>
                     <div class="metrics-grid" id="metrics-grid"></div>
                 </div>
 
@@ -504,13 +459,15 @@
 
     <!-- About Section -->
     <section class="about-section collapsible-section" id="about-section">
-      <details>
+      <details open>
         <summary data-i18n="about.toggle">About This Brain Type Test</summary>
         <div class="about-content">
           <h2 data-i18n="about.heading1">How the Brain Type Test Works</h2>
-          <p data-i18n="about.text1">The Brain Type Test presents you with 10 rapid-fire decision scenarios, each with a 3-second timer. Your instinctive responses activate simulated neural pathways that map your cognitive style. The test analyzes patterns across creativity, logic, empathy, intuition, and drive to classify you into one of 8 distinct brain types.</p>
+          <p data-i18n="about.text1">Ten either-or choices capture preferences such as planning versus acting, novelty versus familiarity, and intuition versus research. Each answer adds weight to related profiles; the highest combined score determines the result.</p>
           <h2 data-i18n="about.heading2">Understanding Your Brain Type</h2>
-          <p data-i18n="about.text2">Each brain type represents a unique cognitive fingerprint. Whether you are a Creator who sees the world through imagination, an Analyzer who thrives on data, or a Dynamo who acts on instinct, your result reveals how your mind naturally processes decisions. Understanding your brain type can help you leverage your cognitive strengths in work, relationships, and personal growth.</p>
+          <p data-i18n="about.text2">The eight profiles are reflection prompts, not fixed identities. Compare the result with real situations and keep only the observations that help you make a better choice.</p>
+          <h2 data-i18n="about.heading3">What This Quiz Does Not Measure</h2>
+          <p data-i18n="about.text3">This entertainment quiz does not scan your brain, measure dopamine, diagnose a condition, or replace psychological or medical advice.</p>
         </div>
       </details>
     </section>

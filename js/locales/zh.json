@@ -1,29 +1,29 @@
 {
   "app": {
-    "title": "Neural Pathway Scanner",
+    "title": "大脑类型测试",
     "loading": "加载中...",
     "skipLink": "跳转到正文"
   },
   "meta": {
-    "description": "10个快速决策揭示你的大脑类型，通过模拟神经通路激活。",
-    "keywords": "大脑类型测试, 神经通路, 心理测试, 脑扫描, 认知风格",
-    "og_title": "Neural Pathway Scanner - 你的大脑是什么类型？",
-    "og_description": "10个快速决策激活你的神经通路。发现你的大脑类型！",
-    "twitter_title": "Neural Pathway Scanner - 大脑类型测试",
-    "twitter_description": "10个快速决策揭示你的大脑类型！",
-    "page_title": "Neural Pathway Scanner - 大脑类型测试 | DopaBrain"
+    "description": "通过10个限时选择，探索你在创造、分析、共情、直觉、策略和行动方面的决策偏好。",
+    "keywords": "大脑类型测试, 认知风格, 决策类型, 思维方式测验",
+    "og_title": "大脑类型测试 - 认知风格测验",
+    "og_description": "用10个选择探索你的决策偏好。免费、无需注册、即时结果。",
+    "twitter_title": "大脑类型测试 - 认知风格测验",
+    "twitter_description": "用10个选择探索你的决策偏好。",
+    "page_title": "大脑类型测试 - 免费认知风格测验 | DopaBrain"
   },
   "intro": {
-    "title": "Neural Pathway Scanner",
-    "subtitle": "通过快速决策扫描你的神经通路。",
+    "title": "大脑类型测试",
+    "subtitle": "通过10个限时选择探索你的决策偏好。",
     "feature_rapid": "10个快速决策",
     "feature_timer": "每题3秒限时",
-    "feature_scan": "实时神经通路映射",
+    "feature_scan": "基于选择模式的评分",
     "time_estimate": "约需1分钟"
   },
   "button": {
-    "start": "开始脑扫描",
-    "retry": "重新扫描",
+    "start": "开始免费测验",
+    "retry": "再试一次",
     "share_twitter": "推特",
     "share_facebook": "脸书",
     "share_copy": "复制链接"
@@ -63,13 +63,13 @@
     "9b": "慎重考虑"
   },
   "analyzing": {
-    "title": "正在分析神经模式...",
-    "mapping": "正在映射神经连接...",
-    "synapses": "正在测量突触活动...",
-    "patterns": "正在分析认知模式...",
-    "cognitive": "正在构建认知画像...",
-    "finalizing": "正在确定大脑类型...",
-    "complete": "分析完成！"
+    "title": "正在计算你的选择模式…",
+    "mapping": "正在读取选择…",
+    "synapses": "正在比较答案权重…",
+    "patterns": "正在整理偏好模式…",
+    "cognitive": "正在生成反思型资料…",
+    "finalizing": "正在选择最接近的资料…",
+    "complete": "资料已完成！"
   },
   "type": {
     "creator": {
@@ -153,12 +153,12 @@
     "drive": "驱动力"
   },
   "result": {
-    "neural_metrics": "神经指标",
+    "neural_metrics": "资料维度",
     "key_traits": "核心特质",
     "share": "分享结果",
     "related": "相关测试",
     "moreTests": "探索更多",
-    "percentileStat": "仅 <strong>{percent}%</strong> 拥有与你相同的大脑类型"
+    "profileStat": "你的答案最接近8种反思型资料中的一种。"
   },
   "related": {
     "eqTest": "情商测试",
@@ -177,9 +177,9 @@
     "guideDesc": "了解大脑类型如何连接习惯、工作和关系。"
   },
   "share": {
-    "twitterText": "我的大脑类型是{type}{emoji}！通过Neural Pathway Scanner发现的！",
+    "twitterText": "我的大脑类型是{type}{emoji}！通过大脑类型测试发现！",
     "copyText": "我的大脑类型是{type}{emoji}！{url}",
-    "canvasTitle": "Neural Pathway Scanner"
+    "canvasTitle": "大脑类型测试"
   },
   "message": {
     "copy_success": "链接已复制！",
@@ -197,13 +197,15 @@
     "result2": "分析者脑 -- 逻辑 & 数据",
     "result3": "共情者脑 -- 情感智商",
     "result4": "战略家脑 -- 规划 & 领导力",
-    "socialProof": "今姩1,950+人已完成扫描"
+    "trustNote": "隐私保护 · 无需注册 · 即时结果"
   },
   "about": {
     "toggle": "关于此脑型测试",
     "heading1": "脑型测试如何运作",
-    "text1": "测试展示10个快速决策场景，每个有3秒计时器。",
+    "text1": "10个二选一问题比较计划与行动、新奇与熟悉、直觉与调查等偏好。每个答案为相关类型加分，总分最高的类型成为结果。",
     "heading2": "理解你的脑型",
-    "text2": "每种脑型代表独特的认知指纹。"
+    "text2": "8种类型是自我反思的提示，不是固定身份。请结合真实经历，只保留能帮助你做出更好选择的部分。",
+    "heading3": "本测验不测量什么",
+    "text3": "本娱乐测验不会扫描大脑、测量多巴胺或诊断疾病，也不能替代心理或医疗建议。"
   }
 }

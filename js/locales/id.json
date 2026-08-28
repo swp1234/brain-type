@@ -1,29 +1,29 @@
 {
   "app": {
-    "title": "Neural Pathway Scanner",
+    "title": "Tes Tipe Otak",
     "loading": "Memuat...",
     "skipLink": "Langsung ke konten"
   },
   "meta": {
-    "description": "10 keputusan cepat mengungkap tipe otak Anda melalui aktivasi jalur saraf.",
-    "keywords": "tes tipe otak, jalur saraf, tes psikologi, pemindai otak",
-    "og_title": "Neural Pathway Scanner - Apa Tipe Otak Anda?",
-    "og_description": "10 keputusan cepat mengaktifkan jalur saraf Anda!",
-    "twitter_title": "Neural Pathway Scanner - Tes Tipe Otak",
-    "twitter_description": "10 keputusan cepat mengungkap tipe otak Anda!",
-    "page_title": "Neural Pathway Scanner - Tes Tipe Otak | DopaBrain"
+    "description": "Jelajahi preferensi keputusan kreatif, analitis, empatik, intuitif, strategis, dan berorientasi tindakan melalui 10 pilihan.",
+    "keywords": "tes tipe otak, gaya kognitif, gaya keputusan, kuis cara berpikir",
+    "og_title": "Tes Tipe Otak - Kuis Gaya Kognitif",
+    "og_description": "Jelajahi preferensi keputusan dalam 10 pertanyaan. Gratis, privat, tanpa pendaftaran.",
+    "twitter_title": "Tes Tipe Otak - Kuis Gaya Kognitif",
+    "twitter_description": "Jelajahi preferensi keputusan dalam 10 pertanyaan.",
+    "page_title": "Tes Tipe Otak Gratis | DopaBrain"
   },
   "intro": {
-    "title": "Neural Pathway Scanner",
-    "subtitle": "Kami akan memindai jalur saraf Anda melalui keputusan cepat.",
+    "title": "Tes Tipe Otak",
+    "subtitle": "Jelajahi preferensi keputusan dengan 10 pilihan berbatas waktu.",
     "feature_rapid": "10 keputusan cepat",
     "feature_timer": "3 detik per keputusan",
-    "feature_scan": "Pemetaan jalur saraf langsung",
+    "feature_scan": "Skor profil berbasis pola pilihan",
     "time_estimate": "Sekitar 1 menit"
   },
   "button": {
-    "start": "Mulai Pemindaian Otak",
-    "retry": "Pindai Lagi",
+    "start": "Mulai Kuis Gratis",
+    "retry": "Coba Lagi",
     "share_twitter": "Twitter",
     "share_facebook": "Facebook",
     "share_copy": "Salin Tautan"
@@ -63,13 +63,13 @@
     "9b": "Pertimbangan hati-hati"
   },
   "analyzing": {
-    "title": "Menganalisis pola saraf...",
-    "mapping": "Memetakan koneksi saraf...",
-    "synapses": "Mengukur aktivitas sinaps...",
-    "patterns": "Menganalisis pola kognitif...",
-    "cognitive": "Membangun profil kognitif...",
-    "finalizing": "Menentukan tipe otak...",
-    "complete": "Analisis selesai!"
+    "title": "Menghitung pola pilihanmu...",
+    "mapping": "Membaca pilihanmu...",
+    "synapses": "Membandingkan bobot jawaban...",
+    "patterns": "Mengelompokkan pola preferensi...",
+    "cognitive": "Menyusun profil refleksi...",
+    "finalizing": "Memilih profil terdekat...",
+    "complete": "Profil siap!"
   },
   "type": {
     "creator": {
@@ -153,12 +153,12 @@
     "drive": "Dorongan"
   },
   "result": {
-    "neural_metrics": "Metrik Neural",
+    "neural_metrics": "Dimensi Profil",
     "key_traits": "Sifat Utama",
     "share": "Bagikan Hasil",
     "related": "Tes Terkait",
     "moreTests": "Jelajahi lagi",
-    "percentileStat": "Hanya <strong>{percent}%</strong> memiliki tipe otak yang sama"
+    "profileStat": "Jawabanmu paling dekat dengan 1 dari 8 profil refleksi."
   },
   "related": {
     "eqTest": "Tes EQ",
@@ -177,9 +177,9 @@
     "guideDesc": "Baca bagaimana hasil tipe otak terhubung dengan kebiasaan, kerja, dan hubungan."
   },
   "share": {
-    "twitterText": "Tipe otak saya adalah {type}{emoji}! Dipindai oleh Neural Pathway Scanner!",
+    "twitterText": "Tipe otak saya adalah {type}{emoji}! Ditemukan lewat Tes Tipe Otak.",
     "copyText": "Tipe otak saya adalah {type}{emoji}! {url}",
-    "canvasTitle": "Neural Pathway Scanner"
+    "canvasTitle": "Tes Tipe Otak"
   },
   "message": {
     "copy_success": "Tautan disalin!",
@@ -197,13 +197,15 @@
     "result2": "Otak Analis -- Logika & Data",
     "result3": "Otak Empati -- Kecerdasan Emosional",
     "result4": "Otak Strategis -- Perencanaan & Kepemimpinan",
-    "socialProof": "1,950+ otak dipindai hari ini"
+    "trustNote": "Privat · tanpa pendaftaran · hasil instan"
   },
   "about": {
     "toggle": "Tentang Tes Ini",
     "heading1": "Cara Kerja",
-    "text1": "Tes ini menyajikan 10 skenario keputusan cepat dengan timer 3 detik.",
+    "text1": "Sepuluh pilihan membandingkan preferensi seperti merencanakan atau bertindak, hal baru atau familiar, serta intuisi atau riset. Setiap jawaban menambah bobot profil terkait.",
     "heading2": "Memahami Tipe Otak Anda",
-    "text2": "Setiap tipe otak mewakili sidik jari kognitif unik."
+    "text2": "Delapan profil adalah bahan refleksi, bukan identitas tetap. Bandingkan hasil dengan situasi nyata dan gunakan hanya pengamatan yang membantu.",
+    "heading3": "Yang Tidak Diukur Kuis Ini",
+    "text3": "Kuis hiburan ini tidak memindai otak, mengukur dopamin, mendiagnosis kondisi, atau menggantikan nasihat psikologis maupun medis."
   }
 }

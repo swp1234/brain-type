@@ -1,29 +1,29 @@
 {
   "app": {
-    "title": "Neural Pathway Scanner",
+    "title": "Beyin Tipi Testi",
     "loading": "Yükleniyor...",
     "skipLink": "Ana içeriğe geç"
   },
   "meta": {
-    "description": "10 hızlı karar beyin tipinizi nöral yol aktivasyonu ile ortaya çıkarır.",
-    "keywords": "beyin tipi testi, nöral yol, psikoloji testi, beyin tarayıcı",
-    "og_title": "Neural Pathway Scanner - Beyin Tipiniz Ne?",
-    "og_description": "10 hızlı karar nöral yollarınızı aktive eder!",
-    "twitter_title": "Neural Pathway Scanner - Beyin Tipi Testi",
-    "twitter_description": "10 hızlı karar beyin tipinizi ortaya çıkarır!",
-    "page_title": "Neural Pathway Scanner - Beyin Tipi Testi | DopaBrain"
+    "description": "10 seçimle yaratıcı, analitik, empatik, sezgisel, stratejik ve eylem odaklı karar tercihlerinizi keşfedin.",
+    "keywords": "beyin tipi testi, bilişsel stil, karar stili, düşünme tarzı testi",
+    "og_title": "Beyin Tipi Testi - Bilişsel Stil",
+    "og_description": "10 soruyla karar tercihlerinizi keşfedin. Ücretsiz, gizli ve kayıt gerektirmez.",
+    "twitter_title": "Beyin Tipi Testi - Bilişsel Stil",
+    "twitter_description": "10 soruyla karar tercihlerinizi keşfedin.",
+    "page_title": "Ücretsiz Beyin Tipi Testi | DopaBrain"
   },
   "intro": {
-    "title": "Neural Pathway Scanner",
-    "subtitle": "Hızlı kararlarla nöral yollarınızı tarayacağız.",
+    "title": "Beyin Tipi Testi",
+    "subtitle": "10 süreli seçimle karar tercihlerinizi keşfedin.",
     "feature_rapid": "10 hızlı karar",
     "feature_timer": "Her biri 3 saniye",
-    "feature_scan": "Canlı nöral yol haritalama",
+    "feature_scan": "Seçim örüntüsüne dayalı puanlama",
     "time_estimate": "Yaklaşık 1 dakika sürer"
   },
   "button": {
-    "start": "Beyin Taramasını Başlat",
-    "retry": "Tekrar Tara",
+    "start": "Ücretsiz Testi Başlat",
+    "retry": "Tekrar Dene",
     "share_twitter": "Twitter",
     "share_facebook": "Facebook",
     "share_copy": "Linki Kopyala"
@@ -63,13 +63,13 @@
     "9b": "Dikkatli değerlendirme"
   },
   "analyzing": {
-    "title": "Nöral kalıplar analiz ediliyor...",
-    "mapping": "Nöral bağlantılar haritalandırılıyor...",
-    "synapses": "Sinaps aktivitesi ölçülüyor...",
-    "patterns": "Bilişsel kalıplar analiz ediliyor...",
-    "cognitive": "Bilişsel profil oluşturuluyor...",
-    "finalizing": "Beyin tipi belirleniyor...",
-    "complete": "Analiz tamamlandı!"
+    "title": "Seçim örüntün hesaplanıyor...",
+    "mapping": "Seçimlerin okunuyor...",
+    "synapses": "Yanıt ağırlıkları karşılaştırılıyor...",
+    "patterns": "Tercih örüntüleri gruplanıyor...",
+    "cognitive": "Düşünme profilin oluşturuluyor...",
+    "finalizing": "En yakın profil seçiliyor...",
+    "complete": "Profil hazır!"
   },
   "type": {
     "creator": {
@@ -153,12 +153,12 @@
     "drive": "Motivasyon"
   },
   "result": {
-    "neural_metrics": "Nöral Metrikler",
+    "neural_metrics": "Profil Boyutları",
     "key_traits": "Temel Özellikler",
     "share": "Sonucu Paylaş",
     "related": "Ilgili Testler",
     "moreTests": "Daha fazla keşfet",
-    "percentileStat": "Sadece <strong>{percent}%</strong>'i senin beyin tipine sahip"
+    "profileStat": "Yanıtların 8 düşünme profilinden 1’ine en yakın örüntüyü gösteriyor."
   },
   "related": {
     "eqTest": "EQ Testi",
@@ -177,9 +177,9 @@
     "guideDesc": "Beyin tipinin alışkanlık, iş ve ilişkilerle bağlantısını oku."
   },
   "share": {
-    "twitterText": "Beyin tipim {type}{emoji}! Neural Pathway Scanner ile tarattım!",
+    "twitterText": "Beyin tipim {type}{emoji}! Beyin Tipi Testi ile keşfettim.",
     "copyText": "Beyin tipim {type}{emoji}! {url}",
-    "canvasTitle": "Neural Pathway Scanner"
+    "canvasTitle": "Beyin Tipi Testi"
   },
   "message": {
     "copy_success": "Link kopyalandı!",
@@ -197,13 +197,15 @@
     "result2": "Analizci Beyin -- Mantik & Veri",
     "result3": "Empatik Beyin -- Duygusal Zeka",
     "result4": "Stratejist Beyin -- Planlama & Liderlik",
-    "socialProof": "Bugun 1,950+ beyin tarandi"
+    "trustNote": "Gizli · kayıt yok · anında sonuç"
   },
   "about": {
     "toggle": "Bu Test Hakkinda",
     "heading1": "Nasil Calisir",
-    "text1": "Test, 3 saniye zamanlayicili 10 hizli karar senaryosu sunar.",
+    "text1": "On ikili seçim; planlama ya da eylem, yenilik ya da tanıdıklık ve sezgi ya da araştırma gibi tercihleri karşılaştırır. Her yanıt ilgili profillere puan ekler.",
     "heading2": "Beyin Tipinizi Anlamak",
-    "text2": "Her beyin tipi benzersiz bir bilissel parmak izini temsil eder."
+    "text2": "Sekiz profil sabit kimlikler değil, düşünme ipuçlarıdır. Sonucu gerçek durumlarla karşılaştırın ve yalnızca yararlı gözlemleri kullanın.",
+    "heading3": "Bu Test Neyi Ölçmez",
+    "text3": "Bu eğlence testi beyni taramaz, dopamin ölçmez, tanı koymaz ve psikolojik ya da tıbbi tavsiyenin yerine geçmez."
   }
 }

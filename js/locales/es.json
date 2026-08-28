@@ -1,29 +1,29 @@
 {
   "app": {
-    "title": "Neural Pathway Scanner",
+    "title": "Test de tipo cerebral",
     "loading": "Cargando...",
     "skipLink": "Ir al contenido"
   },
   "meta": {
-    "description": "10 decisiones rápidas revelan tu tipo de cerebro a través de la activación de vías neuronales.",
-    "keywords": "test tipo cerebro, vías neuronales, test psicológico, escáner cerebral",
-    "og_title": "Neural Pathway Scanner - ¿Cuál es tu tipo de cerebro?",
-    "og_description": "10 decisiones rápidas activan tus vías neuronales. ¡Descubre tu tipo de cerebro!",
-    "twitter_title": "Neural Pathway Scanner - Test de tipo cerebral",
-    "twitter_description": "10 decisiones rápidas revelan tu tipo de cerebro!",
-    "page_title": "Neural Pathway Scanner - Test Cerebral | DopaBrain"
+    "description": "Explora con 10 decisiones tus preferencias creativas, analíticas, empáticas, intuitivas, estratégicas y orientadas a la acción.",
+    "keywords": "test tipo de cerebro, estilo cognitivo, estilo de decisión, test de pensamiento",
+    "og_title": "Test de tipo cerebral - Estilo cognitivo",
+    "og_description": "Explora tus preferencias de decisión con 10 preguntas. Gratis, privado y sin registro.",
+    "twitter_title": "Test de tipo cerebral - Estilo cognitivo",
+    "twitter_description": "Explora tus preferencias de decisión con 10 preguntas.",
+    "page_title": "Test de tipo cerebral gratis | DopaBrain"
   },
   "intro": {
-    "title": "Neural Pathway Scanner",
-    "subtitle": "Escanearemos tus vías neuronales con decisiones rápidas.",
+    "title": "Test de tipo cerebral",
+    "subtitle": "Explora tus preferencias de decisión con 10 preguntas cronometradas.",
     "feature_rapid": "10 decisiones rápidas",
     "feature_timer": "3 segundos cada una",
-    "feature_scan": "Mapeo neural en tiempo real",
+    "feature_scan": "Puntuación basada en patrones",
     "time_estimate": "Dura aproximadamente 1 minuto"
   },
   "button": {
-    "start": "Iniciar escáner cerebral",
-    "retry": "Escanear de nuevo",
+    "start": "Empezar el quiz gratis",
+    "retry": "Intentar de nuevo",
     "share_twitter": "Twitter",
     "share_facebook": "Facebook",
     "share_copy": "Copiar enlace"
@@ -63,13 +63,13 @@
     "9b": "Consideración cuidadosa"
   },
   "analyzing": {
-    "title": "Analizando patrones neuronales...",
-    "mapping": "Mapeando conexiones neuronales...",
-    "synapses": "Midiendo actividad sináptica...",
-    "patterns": "Analizando patrones cognitivos...",
-    "cognitive": "Construyendo perfil cognitivo...",
-    "finalizing": "Determinando tipo de cerebro...",
-    "complete": "¡Análisis completo!"
+    "title": "Calculando tu patrón de elección...",
+    "mapping": "Leyendo tus elecciones...",
+    "synapses": "Comparando el peso de las respuestas...",
+    "patterns": "Agrupando preferencias...",
+    "cognitive": "Creando tu perfil de reflexión...",
+    "finalizing": "Eligiendo el perfil más cercano...",
+    "complete": "¡Perfil listo!"
   },
   "type": {
     "creator": {
@@ -153,12 +153,12 @@
     "drive": "Impulso"
   },
   "result": {
-    "neural_metrics": "Métricas neuronales",
+    "neural_metrics": "Dimensiones del perfil",
     "key_traits": "Rasgos clave",
     "share": "Compartir resultado",
     "related": "Tests relacionados",
     "moreTests": "Explorar más",
-    "percentileStat": "Solo el <strong>{percent}%</strong> comparten tu tipo de cerebro"
+    "profileStat": "Tus respuestas se aproximan a 1 de 8 perfiles de reflexión."
   },
   "related": {
     "eqTest": "Test de EQ",
@@ -177,9 +177,9 @@
     "guideDesc": "Lee como tu resultado se conecta con habitos, trabajo y relaciones."
   },
   "share": {
-    "twitterText": "¡Mi tipo de cerebro es {type}{emoji}! ¡Escaneado por Neural Pathway Scanner!",
+    "twitterText": "¡Mi tipo de cerebro es {type}{emoji}! Descubierto con el test de tipo cerebral.",
     "copyText": "¡Mi tipo de cerebro es {type}{emoji}! {url}",
-    "canvasTitle": "Neural Pathway Scanner"
+    "canvasTitle": "Test de tipo cerebral"
   },
   "message": {
     "copy_success": "¡Enlace copiado!",
@@ -197,13 +197,15 @@
     "result2": "Cerebro Analizador -- Lógica y Datos",
     "result3": "Cerebro Empático -- Inteligencia Emocional",
     "result4": "Cerebro Estratega -- Planificación y Liderazgo",
-    "socialProof": "1,950+ cerebros escaneados hoy"
+    "trustNote": "Privado · sin registro · resultado inmediato"
   },
   "about": {
     "toggle": "Sobre Este Test",
     "heading1": "Cómo Funciona",
-    "text1": "El test presenta 10 escenarios de decisión rápida con temporizador de 3 segundos.",
+    "text1": "Diez elecciones comparan preferencias como planificar o actuar, novedad o familiaridad e intuición o investigación. Cada respuesta suma peso a los perfiles relacionados.",
     "heading2": "Entendiendo Tu Tipo Cerebral",
-    "text2": "Cada tipo cerebral representa una huella cognitiva única."
+    "text2": "Los ocho perfiles son ideas para reflexionar, no identidades fijas. Compara el resultado con situaciones reales y conserva solo lo que te resulte útil.",
+    "heading3": "Lo que este quiz no mide",
+    "text3": "Este quiz de entretenimiento no escanea el cerebro, no mide dopamina, no diagnostica enfermedades ni sustituye consejo psicológico o médico."
   }
 }

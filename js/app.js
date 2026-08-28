@@ -1,4 +1,4 @@
-// Neural Pathway Scanner - Brain Type Test
+// Brain Type Test - weighted preference quiz
 // Dimensions: selfReliance, novelty, intuition, empathy, action, challenge, innovation, extraversion, pressure, risk
 
 const SCENARIOS = [
@@ -189,7 +189,7 @@ function determineBrainType(scores) {
     return resultType;
 }
 
-class NeuralPathwayScanner {
+class BrainTypeQuiz {
     constructor() {
         this.currentRound = 0;
         this.scores = {};
@@ -234,7 +234,7 @@ class NeuralPathwayScanner {
     setupGA() {
         if (typeof gtag !== 'undefined') {
             gtag('event', 'page_view', {
-                page_title: 'Neural Pathway Scanner',
+                page_title: 'Brain Type Test',
                 page_location: window.location.href
             });
         }
@@ -815,15 +815,13 @@ class NeuralPathwayScanner {
         document.getElementById('result-title').textContent = t(type.nameKey);
         document.getElementById('result-tagline').textContent = t(type.taglineKey);
 
-        // Percentile stat
-        const percentile = this.calculatePercentile();
-        const percentileText = t('result.percentileStat').replace('{percent}', percentile);
-        document.getElementById('percentile-stat').innerHTML = percentileText;
+        // Explain the result without inventing population statistics.
+        document.getElementById('percentile-stat').textContent = t('result.profileStat');
 
         // Description
         document.getElementById('result-description').innerHTML = '<p>' + t(type.descKey) + '</p>';
 
-        // Neural metrics
+        // Profile dimensions
         const metricsGrid = document.getElementById('metrics-grid');
         metricsGrid.innerHTML = '';
 
@@ -901,21 +899,6 @@ class NeuralPathwayScanner {
                 surface: 'result_screen'
             }));
         }
-    }
-
-    calculatePercentile() {
-        // 8 brain types → each ~12.5%
-        const typeDistribution = {
-            creator: 14,
-            analyzer: 13,
-            empath: 15,
-            intuitive: 11,
-            strategist: 12,
-            visionary: 10,
-            guardian: 16,
-            dynamo: 9
-        };
-        return typeDistribution[this.resultType] || 12;
     }
 
     buildResultBrainPaths(color) {
@@ -1049,5 +1032,5 @@ class NeuralPathwayScanner {
 // Start app
 let app;
 document.addEventListener('DOMContentLoaded', () => {
-    app = new NeuralPathwayScanner();
+    app = new BrainTypeQuiz();
 });

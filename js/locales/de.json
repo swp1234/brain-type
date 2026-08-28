@@ -1,29 +1,29 @@
 {
   "app": {
-    "title": "Neural Pathway Scanner",
+    "title": "Gehirntyp-Test",
     "loading": "Wird geladen...",
     "skipLink": "Zum Inhalt springen"
   },
   "meta": {
-    "description": "10 blitzschnelle Entscheidungen enthüllen Ihren Gehirntyp durch neurale Pfadaktivierung.",
-    "keywords": "Gehirntyp-Test, neurale Pfade, Psychologietest, Gehirnscan",
-    "og_title": "Neural Pathway Scanner - Welcher Gehirntyp sind Sie?",
-    "og_description": "10 schnelle Entscheidungen aktivieren Ihre neuralen Pfade!",
-    "twitter_title": "Neural Pathway Scanner - Gehirntyp-Test",
-    "twitter_description": "10 blitzschnelle Entscheidungen enthüllen Ihren Gehirntyp!",
-    "page_title": "Neural Pathway Scanner - Gehirntyp-Test | DopaBrain"
+    "description": "Erkunden Sie mit 10 Entscheidungen Ihre kreativen, analytischen, empathischen, intuitiven und strategischen Denkpräferenzen.",
+    "keywords": "Gehirntyp-Test, kognitiver Stil, Entscheidungsstil, Denkstil-Quiz",
+    "og_title": "Gehirntyp-Test - Quiz zum kognitiven Stil",
+    "og_description": "Erkunden Sie Ihre Entscheidungspräferenzen mit 10 Fragen. Kostenlos, privat und ohne Anmeldung.",
+    "twitter_title": "Gehirntyp-Test - Quiz zum kognitiven Stil",
+    "twitter_description": "Erkunden Sie Ihre Entscheidungspräferenzen mit 10 Fragen.",
+    "page_title": "Gehirntyp-Test - Kostenloses Stil-Quiz | DopaBrain"
   },
   "intro": {
-    "title": "Neural Pathway Scanner",
-    "subtitle": "Wir scannen Ihre neuralen Pfade durch blitzschnelle Entscheidungen.",
+    "title": "Gehirntyp-Test",
+    "subtitle": "Erkunden Sie Ihre Entscheidungspräferenzen mit 10 zeitlich begrenzten Fragen.",
     "feature_rapid": "10 Blitzentscheidungen",
     "feature_timer": "Je 3 Sekunden Timer",
-    "feature_scan": "Echtzeit neurale Pfadkartierung",
+    "feature_scan": "Musterbasierte Profilauswertung",
     "time_estimate": "Dauert etwa 1 Minute"
   },
   "button": {
-    "start": "Gehirnscan starten",
-    "retry": "Erneut scannen",
+    "start": "Kostenloses Quiz starten",
+    "retry": "Erneut versuchen",
     "share_twitter": "Twitter",
     "share_facebook": "Facebook",
     "share_copy": "Link kopieren"
@@ -63,13 +63,13 @@
     "9b": "Sorgfältige Überlegung"
   },
   "analyzing": {
-    "title": "Neurale Muster werden analysiert...",
-    "mapping": "Neurale Verbindungen werden kartiert...",
-    "synapses": "Synapsenaktivität wird gemessen...",
-    "patterns": "Kognitive Muster werden analysiert...",
-    "cognitive": "Kognitives Profil wird erstellt...",
-    "finalizing": "Gehirntyp wird bestimmt...",
-    "complete": "Analyse abgeschlossen!"
+    "title": "Dein Auswahlmuster wird berechnet...",
+    "mapping": "Auswahl wird gelesen...",
+    "synapses": "Antwortgewichte werden verglichen...",
+    "patterns": "Präferenzmuster werden gruppiert...",
+    "cognitive": "Reflexionsprofil wird erstellt...",
+    "finalizing": "Nächstes Profil wird gewählt...",
+    "complete": "Profil ist fertig!"
   },
   "type": {
     "creator": {
@@ -153,12 +153,12 @@
     "drive": "Antrieb"
   },
   "result": {
-    "neural_metrics": "Neurale Metriken",
+    "neural_metrics": "Profildimensionen",
     "key_traits": "Kernmerkmale",
     "share": "Ergebnis teilen",
     "related": "Verwandte Tests",
     "moreTests": "Mehr entdecken",
-    "percentileStat": "Nur <strong>{percent}%</strong> teilen deinen Gehirntyp"
+    "profileStat": "Deine Antworten passen am ehesten zu 1 von 8 Reflexionsprofilen."
   },
   "related": {
     "eqTest": "EQ-Test",
@@ -177,9 +177,9 @@
     "guideDesc": "Lies, wie dein Ergebnis mit Gewohnheiten, Arbeit und Beziehungen zusammenhangt."
   },
   "share": {
-    "twitterText": "Mein Gehirntyp ist {type}{emoji}! Gescannt vom Neural Pathway Scanner!",
+    "twitterText": "Mein Gehirntyp ist {type}{emoji}! Gefunden mit dem Gehirntyp-Test!",
     "copyText": "Mein Gehirntyp ist {type}{emoji}! {url}",
-    "canvasTitle": "Neural Pathway Scanner"
+    "canvasTitle": "Gehirntyp-Test"
   },
   "message": {
     "copy_success": "Link kopiert!",
@@ -197,13 +197,15 @@
     "result2": "Analytiker-Gehirn -- Logik & Daten",
     "result3": "Empath-Gehirn -- Emotionale Intelligenz",
     "result4": "Strategen-Gehirn -- Planung & Fuhrung",
-    "socialProof": "Heute 1,950+ Gehirne gescannt"
+    "trustNote": "Privat · keine Anmeldung · sofortiges Ergebnis"
   },
   "about": {
     "toggle": "Uber diesen Test",
     "heading1": "Wie es funktioniert",
-    "text1": "Der Test prasentiert 10 schnelle Entscheidungsszenarien mit 3-Sekunden-Timer.",
+    "text1": "Zehn Entweder-oder-Fragen vergleichen Vorlieben wie Planen oder Handeln, Neues oder Vertrautes sowie Intuition oder Recherche. Jede Antwort gewichtet passende Profile.",
     "heading2": "Ihren Gehirntyp verstehen",
-    "text2": "Jeder Gehirntyp reprasentiert einen einzigartigen kognitiven Fingerabdruck."
+    "text2": "Die acht Profile sind Denkanstöße und keine festen Identitäten. Vergleichen Sie das Ergebnis mit echten Situationen und nutzen Sie nur hilfreiche Beobachtungen.",
+    "heading3": "Was dieses Quiz nicht misst",
+    "text3": "Dieses Unterhaltungsquiz scannt kein Gehirn, misst kein Dopamin, stellt keine Diagnose und ersetzt keine psychologische oder medizinische Beratung."
   }
 }

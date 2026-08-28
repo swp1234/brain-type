@@ -23,7 +23,7 @@ try {
             if (saved && this.supportedLanguages.includes(saved)) return saved;
             const browser = navigator.language.split('-')[0].toLowerCase();
             if (this.supportedLanguages.includes(browser)) return browser;
-            return 'ko';
+            return 'en';
         }
 
         async loadTranslations(lang) {
@@ -43,7 +43,7 @@ try {
             } catch (e) {
                 console.warn('i18n load warning:', e);
                 this.isLoading = false;
-                if (lang !== 'ko') return this.loadTranslations('ko');
+                if (lang !== 'en') return this.loadTranslations('en');
                 return null;
             }
         }
@@ -62,6 +62,31 @@ try {
             return val || key;
         }
 
+        getSeoHref(lang) {
+            const links = document.querySelectorAll('link[rel="alternate"][hreflang]');
+            const hrefMap = {};
+            links.forEach(link => {
+                const hreflang = link.getAttribute('hreflang');
+                if (hreflang) hrefMap[hreflang] = link.href;
+            });
+            return hrefMap[lang] || hrefMap['x-default'] || window.location.href;
+        }
+
+        syncSeoState(lang, updateHistory = false) {
+            const currentUrl = new URL(window.location.href);
+            const targetLang = updateHistory || currentUrl.searchParams.has('lang') ? lang : 'x-default';
+            const targetHref = this.getSeoHref(targetLang);
+            const canonical = document.querySelector('link[rel="canonical"]');
+            if (canonical) canonical.href = targetHref;
+            const ogUrl = document.querySelector('meta[property="og:url"]');
+            if (ogUrl) ogUrl.content = targetHref;
+            if (updateHistory) {
+                const nextUrl = new URL(targetHref);
+                nextUrl.hash = currentUrl.hash;
+                window.history.replaceState({}, '', nextUrl.pathname + nextUrl.search + nextUrl.hash);
+            }
+        }
+
         async setLanguage(lang) {
             if (!this.supportedLanguages.includes(lang)) return;
             this.currentLang = lang;
@@ -69,6 +94,7 @@ try {
             await this.loadTranslations(lang);
             this.updateUI();
             this.updateLangButtons();
+            this.syncSeoState(lang, true);
         }
 
         updateUI() {
@@ -98,6 +124,7 @@ try {
             const loaded = await this.loadTranslations(this.currentLang);
             if (loaded) this.updateUI();
             this.updateLangButtons();
+            this.syncSeoState(this.currentLang);
         }
     }
 

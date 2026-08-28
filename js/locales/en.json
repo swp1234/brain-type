@@ -1,29 +1,29 @@
 {
   "app": {
-    "title": "Neural Pathway Scanner",
+    "title": "Brain Type Test",
     "loading": "Loading...",
     "skipLink": "Skip to main"
   },
   "meta": {
-    "description": "Discover your brain type with 10 rapid-fire decisions. Are you a Creator, Analyzer, or Empath? Free neural pathway scan quiz - instant results!",
-    "keywords": "brain type test, neural pathway, psychology test, brain scan, cognitive style",
-    "og_title": "Neural Pathway Scanner - What's Your Brain Type?",
-    "og_description": "10 rapid-fire decisions activate your neural pathways. Discover your brain type!",
-    "twitter_title": "Neural Pathway Scanner - Brain Type Test",
-    "twitter_description": "10 rapid-fire decisions reveal your brain type!",
-    "page_title": "Brain Type Test - Free Online Neural Scan | DopaBrain"
+    "description": "Take 10 timed choices to explore your cognitive style. Compare creative, analytical, empathic, intuitive, strategic, and action-oriented preferences.",
+    "keywords": "brain type test, cognitive style quiz, decision style test, thinking style",
+    "og_title": "Brain Type Test - Cognitive Style Quiz",
+    "og_description": "Explore your decision-making preferences with 10 timed choices. Free, private, instant result.",
+    "twitter_title": "Brain Type Test - Cognitive Style Quiz",
+    "twitter_description": "Explore your decision-making preferences with 10 timed choices.",
+    "page_title": "Brain Type Test - Free Cognitive Style Quiz | DopaBrain"
   },
   "intro": {
     "title": "Brain Type Test",
-    "subtitle": "Discover your cognitive style through 10 rapid-fire neural decisions.",
+    "subtitle": "Explore your decision-making preferences through 10 timed choices.",
     "feature_rapid": "10 rapid-fire decisions",
     "feature_timer": "3-second timer each",
-    "feature_scan": "Live neural pathway mapping",
+    "feature_scan": "Pattern-based profile scoring",
     "time_estimate": "Takes about 1 minute"
   },
   "button": {
-    "start": "Scan My Brain Now - It's Free",
-    "retry": "Scan Again",
+    "start": "Start the Free Quiz",
+    "retry": "Try Again",
     "share_twitter": "Twitter",
     "share_facebook": "Facebook",
     "share_copy": "Copy Link"
@@ -63,13 +63,13 @@
     "9b": "Careful consideration"
   },
   "analyzing": {
-    "title": "Analyzing neural patterns...",
-    "mapping": "Mapping neural connections...",
-    "synapses": "Measuring synapse activity...",
-    "patterns": "Analyzing cognitive patterns...",
-    "cognitive": "Building cognitive profile...",
-    "finalizing": "Determining brain type...",
-    "complete": "Analysis complete!"
+    "title": "Calculating your choice pattern...",
+    "mapping": "Reading your choices...",
+    "synapses": "Comparing answer weights...",
+    "patterns": "Grouping preference patterns...",
+    "cognitive": "Building your reflection profile...",
+    "finalizing": "Selecting the closest profile...",
+    "complete": "Profile ready!"
   },
   "type": {
     "creator": {
@@ -153,12 +153,12 @@
     "drive": "Drive"
   },
   "result": {
-    "neural_metrics": "Neural Metrics",
+    "neural_metrics": "Profile Dimensions",
     "key_traits": "Key Traits",
     "share": "Share Your Result",
     "related": "Related Tests",
     "moreTests": "Explore More",
-    "percentileStat": "Only <strong>{percent}%</strong> share your brain type"
+    "profileStat": "Your answers map most closely to 1 of 8 reflection profiles."
   },
   "related": {
     "eqTest": "EQ Test",
@@ -177,9 +177,9 @@
     "guideDesc": "Read how brain type results connect to habits, work, and relationships."
   },
   "share": {
-    "twitterText": "My brain type is {type}{emoji}! Scanned by Neural Pathway Scanner!",
+    "twitterText": "My brain type is {type}{emoji}! Found with the Brain Type Test!",
     "copyText": "My brain type is {type}{emoji}! {url}",
-    "canvasTitle": "Neural Pathway Scanner"
+    "canvasTitle": "Brain Type Test"
   },
   "message": {
     "copy_success": "Link copied!",
@@ -197,13 +197,15 @@
     "result2": "Analyzer Brain -- Logic & Data-Driven",
     "result3": "Empath Brain -- Emotional Intelligence",
     "result4": "Strategist Brain -- Planning & Leadership",
-    "socialProof": "1,950+ brains scanned today"
+    "trustNote": "Private · no sign-up · instant result"
   },
   "about": {
     "toggle": "About This Brain Type Test",
     "heading1": "How the Brain Type Test Works",
-    "text1": "The Brain Type Test presents you with 10 rapid-fire decision scenarios, each with a 3-second timer. Your instinctive responses activate simulated neural pathways that map your cognitive style into one of 8 distinct brain types.",
+    "text1": "Ten either-or choices capture preferences such as planning versus acting, novelty versus familiarity, and intuition versus research. Each answer adds weight to related profiles; the highest combined score determines the result.",
     "heading2": "Understanding Your Brain Type",
-    "text2": "Each brain type represents a unique cognitive fingerprint. Whether you are a Creator, Analyzer, or Dynamo, your result reveals how your mind naturally processes decisions."
+    "text2": "The eight profiles are reflection prompts, not fixed identities. Compare the result with real situations and keep only the observations that help you make a better choice.",
+    "heading3": "What This Quiz Does Not Measure",
+    "text3": "This entertainment quiz does not scan your brain, measure dopamine, diagnose a condition, or replace psychological or medical advice."
   }
 }
