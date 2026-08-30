@@ -226,18 +226,8 @@ class BrainTypeQuiz {
         }
         this.setupEventListeners();
         this.updateGrowthGuideLink();
-        this.setupGA();
         this.tryAutoStart();
         if (!this.autoStartConsumed) this.scheduleIntroStickyStart();
-    }
-
-    setupGA() {
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'page_view', {
-                page_title: 'Brain Type Test',
-                page_location: window.location.href
-            });
-        }
     }
 
     trackEvent(eventName, params = {}) {
@@ -289,17 +279,14 @@ class BrainTypeQuiz {
     }
 
     getShareEventParams(method, extra = {}) {
-        const resultType = this.resultType || 'unknown';
         return Object.assign({
             content_type: 'test_result',
             surface: 'result_actions',
             method,
-            result_type: resultType,
             lang: this.getCurrentLang(),
             utm_source: 'share',
             utm_medium: 'brain_type_result',
-            utm_campaign: 'personality_result_share',
-            utm_content: resultType
+            utm_campaign: 'personality_result_share'
         }, extra);
     }
 
@@ -448,7 +435,6 @@ class BrainTypeQuiz {
         if (primaryRelatedCta) {
             primaryRelatedCta.addEventListener('click', () => {
                 this.trackEvent('brain_type_primary_cta_click', {
-                    result_type: this.resultType || 'unknown',
                     related_key: primaryRelatedCta.getAttribute('data-related-key') || this.getSlugFromHref(primaryRelatedCta.href),
                     related_rank: Number(primaryRelatedCta.getAttribute('data-related-rank') || '1'),
                     destination: primaryRelatedCta.href,
@@ -728,8 +714,6 @@ class BrainTypeQuiz {
         if (typeof gtag !== 'undefined') {
             gtag('event', 'scan_choice', {
                 round: this.currentRound + 1,
-                dimension: scenario.dimension,
-                choice: choice,
                 timeout: isTimeout
             });
         }
@@ -767,8 +751,7 @@ class BrainTypeQuiz {
 
                     if (typeof gtag !== 'undefined') {
                         gtag('event', 'test_complete', {
-                            app_name: 'brain-type',
-                            result_type: this.resultType
+                            app_name: 'brain-type'
                         });
                     }
 
@@ -965,21 +948,19 @@ class BrainTypeQuiz {
             .replace('{emoji}', type.emoji);
         const shareUrl = this.getShareUrl();
         const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`;
-        window.open(url, '_blank', 'width=550,height=420');
-
-        const params = this.getShareEventParams('twitter', { share_url: shareUrl });
+        const opened = window.open(url, '_blank', 'width=550,height=420');
+        const params = this.getShareEventParams('twitter');
         this.trackEvent('brain_type_share_click', params);
-        this.trackEvent('share', params);
+        if (opened) this.trackEvent('share', params);
     }
 
     shareFacebook() {
         const shareUrl = this.getShareUrl();
         const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
-        window.open(url, '_blank', 'width=550,height=420');
-
-        const params = this.getShareEventParams('facebook', { share_url: shareUrl });
+        const opened = window.open(url, '_blank', 'width=550,height=420');
+        const params = this.getShareEventParams('facebook');
         this.trackEvent('brain_type_share_click', params);
-        this.trackEvent('share', params);
+        if (opened) this.trackEvent('share', params);
     }
 
     shareCopy() {
@@ -992,9 +973,10 @@ class BrainTypeQuiz {
             .replace('{emoji}', type.emoji)
             .replace('{url}', shareUrl);
 
+        const params = this.getShareEventParams('clipboard');
+        this.trackEvent('brain_type_share_click', params);
         navigator.clipboard.writeText(text).then(() => {
             alert(t('message.copy_success'));
-            const params = this.getShareEventParams('clipboard', { share_url: shareUrl });
             this.trackEvent('brain_type_copy_link', params);
             this.trackEvent('share', params);
         }).catch(() => {
