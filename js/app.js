@@ -522,23 +522,7 @@ class BrainTypeQuiz {
     }
 
     ensureResultAdLoaded() {
-        if (this.resultInlineAdLoaded) return;
-        const resultAd = document.getElementById('result-inline-ad');
-        const adNode = resultAd ? resultAd.querySelector('.adsbygoogle') : null;
-        if (!adNode) return;
-
-        try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (error) {
-            // Ad blockers or delayed AdSense init should not break the result flow.
-        }
-
-        this.resultInlineAdLoaded = true;
-        this.trackEvent('brain_type_result_ad_impression', this.getShareEventParams('ad_impression', {
-            surface: 'result_inline',
-            ad_surface: adNode.getAttribute('data-ad-surface') || 'brain_type_result',
-            ad_slot: adNode.getAttribute('data-ad-slot') || 'auto'
-        }));
+        // Auto Ads owns placement and paid-impression measurement.
     }
 
     initTheme() {
