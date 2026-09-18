@@ -421,25 +421,37 @@ class BrainTypeQuiz {
         });
 
         document.querySelectorAll('.related-card').forEach((card, index) => {
-            card.addEventListener('click', () => {
+            card.addEventListener('click', (e) => {
                 this.trackEvent('brain_type_related_click', {
                     related_position: Number(card.getAttribute('data-related-rank') || index + 1),
                     related_key: card.getAttribute('data-related-key') || this.getSlugFromHref(card.href),
                     destination: card.href,
                     target_label: card.textContent.trim().replace(/\s+/g, ' ').slice(0, 120)
                 });
+                const href = card.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.includes('?')) {
+                    const currentLang = (window.i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : (new URLSearchParams(location.search).get('lang') || 'en');
+                    e.preventDefault();
+                    location.href = `${href}?lang=${encodeURIComponent(currentLang)}&source=brain_related`;
+                }
             });
         });
 
         const primaryRelatedCta = document.getElementById('primary-related-cta');
         if (primaryRelatedCta) {
-            primaryRelatedCta.addEventListener('click', () => {
+            primaryRelatedCta.addEventListener('click', (e) => {
                 this.trackEvent('brain_type_primary_cta_click', {
                     related_key: primaryRelatedCta.getAttribute('data-related-key') || this.getSlugFromHref(primaryRelatedCta.href),
                     related_rank: Number(primaryRelatedCta.getAttribute('data-related-rank') || '1'),
                     destination: primaryRelatedCta.href,
                     surface: 'result_next_step'
                 });
+                const href = primaryRelatedCta.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.includes('?')) {
+                    const currentLang = (window.i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : (new URLSearchParams(location.search).get('lang') || 'en');
+                    e.preventDefault();
+                    location.href = `${href}?lang=${encodeURIComponent(currentLang)}&source=brain_primary_next`;
+                }
             });
         }
 
@@ -457,14 +469,14 @@ class BrainTypeQuiz {
 
     getRecommendationOrder() {
         const map = {
-            creator: ['hsp-test', 'eq-test', 'mental-age', 'hail-mary-mode', 'iq-test'],
-            analyzer: ['iq-test', 'eq-test', 'mental-age', 'hail-mary-mode', 'hsp-test'],
-            empath: ['eq-test', 'hsp-test', 'mental-age', 'hail-mary-mode', 'iq-test'],
-            intuitive: ['hsp-test', 'mental-age', 'eq-test', 'hail-mary-mode', 'iq-test'],
-            strategist: ['hail-mary-mode', 'iq-test', 'eq-test', 'mental-age', 'hsp-test'],
-            visionary: ['hail-mary-mode', 'eq-test', 'hsp-test', 'iq-test', 'mental-age'],
-            guardian: ['hsp-test', 'eq-test', 'mental-age', 'iq-test', 'hail-mary-mode'],
-            dynamo: ['hail-mary-mode', 'eq-test', 'iq-test', 'hsp-test', 'mental-age']
+            creator: ['stress-check', 'hsp-test', 'eq-test', 'mental-age', 'iq-test'],
+            analyzer: ['iq-test', 'stress-check', 'eq-test', 'mental-age', 'hsp-test'],
+            empath: ['eq-test', 'hsp-test', 'stress-check', 'mental-age', 'iq-test'],
+            intuitive: ['hsp-test', 'stress-check', 'mental-age', 'eq-test', 'iq-test'],
+            strategist: ['stress-check', 'iq-test', 'eq-test', 'mental-age', 'hsp-test'],
+            visionary: ['stress-check', 'eq-test', 'hsp-test', 'iq-test', 'mental-age'],
+            guardian: ['stress-check', 'hsp-test', 'eq-test', 'mental-age', 'iq-test'],
+            dynamo: ['stress-check', 'eq-test', 'iq-test', 'hsp-test', 'mental-age']
         };
         return map[this.resultType] || map.empath;
     }

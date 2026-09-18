@@ -165,7 +165,8 @@
     "hspTest": "HSPテスト",
     "mentalAge": "精神年齢",
     "iqTest": "IQテスト",
-    "hailMaryMode": "Hail Mary Mode Test"
+    "hailMaryMode": "Hail Mary Mode Test",
+    "stressCheck": "ストレスチェック"
   },
   "growth": {
     "heading": "認知マップをさらに探索",

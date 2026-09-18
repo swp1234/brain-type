@@ -165,7 +165,8 @@
     "hspTest": "HSP Тест",
     "mentalAge": "Ментальный возраст",
     "iqTest": "IQ Тест",
-    "hailMaryMode": "Hail Mary Mode Test"
+    "hailMaryMode": "Hail Mary Mode Test",
+    "stressCheck": "Проверка стресса"
   },
   "growth": {
     "heading": "Продолжи изучать свою когнитивную карту",

@@ -165,7 +165,8 @@
     "hspTest": "HSP测试",
     "mentalAge": "心理年龄",
     "iqTest": "智商测试",
-    "hailMaryMode": "Hail Mary Mode Test"
+    "hailMaryMode": "Hail Mary Mode Test",
+    "stressCheck": "压力检测"
   },
   "growth": {
     "heading": "继续探索你的认知地图",

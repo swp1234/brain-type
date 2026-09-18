@@ -165,7 +165,8 @@
     "hspTest": "HSP 테스트",
     "mentalAge": "정신 연령",
     "iqTest": "IQ 테스트",
-    "hailMaryMode": "Hail Mary Mode Test"
+    "hailMaryMode": "Hail Mary Mode Test",
+    "stressCheck": "스트레스 체크"
   },
   "growth": {
     "heading": "인지 지도를 계속 탐색하기",

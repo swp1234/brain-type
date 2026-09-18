@@ -165,7 +165,8 @@
     "hspTest": "HSP Test",
     "mentalAge": "Mental Age",
     "iqTest": "IQ Test",
-    "hailMaryMode": "Hail Mary Mode Test"
+    "hailMaryMode": "Hail Mary Mode Test",
+    "stressCheck": "Stress Check"
   },
   "growth": {
     "heading": "Keep exploring your cognitive map",
