@@ -166,7 +166,8 @@
     "mentalAge": "心理年龄",
     "iqTest": "智商测试",
     "hailMaryMode": "Hail Mary Mode Test",
-    "stressCheck": "压力检测"
+    "stressCheck": "压力检测",
+    "futureSelf": "未来自我测试"
   },
   "growth": {
     "heading": "继续探索你的认知地图",

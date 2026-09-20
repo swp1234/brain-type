@@ -166,7 +166,8 @@
     "mentalAge": "Mental Age",
     "iqTest": "IQ Test",
     "hailMaryMode": "Hail Mary Mode Test",
-    "stressCheck": "Stress Check"
+    "stressCheck": "Stress Check",
+    "futureSelf": "Future Self"
   },
   "growth": {
     "heading": "Keep exploring your cognitive map",

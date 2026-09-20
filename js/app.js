@@ -429,10 +429,11 @@ class BrainTypeQuiz {
                     target_label: card.textContent.trim().replace(/\s+/g, ' ').slice(0, 120)
                 });
                 const href = card.getAttribute('href');
-                if (href && !href.startsWith('http') && !href.includes('?')) {
+                if (href && !href.startsWith('http')) {
+                    const cleanHref = href.split('?')[0];
                     const currentLang = (window.i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : (new URLSearchParams(location.search).get('lang') || 'en');
                     e.preventDefault();
-                    location.href = `${href}?lang=${encodeURIComponent(currentLang)}&source=brain_related`;
+                    location.href = `${cleanHref}?lang=${encodeURIComponent(currentLang)}&source=brain_type_result`;
                 }
             });
         });
@@ -447,10 +448,11 @@ class BrainTypeQuiz {
                     surface: 'result_next_step'
                 });
                 const href = primaryRelatedCta.getAttribute('href');
-                if (href && !href.startsWith('http') && !href.includes('?')) {
+                if (href && !href.startsWith('http')) {
+                    const cleanHref = href.split('?')[0];
                     const currentLang = (window.i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : (new URLSearchParams(location.search).get('lang') || 'en');
                     e.preventDefault();
-                    location.href = `${href}?lang=${encodeURIComponent(currentLang)}&source=brain_primary_next`;
+                    location.href = `${cleanHref}?lang=${encodeURIComponent(currentLang)}&source=brain_type_result`;
                 }
             });
         }
@@ -469,14 +471,14 @@ class BrainTypeQuiz {
 
     getRecommendationOrder() {
         const map = {
-            creator: ['stress-check', 'hsp-test', 'eq-test', 'mental-age', 'iq-test'],
-            analyzer: ['iq-test', 'stress-check', 'eq-test', 'mental-age', 'hsp-test'],
-            empath: ['eq-test', 'hsp-test', 'stress-check', 'mental-age', 'iq-test'],
-            intuitive: ['hsp-test', 'stress-check', 'mental-age', 'eq-test', 'iq-test'],
-            strategist: ['stress-check', 'iq-test', 'eq-test', 'mental-age', 'hsp-test'],
-            visionary: ['stress-check', 'eq-test', 'hsp-test', 'iq-test', 'mental-age'],
-            guardian: ['stress-check', 'hsp-test', 'eq-test', 'mental-age', 'iq-test'],
-            dynamo: ['stress-check', 'eq-test', 'iq-test', 'hsp-test', 'mental-age']
+            creator: ['stress-check', 'hsp-test', 'future-self', 'eq-test', 'mental-age'],
+            analyzer: ['future-self', 'stress-check', 'eq-test', 'mental-age', 'hsp-test'],
+            empath: ['eq-test', 'future-self', 'hsp-test', 'stress-check', 'mental-age'],
+            intuitive: ['future-self', 'hsp-test', 'stress-check', 'mental-age', 'eq-test'],
+            strategist: ['future-self', 'stress-check', 'eq-test', 'mental-age', 'hsp-test'],
+            visionary: ['future-self', 'stress-check', 'eq-test', 'hsp-test', 'mental-age'],
+            guardian: ['stress-check', 'future-self', 'hsp-test', 'eq-test', 'mental-age'],
+            dynamo: ['future-self', 'stress-check', 'eq-test', 'hsp-test', 'mental-age']
         };
         return map[this.resultType] || map.empath;
     }
@@ -501,8 +503,14 @@ class BrainTypeQuiz {
             const bRank = Object.prototype.hasOwnProperty.call(rankMap, bKey) ? rankMap[bKey] : 999;
             return aRank - bRank;
         });
+        const currentLang = (window.i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : (new URLSearchParams(location.search).get('lang') || 'en');
         cards.forEach((card, index) => {
             card.setAttribute('data-related-rank', String(index + 1));
+            const rawHref = (card.getAttribute('data-base-href') || card.getAttribute('href') || '').split('?')[0];
+            if (rawHref && !rawHref.startsWith('http')) {
+                card.setAttribute('data-base-href', rawHref);
+                card.setAttribute('href', `${rawHref}?lang=${encodeURIComponent(currentLang)}&source=brain_type_result`);
+            }
             grid.appendChild(card);
         });
 

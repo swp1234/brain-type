@@ -166,7 +166,8 @@
     "mentalAge": "精神年齢",
     "iqTest": "IQテスト",
     "hailMaryMode": "Hail Mary Mode Test",
-    "stressCheck": "ストレスチェック"
+    "stressCheck": "ストレスチェック",
+    "futureSelf": "未来の自分テスト"
   },
   "growth": {
     "heading": "認知マップをさらに探索",
