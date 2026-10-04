@@ -202,12 +202,26 @@
     "trustNote": "Privado · sin registro · resultado inmediato"
   },
   "about": {
-    "toggle": "Sobre Este Test",
+    "toggle": "About This Brain Type Test",
     "heading1": "Cómo Funciona",
     "text1": "Diez elecciones comparan preferencias como planificar o actuar, novedad o familiaridad e intuición o investigación. Cada respuesta suma peso a los perfiles relacionados.",
     "heading2": "Entendiendo Tu Tipo Cerebral",
     "text2": "Los ocho perfiles son ideas para reflexionar, no identidades fijas. Compara el resultado con situaciones reales y conserva solo lo que te resulte útil.",
     "heading3": "Lo que este quiz no mide",
-    "text3": "Este quiz de entretenimiento no escanea el cerebro, no mide dopamina, no diagnostica enfermedades ni sustituye consejo psicológico o médico."
+    "text3": "Este quiz de entretenimiento no escanea el cerebro, no mide dopamina, no diagnostica enfermedades ni sustituye consejo psicológico o médico.",
+    "heading4": "5 Cognitive Processing Dimensions",
+    "text4": "Each rapid choice reflects your intuitive weighting across five primary thinking modes: Creativity (divergent idea generation), Logic (structured systematic reasoning), Empathy (emotional attunement and social awareness), Intuition (rapid subconscious pattern matching), and Drive (decisive action under momentum). Your balance across these five dimensions forms your unique cognitive profile.",
+    "heading5": "Frequently Asked Questions",
+    "faq1Q": "Q: Can cognitive styles change over time?",
+    "faq1A": "A: Yes. Unlike fixed neurological traits, cognitive styles and decision habits adapt depending on your current environment, profession, stress levels, and deliberate mental practice.",
+    "faq2Q": "Q: Is one brain type superior to another?",
+    "faq2A": "A: Not at all. High-performance teams and healthy problem-solving require diverse cognitive profiles—from analytical fact-checkers and visionary pioneers to empathetic communicators and disciplined executors.",
+    "faq3Q": "Q: Why does the test use 3-second rapid choices?",
+    "faq3A": "A: Rapid time limits bypass conscious overthinking and social desirability bias, tapping into what cognitive psychologist Daniel Kahneman termed 'System 1' intuitive heuristic processing.",
+    "faq4Q": "Q: Are my test choices private?",
+    "faq4A": "A: Completely private. All calculations happen entirely within your local browser session. No answer selections or personality scores are tracked or stored.",
+    "heading6": "References & Theoretical Background",
+    "reviewDate": "Editorial Review: October 2026",
+    "reviewTeam": "DopaBrain Cognitive Psychology Team"
   }
 }

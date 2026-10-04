@@ -202,12 +202,26 @@
     "trustNote": "隐私保护 · 无需注册 · 即时结果"
   },
   "about": {
-    "toggle": "关于此脑型测试",
+    "toggle": "About This Brain Type Test",
     "heading1": "脑型测试如何运作",
     "text1": "10个二选一问题比较计划与行动、新奇与熟悉、直觉与调查等偏好。每个答案为相关类型加分，总分最高的类型成为结果。",
     "heading2": "理解你的脑型",
     "text2": "8种类型是自我反思的提示，不是固定身份。请结合真实经历，只保留能帮助你做出更好选择的部分。",
     "heading3": "本测验不测量什么",
-    "text3": "本娱乐测验不会扫描大脑、测量多巴胺或诊断疾病，也不能替代心理或医疗建议。"
+    "text3": "本娱乐测验不会扫描大脑、测量多巴胺或诊断疾病，也不能替代心理或医疗建议。",
+    "heading4": "5 Cognitive Processing Dimensions",
+    "text4": "Each rapid choice reflects your intuitive weighting across five primary thinking modes: Creativity (divergent idea generation), Logic (structured systematic reasoning), Empathy (emotional attunement and social awareness), Intuition (rapid subconscious pattern matching), and Drive (decisive action under momentum). Your balance across these five dimensions forms your unique cognitive profile.",
+    "heading5": "Frequently Asked Questions",
+    "faq1Q": "Q: Can cognitive styles change over time?",
+    "faq1A": "A: Yes. Unlike fixed neurological traits, cognitive styles and decision habits adapt depending on your current environment, profession, stress levels, and deliberate mental practice.",
+    "faq2Q": "Q: Is one brain type superior to another?",
+    "faq2A": "A: Not at all. High-performance teams and healthy problem-solving require diverse cognitive profiles—from analytical fact-checkers and visionary pioneers to empathetic communicators and disciplined executors.",
+    "faq3Q": "Q: Why does the test use 3-second rapid choices?",
+    "faq3A": "A: Rapid time limits bypass conscious overthinking and social desirability bias, tapping into what cognitive psychologist Daniel Kahneman termed 'System 1' intuitive heuristic processing.",
+    "faq4Q": "Q: Are my test choices private?",
+    "faq4A": "A: Completely private. All calculations happen entirely within your local browser session. No answer selections or personality scores are tracked or stored.",
+    "heading6": "References & Theoretical Background",
+    "reviewDate": "Editorial Review: October 2026",
+    "reviewTeam": "DopaBrain Cognitive Psychology Team"
   }
 }
