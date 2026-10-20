@@ -184,6 +184,10 @@ body {
     text-decoration: none;
     z-index: 10001;
     font-size: 14px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
 }
 .skip-link:focus { top: 0; }
 
