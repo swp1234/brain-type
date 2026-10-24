@@ -226,6 +226,7 @@ class BrainTypeQuiz {
         }
         this.setupEventListeners();
         this.updateGrowthGuideLink();
+        this.syncFooterLinks();
         this.tryAutoStart();
         if (!this.autoStartConsumed) this.scheduleIntroStickyStart();
     }
@@ -469,18 +470,29 @@ class BrainTypeQuiz {
         });
     }
 
+    syncFooterLinks() {
+        const currentLang = this.getCurrentLang();
+        document.querySelectorAll('.related-games a').forEach(link => {
+            const rawHref = (link.getAttribute('data-base-href') || link.getAttribute('href') || '').split('?')[0];
+            if (rawHref && !rawHref.startsWith('http')) {
+                link.setAttribute('data-base-href', rawHref);
+                link.setAttribute('href', `${rawHref}?lang=${encodeURIComponent(currentLang)}`);
+            }
+        });
+    }
+
     getRecommendationOrder() {
         const map = {
-            creator: ['stress-check', 'hsp-test', 'future-self', 'eq-test', 'mental-age'],
-            analyzer: ['future-self', 'stress-check', 'eq-test', 'mental-age', 'hsp-test'],
-            empath: ['eq-test', 'future-self', 'hsp-test', 'stress-check', 'mental-age'],
-            intuitive: ['future-self', 'hsp-test', 'stress-check', 'mental-age', 'eq-test'],
-            strategist: ['future-self', 'stress-check', 'eq-test', 'mental-age', 'hsp-test'],
-            visionary: ['future-self', 'stress-check', 'eq-test', 'hsp-test', 'mental-age'],
-            guardian: ['stress-check', 'future-self', 'hsp-test', 'eq-test', 'mental-age'],
-            dynamo: ['future-self', 'stress-check', 'eq-test', 'hsp-test', 'mental-age']
+            creator: ['stress-check', 'hsp-test', 'future-self', 'iq-test'],
+            analyzer: ['stress-check', 'future-self', 'iq-test', 'hsp-test'],
+            empath: ['hsp-test', 'stress-check', 'future-self', 'iq-test'],
+            intuitive: ['future-self', 'hsp-test', 'stress-check', 'iq-test'],
+            strategist: ['stress-check', 'future-self', 'iq-test', 'hsp-test'],
+            visionary: ['future-self', 'stress-check', 'hsp-test', 'iq-test'],
+            guardian: ['stress-check', 'hsp-test', 'future-self', 'iq-test'],
+            dynamo: ['stress-check', 'future-self', 'hsp-test', 'iq-test']
         };
-        return map[this.resultType] || map.empath;
+        return map[this.resultType] || map.creator;
     }
 
     updatePrimaryRecommendation() {
@@ -566,6 +578,7 @@ class BrainTypeQuiz {
             await i18n.setLanguage(lang);
         }
         this.updateGrowthGuideLink();
+        this.syncFooterLinks();
         document.getElementById('lang-menu').classList.add('hidden');
 
         // If on scan screen, update current scenario
