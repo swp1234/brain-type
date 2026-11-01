@@ -411,10 +411,17 @@ class BrainTypeQuiz {
 
         document.querySelectorAll('.growth-card').forEach((card, index) => {
             card.addEventListener('click', () => {
+                const targetSlug = card.getAttribute('data-target-slug') || this.getSlugFromHref(card.href);
+                this.trackEvent('content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: card.href,
+                    link_id: 'brain_type_growth_' + targetSlug
+                });
                 this.trackEvent('brain_type_growth_click', {
                     cta_surface: card.getAttribute('data-growth-surface') || 'intro_growth',
                     link_position: index + 1,
-                    target_slug: card.getAttribute('data-target-slug') || this.getSlugFromHref(card.href),
+                    target_slug: targetSlug,
                     destination: card.href,
                     target_label: card.textContent.trim().replace(/\s+/g, ' ').slice(0, 120)
                 });
@@ -423,9 +430,16 @@ class BrainTypeQuiz {
 
         document.querySelectorAll('.related-card').forEach((card, index) => {
             card.addEventListener('click', (e) => {
+                const targetKey = card.getAttribute('data-related-key') || this.getSlugFromHref(card.href);
+                this.trackEvent('content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: card.href,
+                    link_id: 'brain_type_related_' + targetKey
+                });
                 this.trackEvent('brain_type_related_click', {
                     related_position: Number(card.getAttribute('data-related-rank') || index + 1),
-                    related_key: card.getAttribute('data-related-key') || this.getSlugFromHref(card.href),
+                    related_key: targetKey,
                     destination: card.href,
                     target_label: card.textContent.trim().replace(/\s+/g, ' ').slice(0, 120)
                 });
@@ -442,6 +456,12 @@ class BrainTypeQuiz {
         const primaryRelatedCta = document.getElementById('primary-related-cta');
         if (primaryRelatedCta) {
             primaryRelatedCta.addEventListener('click', (e) => {
+                this.trackEvent('content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: primaryRelatedCta.href,
+                    link_id: 'brain_type_primary_cta'
+                });
                 this.trackEvent('brain_type_primary_cta_click', {
                     related_key: primaryRelatedCta.getAttribute('data-related-key') || this.getSlugFromHref(primaryRelatedCta.href),
                     related_rank: Number(primaryRelatedCta.getAttribute('data-related-rank') || '1'),
@@ -460,9 +480,16 @@ class BrainTypeQuiz {
 
         document.querySelectorAll('.related-games a').forEach((link, index) => {
             link.addEventListener('click', () => {
+                const targetSlug = this.getSlugFromHref(link.href);
+                this.trackEvent('content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: link.href,
+                    link_id: 'brain_type_footer_' + targetSlug
+                });
                 this.trackEvent('brain_type_footer_link_click', {
                     link_position: index + 1,
-                    target_slug: this.getSlugFromHref(link.href),
+                    target_slug: targetSlug,
                     destination: link.href,
                     target_label: link.textContent.trim()
                 });
