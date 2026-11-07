@@ -843,7 +843,7 @@ class BrainTypeQuiz {
         document.getElementById('result-tagline').textContent = t(type.taglineKey);
 
         // Explain the result without inventing population statistics.
-        document.getElementById('percentile-stat').textContent = t('result.profileStat');
+        document.getElementById('profile-stat').textContent = t('result.profileStat');
 
         // Description
         document.getElementById('result-description').innerHTML = '<p>' + t(type.descKey) + '</p>';

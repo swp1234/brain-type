@@ -46,7 +46,7 @@
 [data-theme="light"] .app-loader { background: #f0f0f8; }
 [data-theme="light"] .ad-container { background: rgba(0,0,0,0.02); }
 [data-theme="light"] .related-card { background: rgba(0,0,0,0.02); border-color: rgba(0,0,0,0.1); }
-[data-theme="light"] .percentile-stat { background: rgba(0,0,0,0.03); border-color: rgba(0,0,0,0.08); }
+[data-theme="light"] .profile-stat { background: rgba(0,0,0,0.03); border-color: rgba(0,0,0,0.08); }
 [data-theme="light"] .related-tests { background: rgba(0,0,0,0.03); border-color: rgba(0,0,0,0.08); }
 
 /* === Reset === */
@@ -893,7 +893,7 @@ body {
 }
 
 /* Percentile stat */
-.percentile-stat {
+.profile-stat {
     text-align: center;
     font-size: 15px;
     color: var(--text-secondary);
@@ -907,7 +907,7 @@ body {
     line-height: 1.6;
 }
 
-.percentile-stat strong {
+.profile-stat strong {
     color: var(--primary-color);
     font-weight: 700;
     font-size: 17px;
